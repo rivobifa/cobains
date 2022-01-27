@@ -164,10 +164,6 @@
 
         @include mq(breakpoint(medium)) {
           margin-top: 2rem;
-        }
-
-        @include mq(breakpoint(large)) {
-          margin-top: 3rem;
           flex-direction: row;
           align-items: center;
           justify-content: flex-start;
@@ -182,6 +178,10 @@
               margin-left: 1rem;
             }
           }
+        }
+
+        @include mq(breakpoint(large)) {
+          margin-top: 3rem;
         }
       }
     }
