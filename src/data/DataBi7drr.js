@@ -3,12 +3,12 @@ export const DataBi7drr = [
     date: '20 January 2022',
     interest: 0.035,
     url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_241522.aspx',
-  }
+  },
   {
     date: '16 December 2021',
     interest: 0.035,
     url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2333221.aspx',
-  }
+  },
   {
     date: '18 November 2021',
     interest: 0.035,
