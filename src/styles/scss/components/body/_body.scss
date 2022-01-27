@@ -1,0 +1,36 @@
+@use '../../functions' as *;
+
+.body {
+  position: relative;
+  margin: -5rem 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: clr-neutral(100);
+
+  &-page {
+    width: breakpoint(large);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-container {
+    padding: 5rem 0;
+
+    @include mq(breakpoint(large)) {
+      max-width: 37.5rem;
+    }
+
+    & > section:nth-child(1) {
+      margin-top: 0;
+      padding-top: 3rem;
+
+      @include mq(breakpoint(large)) {
+        padding-top: 6rem;
+      }
+    }
+  }
+}

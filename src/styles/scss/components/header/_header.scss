@@ -1,0 +1,44 @@
+@use '../../functions' as *;
+
+$clr_acc1_header: clr-neutral(100);
+$clr_acc2_header: clr-primary(300);
+$clr_acc3_header: clr-neutral(800);
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid clr-neutral(300);
+  background: rgba(clr-neutral(100), 0.75);
+  backdrop-filter: blur(15px);
+  transform: translateY(-70px);
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+
+  @include mq(breakpoint(medium)) {
+    border: none;
+  }
+
+  &-sticky {
+    transform: translateY(0);
+  }
+
+  &-container {
+    width: breakpoint(large);
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    @include mq(breakpoint(medium)) {
+      padding: 0.75rem 2rem;
+    }
+  }
+
+  .transition-none {
+    transition: none;
+  }
+}

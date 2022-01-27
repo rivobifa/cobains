@@ -1,0 +1,7 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+@function breakpoint($val) {
+  $breakpoint: map-get($breakpoints, $val);
+  @return $breakpoint;
+}

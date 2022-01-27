@@ -1,0 +1,10 @@
+@use '../functions' as *;
+@use './section' as *;
+
+.term-text {
+  padding: 0 0.2rem;
+  font-size: 0.875rem;
+  font-family: 'Noto Sans Math';
+  font-weight: 400;
+  background: rgba(clr-neutral(300), 0.4);
+}

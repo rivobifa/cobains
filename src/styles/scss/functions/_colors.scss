@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+@function clr-primary($val) {
+  $clr: map-get($colors, primary, $val);
+  @return $clr;
+}
+
+@function clr-secondary($val) {
+  $clr: map-get($colors, secondary, $val);
+  @return $clr;
+}
+
+@function clr-neutral($val) {
+  $clr: map-get($colors, neutral, $val);
+  @return $clr;
+}

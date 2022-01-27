@@ -1,0 +1,55 @@
+import React from 'react';
+import { ReactComponent as IconLinkedin } from '../assets/icon/linkedin.svg';
+import { ReactComponent as IconInstagram } from '../assets/icon/instagram.svg';
+import { ReactComponent as IconTwitter } from '../assets/icon/twitter.svg';
+import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/exhaustedMan.svg';
+import { ReactComponent as IllustrationElderly } from '../assets/illustration/elderly.svg';
+import { ReactComponent as IllustrationUmbrella } from '../assets/illustration/umbrella.svg';
+import { ReactComponent as IllustrationSport } from '../assets/illustration/tennis.svg';
+import { ReactComponent as IllustrationSuccess } from '../assets/illustration/success.svg';
+import { ReactComponent as IllustrationResearch } from '../assets/illustration/analytics1.svg';
+import { ReactComponent as IllustrationResearch2 } from '../assets/illustration/analytics2.svg';
+import { ReactComponent as IllustrationFast } from '../assets/illustration/bicycle.svg';
+import { ReactComponent as IllustrationGadget } from '../assets/illustration/gadgetWoman.svg';
+import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/analytics3.svg';
+import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/shoppingWoman.svg';
+
+export const Wrapper = (data) => {
+  return (
+    <div className='illustration' title='Powered by getIllustrations'>
+      {data}
+    </div>
+  );
+};
+
+export const DataIllustration = {
+  research: Wrapper(<IllustrationResearch />),
+  research2: Wrapper(<IllustrationResearch2 />),
+  pageNotFound: Wrapper(<IllustrationPageNotFound />),
+  elderly: Wrapper(<IllustrationElderly />),
+  umbrella: Wrapper(<IllustrationUmbrella />),
+  sport: Wrapper(<IllustrationSport />),
+  success: Wrapper(<IllustrationSuccess />),
+  fast: Wrapper(<IllustrationFast />),
+  gadget: Wrapper(<IllustrationGadget />),
+  packageBundle: Wrapper(<IllustrationPackageBundle />),
+  packageIndividual: Wrapper(<IllustrationPackageIndividual />),
+};
+
+export const DataIconSocMed = {
+  linkedin: (
+    <a href='https://www.linkedin.com/in/rivobifa'>
+      <IconLinkedin />
+    </a>
+  ),
+  instagram: (
+    <a href='https://www.instagram.com/anotherbeef'>
+      <IconInstagram />
+    </a>
+  ),
+  twitter: (
+    <a href='https://www.twitter.com/rbifa_'>
+      <IconTwitter />
+    </a>
+  ),
+};

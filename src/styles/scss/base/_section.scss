@@ -1,0 +1,146 @@
+@use '../functions' as *;
+
+$clr_acc1_section: clr-neutral(900);
+$clr_acc2_section: clr-primary(300);
+$clr_acc3_section: clr-neutral(100);
+
+section {
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include mq(breakpoint(medium)) {
+    padding: 0 2rem;
+  }
+
+  @include mq(1056px) {
+    padding: 0;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: $clr_acc1_section;
+
+    @include mq(breakpoint(medium)) {
+      line-height: 1.8rem;
+    }
+  }
+
+  .title {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    line-height: 1.4;
+    color: $clr_acc1_section;
+
+    @include mq(breakpoint(large)) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .sub-info {
+    margin: 0.5rem 0;
+
+    .author,
+    .timestamp,
+    .location {
+      font-size: 0.875rem;
+    }
+
+    .author {
+      color: clr-primary(300);
+      font-weight: 700;
+      font-family: 'Poppins';
+    }
+
+    .timestamp,
+    .separator,
+    .location {
+      color: rgba(clr-neutral(900), 0.65);
+    }
+  }
+
+  .sub-content {
+    .title {
+      padding-top: 1.25rem;
+      margin-bottom: -0.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+
+  .content {
+    &-paragraph {
+      margin: 0;
+      margin: 1.5rem 0;
+    }
+
+    &-list {
+      list-style: none;
+
+      &-item {
+        margin-bottom: 0.5rem;
+      }
+
+      &-item:before {
+        content: '\2022';
+        display: inline-block;
+        font-weight: bold;
+        width: 1rem;
+        margin-left: -1rem;
+        color: $clr_acc1_section;
+      }
+    }
+
+    &-quote {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      color: rgba(clr-neutral(600), 0.75);
+      border-left: 0.3rem solid rgba(clr-neutral(500), 1);
+
+      span {
+        color: clr-neutral(700);
+      }
+
+      &-text {
+        font-family: 'Lora';
+      }
+
+      &-author {
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: smaller;
+
+          &:first-child {
+            color: clr-primary(400);
+          }
+
+          &:last-child {
+            color: rgba(clr-neutral(700), 1);
+            font-style: italic;
+            text-transform: none;
+          }
+        }
+      }
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: $clr_acc2_section;
+
+      @include hvr-btn() {
+        color: clr-primary(200);
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
+}

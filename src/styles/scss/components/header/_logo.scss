@@ -1,0 +1,40 @@
+@use '../../functions' as *;
+@use './header' as *;
+
+.logo {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.35rem;
+
+  a {
+    cursor: pointer;
+    color: $clr_acc2_header;
+    color: clr-neutral(900);
+    text-decoration: none;
+
+    @include hvr-btn() {
+      background: transparent;
+    }
+
+    span {
+      font-family: 'Open Sans';
+      // font-size: larger;
+      font-weight: 700;
+      color: $clr_acc2_header;
+    }
+  }
+}
+
+.header {
+  .logo {
+    transition: opacity 0.3s ease-in-out;
+
+    &-hide {
+      opacity: 0;
+
+      @include mq(breakpoint(medium)) {
+        opacity: 1;
+      }
+    }
+  }
+}

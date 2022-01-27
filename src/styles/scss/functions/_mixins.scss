@@ -1,0 +1,85 @@
+@use './colors' as *;
+
+@mixin mq($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin hvr-btn() {
+  &:hover,
+  &:focus-visible {
+    background: rgba(clr-neutral(300), 0.18);
+    color: clr-primary(400);
+    @content;
+  }
+
+  &:focus-visible {
+    outline: 2px solid clr-primary(300);
+    @content;
+  }
+}
+
+@mixin movingTop($time) {
+  animation: movingTop $time ease-in-out 1;
+  @content;
+
+  @keyframes movingTop {
+    0% {
+      transform: translateY(2rem);
+      opacity: 0.25;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin movingBottom($time) {
+  animation: movingBottom $time ease-in-out 1;
+  @content;
+
+  @keyframes movingBottom {
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0.25;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin movingLeft($time) {
+  animation: movingLeft $time ease-in-out 1;
+  @content;
+
+  @keyframes movingLeft {
+    0% {
+      transform: translateX(2rem);
+      opacity: 0.25;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin movingRight($time) {
+  animation: movingRight $time ease-in-out 1;
+  @content;
+
+  @keyframes movingRight {
+    0% {
+      transform: translateX(-2rem);
+      opacity: 0.25;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

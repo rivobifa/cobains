@@ -1,0 +1,57 @@
+@use '../../functions' as *;
+@use './header' as *;
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 2.75rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  padding-right: 0.25rem;
+  margin-left: -0.5rem;
+  border: 0;
+  border-radius: 2rem;
+  background: transparent;
+  transition: all 0.2s 0.3s ease-in-out;
+
+  @include hvr-btn() {
+  }
+
+  &-line {
+    height: 2px;
+    border: 0;
+    border-radius: 2.5rem;
+    background: $clr_acc3_header;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &-line:first-child {
+    width: 80%;
+  }
+
+  &-line:last-child {
+    width: 60%;
+  }
+
+  &-close {
+    margin: 0 0.5rem 0 -0.85rem;
+
+    .hamburger-line {
+      width: 60%;
+    }
+
+    .hamburger-line:first-child {
+      transform-origin: left top;
+      transform: rotate(45deg) translate(4px, -7px);
+    }
+
+    .hamburger-line:last-child {
+      transform-origin: left bottom;
+      transform: rotate(-45deg) translate(4px, 7px);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use 'functions' as *;
+
+@use 'base';
+@use 'components';
+@use 'pages';
+
+// * {
+//   border: 0.2px solid red;
+// }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+  height: auto;
+  font-family: 'Open Sans', 'Poppins', 'Lora', 'Noto Sans Math', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: clr-neutral(900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: clr-neutral(900);
+}
+
+input {
+  accent-color: clr-primary(300);
+}
+
+.app {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

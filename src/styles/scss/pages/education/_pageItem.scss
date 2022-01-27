@@ -1,0 +1,42 @@
+@use '../../functions' as *;
+
+.page-container.page-education-item {
+  & + .side-content {
+    padding-top: 8rem;
+  }
+
+  section.section-main {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    @include mq(breakpoint(large)) {
+      padding-top: 4rem;
+    }
+  }
+
+  .content-container {
+    span {
+      line-height: 1.8rem;
+
+      @include mq(breakpoint(medium)) {
+        line-height: 2rem;
+      }
+    }
+
+    & > .title {
+      font-size: 1.8rem;
+
+      @include mq(breakpoint(medium)) {
+        font-size: 2rem;
+      }
+    }
+
+    &-conclusion {
+      margin: 4rem 0;
+
+      .title {
+        font-weight: 400;
+      }
+    }
+  }
+}

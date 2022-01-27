@@ -1,0 +1,321 @@
+@use '../../functions' as *;
+
+.page-container.page-calc-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+
+  section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &.section {
+      &-main,
+      &-second {
+        width: 100vw;
+      }
+
+      &-main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 100vh;
+        min-height: 38rem;
+        max-height: 45.875rem;
+        max-width: breakpoint(large);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        @include mq(breakpoint(medium)) {
+          margin-top: -6rem;
+          padding-top: 0;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          flex-direction: row;
+          align-items: flex-start;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        @include mq(breakpoint(large)) {
+          margin-top: -3rem;
+        }
+
+        .title b {
+          color: clr-primary(300);
+        }
+
+        .illustration {
+          @include movingTop(0.5s) {
+          }
+
+          @include mq(breakpoint(medium)) {
+            @include movingLeft(0.5s) {
+            }
+          }
+        }
+
+        .content-link {
+          .button {
+            &-regular {
+              @include movingTop(0.5s) {
+              }
+            }
+
+            &-complementary {
+              @include movingTop(0.75s) {
+              }
+            }
+          }
+        }
+      }
+
+      &-second {
+        padding: 3rem 0;
+
+        @include movingTop(0.3s) {
+        }
+
+        @include mq(breakpoint(medium)) {
+          margin-top: -12rem;
+          padding: 8rem 0;
+        }
+
+        @include mq(breakpoint(large)) {
+          margin-top: -8rem;
+        }
+
+        @include mq(breakpoint(extraLarge)) {
+          margin-top: -4rem;
+          padding: 2rem 0 6rem;
+        }
+
+        .title,
+        span {
+          text-align: center;
+        }
+
+        .title {
+          font-size: 1.6rem;
+
+          @include mq(breakpoint(medium)) {
+            font-size: 2.4rem;
+          }
+        }
+      }
+
+      &-third {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        height: auto;
+        min-height: 100%;
+        max-height: 100%;
+
+        @include mq(breakpoint(medium)) {
+          flex-direction: row-reverse;
+        }
+
+        .title b {
+          color: clr-primary(300);
+        }
+
+        .illustration {
+          transform: scale(0.9);
+
+          @include movingRight(0.5s) {
+          }
+
+          @include mq(breakpoint(medium)) {
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 3rem;
+          }
+
+          @include mq(breakpoint(large)) {
+            margin-top: 2rem;
+          }
+
+          @include mq(breakpoint(extraLarge)) {
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    &-container {
+      @include movingTop(0.3s) {
+      }
+
+      &-level {
+        padding: 2rem 0 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        overflow-x: auto;
+
+        @include mq(breakpoint(large)) {
+          padding: 1.5rem 0;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+
+    &-level {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      @include mq(breakpoint(large)) {
+        margin: 1rem 0;
+      }
+
+      &:first-child {
+        .content-box:first-child {
+          margin-left: 3rem;
+        }
+      }
+
+      &:last-child {
+        .content-box:last-child {
+          margin-right: 3rem;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-box {
+      margin: 0 1.5rem;
+      padding: 3rem 2rem;
+      height: 13rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 4px;
+      border: 1px solid rgba(clr-neutral(300), 0.45);
+      box-shadow: 0px 6px 12px rgba(clr-neutral(300), 0.5);
+      transform: scale(0.95);
+      transition: all 0.3s ease-in-out;
+
+      @include movingTop(0.3s) {
+      }
+
+      &:hover,
+      &:focus-visible {
+        transform: scale(1.1);
+        box-shadow: 0px 22px 12px -12px rgba(clr-neutral(300), 0.35);
+      }
+
+      .box {
+        &-title {
+          color: clr-neutral(900);
+          margin: 1rem 0 0.5rem;
+        }
+
+        &-desc {
+          margin: 0;
+          width: 10rem;
+          text-align: center;
+
+          span {
+            font-size: smaller;
+            line-height: 1.2rem;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      margin-top: 0.75rem;
+      height: 4rem;
+      width: 4rem;
+
+      .icon {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        color: clr-primary(300);
+      }
+    }
+
+    &-link {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .button-regular {
+        margin: 0.25rem 0;
+        width: 100%;
+      }
+
+      @include mq(breakpoint(medium)) {
+        margin-top: 2rem;
+      }
+
+      @include mq(breakpoint(large)) {
+        margin-top: 3rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .button {
+          &-regular {
+            width: auto;
+            margin: 0;
+          }
+
+          &-complementary {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  section > .content-link {
+    display: flex;
+
+    @include mq(breakpoint(medium)) {
+      display: none;
+    }
+  }
+
+  .content-container > .content-link {
+    display: none;
+
+    @include mq(breakpoint(medium)) {
+      display: flex;
+    }
+  }
+
+  .illustration {
+    padding: 0 1rem;
+    margin: 4rem 0 2rem 0;
+
+    @include mq(breakpoint(medium)) {
+      margin: 1rem 0 0 3rem;
+      padding: 0;
+    }
+  }
+}

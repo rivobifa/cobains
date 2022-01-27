@@ -1,0 +1,41 @@
+@use '../functions' as *;
+
+.button {
+  &-regular {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    border: none;
+    color: clr-neutral(100);
+    background: clr-primary(300);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: smaller;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @include hvr-btn() {
+      color: clr-neutral(100);
+      background: rgba(clr-primary(300), 0.9);
+      box-shadow: 0 2px 8px clr-primary(100);
+    }
+  }
+
+  &-complementary {
+    border: 1px solid clr-neutral(600);
+    color: clr-neutral(700);
+    background: clr-neutral(100);
+
+    @include hvr-btn() {
+      box-shadow: 0 2px 8px rgba(clr-neutral(300), 0.75);
+      background: clr-neutral(100);
+      color: clr-neutral(900);
+    }
+  }
+}

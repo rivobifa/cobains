@@ -1,0 +1,27 @@
+@use '../functions' as *;
+
+.illustration {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(breakpoint(medium)) {
+    padding: 0;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 460px;
+
+    @include mq(breakpoint(medium)) {
+      width: calc(
+        260px + (460 - 260) * ((100vw - breakpoint(medium)) / (1024 - 640))
+      );
+    }
+  }
+}

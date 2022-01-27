@@ -1,0 +1,6 @@
+@use '../functions' as *;
+
+::selection {
+  background: rgba(clr-primary(300), 0.75);
+  color: clr-neutral(100);
+}
