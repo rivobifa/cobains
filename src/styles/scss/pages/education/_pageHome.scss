@@ -141,12 +141,33 @@
 
   .article {
     &-box {
-      margin: 1.5rem 0 0;
-      padding: 1rem 0;
-      display: block;
+      margin: 2rem 0 0;
+
+      .link {
+        &-title {
+          @include hvr-btn() {
+            color: clr-neutral(900);
+            background: none;
+            text-decoration: underline;
+          }
+        }
+
+        &-content {
+          @include hvr-btn() {
+            color: clr-neutral(900);
+            background: none;
+          }
+        }
+      }
 
       .title {
         font-size: 1.1rem;
+
+        @include hvr-btn() {
+          color: clr-neutral(900);
+          background: none;
+          text-decoration: underline;
+        }
       }
 
       .sub-info {
@@ -184,25 +205,24 @@
       display: flex;
       justify-content: flex-end;
 
-      .icon,
-      .link {
-        color: clr-primary(300);
-      }
-
       .icon {
         margin-right: 0.5rem;
       }
 
       .link {
-        margin-right: -0.75rem;
-        padding: 0.25rem 0.75rem;
+        cursor: pointer;
+        margin-right: -0.5rem;
+        padding: 0.25rem 0.5rem;
         display: flex;
         align-items: center;
-        border-radius: 2rem;
         font-size: 0.875rem;
         font-weight: 700;
+        color: clr-primary(300);
 
         @include hvr-btn() {
+          color: clr-primary(200);
+          background: none;
+          text-decoration: underline;
         }
       }
     }

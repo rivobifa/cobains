@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import * as TiIcons from 'react-icons/ti';
 import { FormatText } from '../../functions/FormatText';
+import { DataLinkPage } from '../../data/DataLink';
 
 export const WarningText = ({ data }) => {
   return (
@@ -55,18 +57,20 @@ export const SubInfo = ({ data }) => {
     return before && after && <span className='separator'> | </span>;
   };
 
-  const SubInfoContent = ({ data, author, timestamp, location }) => {
-    return (
+  const SubInfoContent = ({
+    data,
+    author,
+    timestamp,
+    location,
+    linkProfile,
+  }) => {
+    return author ? (
+      <Link to={linkProfile || DataLinkPage[404]} className='author'>
+        {data}
+      </Link>
+    ) : (
       <span
-        className={`${
-          author
-            ? 'author'
-            : timestamp
-            ? 'timestamp'
-            : location
-            ? 'location'
-            : ''
-        }`}
+        className={`${timestamp ? 'timestamp' : location ? 'location' : ''}`}
       >
         {data}
       </span>
@@ -75,7 +79,13 @@ export const SubInfo = ({ data }) => {
 
   return (
     <div className='sub-info'>
-      {data.author && <SubInfoContent author data={data.author} />}
+      {data.author && (
+        <SubInfoContent
+          author
+          data={data.author}
+          linkProfile={data.linkProfile}
+        />
+      )}
       <SubInfoSeparator before={data.author} after={data.timestamp} />
       {data.timestamp && <SubInfoContent timestamp data={data.timestamp} />}
       <SubInfoSeparator before={data.timestamp} after={data.location} />

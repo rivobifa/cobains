@@ -18,6 +18,7 @@ export const DataWholeLifeIns = {
       ],
       subInfo: {
         author: 'Rivo Bifa',
+        linkProfile: DataLinkPage.author_Rivo,
         timestamp: 'Rabu, 25 Januari 2022',
         location: 'Jakarta',
       },

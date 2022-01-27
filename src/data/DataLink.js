@@ -16,6 +16,7 @@ export const DataLinkPage = {
   edu_netoVsBruto: '/Edukasi/NetoVsBruto',
   edu_createAssumption: '/Edukasi/MembuatAsumsiAkturiaAsuransiJiwa',
   about: '/TentangKami',
+  author_Rivo: '/Author/RivoBifa',
   404: '/PageNotFound',
 };
 

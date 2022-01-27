@@ -54,6 +54,12 @@ section {
       color: clr-primary(300);
       font-weight: 700;
       font-family: 'Poppins';
+
+      @include hvr-btn() {
+        color: clr-primary(200);
+        background: none;
+        text-decoration: underline;
+      }
     }
 
     .timestamp,
@@ -119,7 +125,7 @@ section {
           font-size: smaller;
 
           &:first-child {
-            color: clr-primary(400);
+            color: clr-primary(300);
           }
 
           &:last-child {

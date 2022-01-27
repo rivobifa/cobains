@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { DataEducation } from '../../data/DataEducation';
-import { RegularText } from '../../components/body/SectionGenerator';
+import {
+  RegularText,
+  Title,
+  SubInfo,
+  Content,
+} from '../../components/body/SectionGenerator';
 
 const HomePage = () => {
   const article = DataEducation.article;
@@ -35,10 +40,16 @@ const HomePage = () => {
 
 export const ArticleBox = ({ data, link }) => {
   return (
-    <Link className='article-box' to={link}>
-      <RegularText data={data} />
+    <div className='article-box'>
+      <Link to={link} className='link-title'>
+        <Title data={data.title} />
+      </Link>
+      <SubInfo data={data.subInfo} />
+      <Link to={link} className='link-content'>
+        <Content data={data.content} />
+      </Link>
       <ArticleLink link={link} />
-    </Link>
+    </div>
   );
 };
 
@@ -47,12 +58,12 @@ export const ArticleLink = ({ link, data }) => {
 
   return (
     <div className='article-link'>
-      <span className='link'>
+      <Link className='link' to={link}>
         <IconContext.Provider value={{ className: 'icon' }}>
           {button.icon}
         </IconContext.Provider>
         {data || button.text}
-      </span>
+      </Link>
     </div>
   );
 };

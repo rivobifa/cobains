@@ -93,6 +93,19 @@ section .sub-info .author {
   font-weight: 700;
   font-family: "Poppins";
 }
+section .sub-info .author:hover, section .sub-info .author:focus-visible {
+  background: rgba(222, 222, 222, 0.18);
+  color: #7f6bae;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
+}
+section .sub-info .author:focus-visible {
+  outline: 2px solid #9b8cc0;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
+}
 section .sub-info .timestamp,
 section .sub-info .separator,
 section .sub-info .location {
@@ -144,7 +157,7 @@ section .content-quote-author span {
   font-size: smaller;
 }
 section .content-quote-author span:first-child {
-  color: #7f6bae;
+  color: #9b8cc0;
 }
 section .content-quote-author span:last-child {
   color: #76717f;
@@ -1070,7 +1083,7 @@ section .content a:focus-visible {
   font-size: 0.8rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: #7f6bae;
+  color: #9b8cc0;
 }
 .side-content .preview-content > a .preview-content-icon {
   margin: 1.5px 3px 0 0;
@@ -1078,13 +1091,15 @@ section .content a:focus-visible {
 .side-content .preview-content > a:hover, .side-content .preview-content > a:focus-visible {
   background: rgba(222, 222, 222, 0.18);
   color: #7f6bae;
-  color: #9b8cc0;
-  background: transparent;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
 }
 .side-content .preview-content > a:focus-visible {
   outline: 2px solid #9b8cc0;
-  color: #9b8cc0;
-  background: transparent;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
 }
 
 .loader {
@@ -2810,12 +2825,47 @@ li.MuiMenuItem-root {
   }
 }
 .page-container.page-education .article-box {
-  margin: 1.5rem 0 0;
-  padding: 1rem 0;
-  display: block;
+  margin: 2rem 0 0;
+}
+.page-container.page-education .article-box .link-title:hover, .page-container.page-education .article-box .link-title:focus-visible {
+  background: rgba(222, 222, 222, 0.18);
+  color: #7f6bae;
+  color: #333333;
+  background: none;
+  text-decoration: underline;
+}
+.page-container.page-education .article-box .link-title:focus-visible {
+  outline: 2px solid #9b8cc0;
+  color: #333333;
+  background: none;
+  text-decoration: underline;
+}
+.page-container.page-education .article-box .link-content:hover, .page-container.page-education .article-box .link-content:focus-visible {
+  background: rgba(222, 222, 222, 0.18);
+  color: #7f6bae;
+  color: #333333;
+  background: none;
+}
+.page-container.page-education .article-box .link-content:focus-visible {
+  outline: 2px solid #9b8cc0;
+  color: #333333;
+  background: none;
 }
 .page-container.page-education .article-box .title {
   font-size: 1.1rem;
+}
+.page-container.page-education .article-box .title:hover, .page-container.page-education .article-box .title:focus-visible {
+  background: rgba(222, 222, 222, 0.18);
+  color: #7f6bae;
+  color: #333333;
+  background: none;
+  text-decoration: underline;
+}
+.page-container.page-education .article-box .title:focus-visible {
+  outline: 2px solid #9b8cc0;
+  color: #333333;
+  background: none;
+  text-decoration: underline;
 }
 .page-container.page-education .article-box .sub-info span {
   font-size: 0.75rem;
@@ -2848,28 +2898,31 @@ li.MuiMenuItem-root {
   display: flex;
   justify-content: flex-end;
 }
-.page-container.page-education .article-link .icon,
-.page-container.page-education .article-link .link {
-  color: #9b8cc0;
-}
 .page-container.page-education .article-link .icon {
   margin-right: 0.5rem;
 }
 .page-container.page-education .article-link .link {
-  margin-right: -0.75rem;
-  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  margin-right: -0.5rem;
+  padding: 0.25rem 0.5rem;
   display: flex;
   align-items: center;
-  border-radius: 2rem;
   font-size: 0.875rem;
   font-weight: 700;
+  color: #9b8cc0;
 }
 .page-container.page-education .article-link .link:hover, .page-container.page-education .article-link .link:focus-visible {
   background: rgba(222, 222, 222, 0.18);
   color: #7f6bae;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
 }
 .page-container.page-education .article-link .link:focus-visible {
   outline: 2px solid #9b8cc0;
+  color: #b8add2;
+  background: none;
+  text-decoration: underline;
 }
 
 .page-container.page-education-item + .side-content {
