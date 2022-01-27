@@ -1,19 +1,19 @@
 {
   "resultCalcLifeIns": {
-    "apv": 1634.716834791283,
-    "nap": 133.0628949064095
+    "apv": null,
+    "nap": null
   },
   "userData": {
-    "gender": "Perempuan",
-    "age": 70,
-    "product": "Whole life insurance",
-    "calc": "Hitung premi neto",
-    "toggleAdv": false,
-    "tbp": "The end of the year of death",
-    "tsi": 3500,
-    "installment": 41,
-    "interest": "",
-    "mortality": "",
-    "annuity": ""
+    "gender": null,
+    "age": null,
+    "product": null,
+    "calc": null,
+    "toggleAdv": null,
+    "tbp": null,
+    "tsi": null,
+    "installment": null,
+    "interest": null,
+    "mortality": null,
+    "annuity": null
   }
 }
