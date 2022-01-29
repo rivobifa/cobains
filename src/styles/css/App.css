@@ -2299,6 +2299,7 @@ li.MuiMenuItem-root {
   max-width: 100%;
 }
 .page-container.page-calc-result section {
+  margin: 2rem 0;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -2307,6 +2308,7 @@ li.MuiMenuItem-root {
 }
 .page-container.page-calc-result section.section-result {
   width: 100vw;
+  padding-top: 2rem;
 }
 .page-container.page-calc-result section.section-link {
   padding-bottom: 3rem;
@@ -2417,7 +2419,7 @@ li.MuiMenuItem-root {
 .page-container.page-calc-result .content-container {
   margin: 1rem 0 0 0;
   padding: 2rem 0 1rem 0;
-  height: 32.5rem;
+  height: 31rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -2554,9 +2556,6 @@ li.MuiMenuItem-root {
   box-shadow: 0 2px 6px rgba(222, 222, 222, 0.5);
   box-sizing: border-box;
 }
-.page-container.page-calc-result .chart-bi7drr {
-  margin-bottom: 3rem;
-}
 .page-container.page-calc-result .table-container {
   padding: 0 1rem;
   padding-bottom: 1rem;
@@ -2591,6 +2590,9 @@ li.MuiMenuItem-root {
 .page-container.page-calc-result .table-container.table-bi7drr td:last-child a {
   text-decoration: underline;
   color: #9b8cc0;
+}
+.page-container.page-calc-result .table-container.table-bi7drr {
+  margin-top: 3rem;
 }
 .page-container.page-calc-result .table-container.table-commutation td:first-child {
   text-align: center;
