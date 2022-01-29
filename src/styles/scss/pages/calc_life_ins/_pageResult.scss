@@ -74,7 +74,7 @@
 
     button {
       padding: 0.75rem 1.25rem;
-      min-width: 11rem;
+      min-width: 14 rem;
       font-size: 0.875rem;
 
       @include mq(breakpoint(medium)) {
@@ -303,7 +303,6 @@
       padding: 1rem 0.5rem;
       width: 100%;
       max-width: 600px;
-      // border: 1px solid red;
       box-shadow: 0 2px 6px rgba(clr-neutral(300), 0.5);
       box-sizing: border-box;
     }
@@ -335,6 +334,7 @@
     th,
     td {
       padding: 0.25rem 0.75rem;
+      min-width: 4rem;
     }
 
     td {
@@ -352,6 +352,14 @@
         a {
           text-decoration: underline;
           color: clr-primary(300);
+        }
+      }
+    }
+
+    &.table-commutation {
+      td {
+        &:first-child {
+          text-align: center;
         }
       }
     }

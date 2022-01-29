@@ -835,7 +835,7 @@ section .content a:focus-visible {
 }
 @media (min-width: 1024px) {
   .body .page-container > section:nth-child(1) {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
 }
 
@@ -2356,7 +2356,7 @@ li.MuiMenuItem-root {
 }
 .page-container.page-calc-result .add-container button {
   padding: 0.75rem 1.25rem;
-  min-width: 11rem;
+  min-width: 14 rem;
   font-size: 0.875rem;
 }
 @media (min-width: 640px) {
@@ -2577,6 +2577,7 @@ li.MuiMenuItem-root {
 .page-container.page-calc-result .table-container th,
 .page-container.page-calc-result .table-container td {
   padding: 0.25rem 0.75rem;
+  min-width: 4rem;
 }
 .page-container.page-calc-result .table-container td {
   text-align: right;
@@ -2590,6 +2591,9 @@ li.MuiMenuItem-root {
 .page-container.page-calc-result .table-container.table-bi7drr td:last-child a {
   text-decoration: underline;
   color: #9b8cc0;
+}
+.page-container.page-calc-result .table-container.table-commutation td:first-child {
+  text-align: center;
 }
 .page-container.page-calc-result .link-container {
   padding: 0 1rem;

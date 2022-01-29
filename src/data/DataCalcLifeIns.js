@@ -216,7 +216,7 @@ export const DataResultCalc = {
     title: 'Nilai Komutasi',
     subTitle: ['Usia', 'Periode pertanggungan', 'dan Periode cicilan'],
     table: {
-      header: ['Notasi', 'x', 'x+1', 'x+n', 'x+m', 'x+m+1'],
+      header: ['Usia', 'p', 'q', 'l', 'd', 'D', 'N', 'S', 'C', 'M', 'R'],
     },
   },
   link: {
