@@ -98,15 +98,15 @@ export const Content = ({ data }) => {
   return data.map((content, i) => {
     return (
       <div key={i}>
-        {content.paragraph && <Paragraph data={content.paragraph} key={i} />}
-        {content.list && <List data={content.list} key={i} />}
-        {content.quote && <Quote data={content.quote} key={i} />}
+        {content.paragraph && <Paragraph data={content.paragraph} />}
+        {content.list && <List data={content.list} />}
+        {content.quote && <Quote data={content.quote} />}
       </div>
     );
   });
 };
 
-export const Paragraph = ({ data, i }) => {
+export const Paragraph = ({ data }) => {
   return data.map((val, i) => {
     return (
       <p key={i} className='content-paragraph'>
@@ -120,9 +120,9 @@ export const Paragraph = ({ data, i }) => {
   });
 };
 
-export const List = ({ data, i }) => {
+export const List = ({ data }) => {
   return (
-    <ul key={i} className='content-list'>
+    <ul className='content-list'>
       {data.map((val, i) => {
         return (
           <li key={i} className='content-list-item'>
@@ -138,17 +138,17 @@ export const List = ({ data, i }) => {
   );
 };
 
-export const Quote = ({ data, i }) => {
+export const Quote = ({ data }) => {
   return (
-    <div key={i} className='content-quote'>
-      <div className='content-quote-text'>
+    <div className='content-quote'>
+      <p className='content-quote-text'>
         <span className='content-quote-text'>
           {data.content.map((text, i) => {
             return FormatText({ text, i });
           })}
         </span>
-      </div>
-      <div className='content-quote-author'>
+      </p>
+      <p className='content-quote-author'>
         <span>{data.author}</span>
         {data.source &&
           (data.source.path ? (
@@ -158,7 +158,7 @@ export const Quote = ({ data, i }) => {
           ) : (
             <span>{data.source.text}</span>
           ))}
-      </div>
+      </p>
     </div>
   );
 };

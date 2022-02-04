@@ -15,17 +15,10 @@
     justify-content: flex-start;
 
     &.section {
-      &-main,
-      &-second {
-        width: 100vw;
-      }
-
       &-main {
+        padding-bottom: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        height: 100vh;
-        min-height: 38rem;
-        max-height: 45.875rem;
         max-width: breakpoint(large);
         display: flex;
         flex-direction: column;
@@ -34,13 +27,38 @@
 
         @include mq(breakpoint(medium)) {
           margin-top: -6rem;
-          padding-top: 0;
-          padding-left: 2rem;
-          padding-right: 2rem;
+          padding: 0 2rem;
+          height: 100vh;
+          min-height: 38rem;
+          max-height: 45.875rem;
           flex-direction: row;
           align-items: flex-start;
           align-items: center;
           justify-content: space-between;
+
+          .illustration {
+            @include movingTop(0.5s) {
+            }
+
+            @include mq(breakpoint(medium)) {
+              @include movingLeft(0.5s) {
+              }
+            }
+          }
+
+          .content-link {
+            .button {
+              &-regular {
+                @include movingTop(0.5s) {
+                }
+              }
+
+              &-complementary {
+                @include movingTop(0.75s) {
+                }
+              }
+            }
+          }
         }
 
         @include mq(breakpoint(large)) {
@@ -50,50 +68,15 @@
         .title b {
           color: clr-primary(300);
         }
-
-        .illustration {
-          @include movingTop(0.5s) {
-          }
-
-          @include mq(breakpoint(medium)) {
-            @include movingLeft(0.5s) {
-            }
-          }
-        }
-
-        .content-link {
-          .button {
-            &-regular {
-              @include movingTop(0.5s) {
-              }
-            }
-
-            &-complementary {
-              @include movingTop(0.75s) {
-              }
-            }
-          }
-        }
       }
 
       &-second {
         padding: 3rem 0;
-
-        @include movingTop(0.3s) {
-        }
+        width: 100vw;
 
         @include mq(breakpoint(medium)) {
-          margin-top: -12rem;
-          padding: 8rem 0;
-        }
-
-        @include mq(breakpoint(large)) {
-          margin-top: -8rem;
-        }
-
-        @include mq(breakpoint(extraLarge)) {
-          margin-top: -4rem;
-          padding: 2rem 0 6rem;
+          @include movingTop(0.3s) {
+          }
         }
 
         .title,
@@ -111,11 +94,9 @@
       }
 
       &-third {
+        margin-top: 0;
         padding-top: 4rem;
         padding-bottom: 6rem;
-        height: auto;
-        min-height: 100%;
-        max-height: 100%;
 
         @include mq(breakpoint(medium)) {
           flex-direction: row-reverse;
@@ -128,13 +109,13 @@
         .illustration {
           transform: scale(0.9);
 
-          @include movingRight(0.5s) {
-          }
-
           @include mq(breakpoint(medium)) {
             margin-top: 0;
             margin-left: 0;
             margin-right: 3rem;
+
+            @include movingRight(0.5s) {
+            }
           }
 
           @include mq(breakpoint(large)) {
@@ -152,11 +133,12 @@
 
   .content {
     &-container {
-      @include movingTop(0.3s) {
+      @include mq(breakpoint(medium)) {
+        @include movingTop(0.3s) {
+        }
       }
 
       &-level {
-        padding: 2rem 0 3rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -206,6 +188,7 @@
       margin: 0 1.5rem;
       padding: 3rem 2rem;
       height: 13rem;
+      min-width: 11.41875rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -213,10 +196,13 @@
       border-radius: 4px;
       border: 1px solid rgba(clr-neutral(300), 0.45);
       box-shadow: 0px 6px 12px rgba(clr-neutral(300), 0.5);
+      background: clr-neutral(100);
       transform: scale(0.95);
       transition: all 0.3s ease-in-out;
 
-      @include movingTop(0.3s) {
+      @include mq(breakpoint(medium)) {
+        @include movingTop(0.3s) {
+        }
       }
 
       &:hover,

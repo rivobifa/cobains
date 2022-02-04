@@ -128,35 +128,31 @@ export const DataHomeCalc = {
     },
   ],
   card: [
-    [
-      {
-        icon: <MdIcons.MdMoneyOff />,
-        title: 'Gratis',
-        desc: 'Tidak perlu membuka dompet.',
-      },
-      {
-        icon: <BiIcons.BiTimer />,
-        title: 'Dibawah 2 detik',
-        desc: 'Proses cepat, tidak sampai dua detik.',
-      },
-      {
-        icon: <BiIcons.BiSelectMultiple />,
-        title: 'Multi Opsi',
-        desc: 'Hadir dalam pillihan input yang bervariasi.',
-      },
-    ],
-    [
-      {
-        icon: <MdIcons.MdOutlineTimeline />,
-        title: 'Visualisasi Data',
-        desc: 'Pertimbangan lebih baik dan mudah dipahami.',
-      },
-      {
-        icon: <AiIcons.AiOutlineBorderlessTable />,
-        title: 'Tabulasi Pilihan',
-        desc: 'Tabel sesuai keinginan dan kebutuhan.',
-      },
-    ],
+    {
+      icon: <MdIcons.MdMoneyOff />,
+      title: 'Gratis',
+      desc: 'Tidak perlu membuka dompet.',
+    },
+    {
+      icon: <BiIcons.BiTimer />,
+      title: 'Dibawah 2 detik',
+      desc: 'Proses cepat, tidak sampai dua detik.',
+    },
+    {
+      icon: <BiIcons.BiSelectMultiple />,
+      title: 'Multi Opsi',
+      desc: 'Hadir dalam pillihan input yang bervariasi.',
+    },
+    {
+      icon: <MdIcons.MdOutlineTimeline />,
+      title: 'Visualisasi Data',
+      desc: 'Pertimbangan lebih baik dan mudah dipahami.',
+    },
+    {
+      icon: <AiIcons.AiOutlineBorderlessTable />,
+      title: 'Tabulasi Pilihan',
+      desc: 'Tabel sesuai keinginan dan kebutuhan.',
+    },
   ],
 };
 

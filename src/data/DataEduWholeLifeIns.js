@@ -85,7 +85,7 @@ export const DataWholeLifeIns = {
                 type: 'italic',
               },
               {
-                text: ' kita bakal ngomongin bagaimana hubungannya dengan tabel mortalita serta perilaku grafiknya.',
+                text: ', kita bakal ngomongin bagaimana hubungannya dengan tabel mortalita serta perilaku grafiknya.',
               },
             ],
           ],
@@ -149,7 +149,7 @@ export const DataWholeLifeIns = {
                 path: DataLinkPage.edu_TermLifeIns,
               },
               {
-                text: ' Kalau udah balik lagi sini yakk',
+                text: ' Kalau udah balik lagi sini yakk.',
               },
             ],
             [
@@ -215,7 +215,7 @@ export const DataWholeLifeIns = {
             ],
             [
               {
-                text: 'Wow...',
+                text: 'Wow... ',
               },
               {
                 text: 'Amazing',
@@ -227,7 +227,14 @@ export const DataWholeLifeIns = {
             ],
             [
               {
-                text: 'Kenapa gua bilang begitu? karena kalau ',
+                text: 'Kenapa ',
+              },
+              {
+                text: 'gue',
+                type: 'italic',
+              },
+              {
+                text: ' bilang begitu? karena kalau ',
               },
               {
                 text: 'lo',

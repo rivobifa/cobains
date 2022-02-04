@@ -4,10 +4,22 @@ import { DataHomeCalc } from '../../data/DataCalcLifeIns';
 import { RegularText } from '../../components/body/SectionGenerator';
 import { Button } from '../../components/body/Button';
 import { IconContext } from 'react-icons';
+import SwiperCustom from '../../components/body/SwiperCustom';
+import useWindowDimension from '../../functions/useWindowDimension';
+import { DataBreakpoint } from '../../data/DataBreakpoint';
+import { SwiperSlide } from 'swiper/react';
 
 const PageCalcHome = () => {
+  const { screenWidth } = useWindowDimension();
+  const breakpoint = DataBreakpoint;
+
   const sectionSecond = useRef(null);
   const scrollToSectionSecond = () => sectionSecond.current.scrollIntoView();
+
+  const cardLevel_1 = DataHomeCalc.card.slice(0, 3);
+  const cardLevel_2 = DataHomeCalc.card.slice(3, 5);
+
+  const card = [cardLevel_1, cardLevel_2];
 
   return (
     <div className='page-container page-calc-home'>
@@ -32,29 +44,27 @@ const PageCalcHome = () => {
       <section ref={sectionSecond} className='section-second'>
         <RegularText data={DataHomeCalc.section[1]} />
         <div className='content-container-level'>
-          {DataHomeCalc.card.map((val, i) => {
-            return (
-              <div key={i} className='content-level'>
-                {val.map((val, j) => {
-                  return (
-                    <div key={j} className='content-box'>
-                      <div className='content-icon'>
-                        <IconContext.Provider value={{ className: 'icon' }}>
-                          {val.icon}
-                        </IconContext.Provider>
-                      </div>
-                      <div className='content-item'>
-                        <h3 className='box-title'>{val.title}</h3>
-                        <p className='box-desc'>
-                          <span>{val.desc}</span>
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          })}
+          {screenWidth < breakpoint.large ? (
+            <SwiperCustom
+              children={DataHomeCalc.card.map((val, i) => {
+                return (
+                  <SwiperSlide key={i}>
+                    <CardBox value={val} />
+                  </SwiperSlide>
+                );
+              })}
+            />
+          ) : (
+            card.map((val, i) => {
+              return (
+                <div key={i} className='content-level'>
+                  {val.map((val, i) => {
+                    return <CardBox key={i} value={val} />;
+                  })}
+                </div>
+              );
+            })
+          )}
         </div>
       </section>
       <section className='section-main section-third'>
@@ -76,3 +86,21 @@ const PageCalcHome = () => {
 };
 
 export default PageCalcHome;
+
+export const CardBox = ({ value }) => {
+  return (
+    <div className='content-box'>
+      <div className='content-icon'>
+        <IconContext.Provider value={{ className: 'icon' }}>
+          {value.icon}
+        </IconContext.Provider>
+      </div>
+      <div className='content-item'>
+        <h3 className='box-title'>{value.title}</h3>
+        <p className='box-desc'>
+          <span>{value.desc}</span>
+        </p>
+      </div>
+    </div>
+  );
+};

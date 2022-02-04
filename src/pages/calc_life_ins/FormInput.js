@@ -16,7 +16,7 @@ export const InputToggleAdv = ({
 }) => {
   return (
     <div className={`input-toggle ${value && 'close'}`}>
-      {value && <div>{form.close.message}</div>}
+      {value && <small>{form.close.message}</small>}
       <input
         type='checkbox'
         id={form.name}

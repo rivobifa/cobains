@@ -19,11 +19,13 @@
     font-size: smaller;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: transform 0.2s ease;
 
     @include hvr-btn() {
       color: clr-neutral(100);
       background: rgba(clr-primary(300), 0.9);
       box-shadow: 0 2px 8px clr-primary(100);
+      transform: scale(1.08);
     }
   }
 

@@ -40,6 +40,21 @@
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
+
+          a.bullet-button {
+            @include movingTop(0.5s) {
+            }
+          }
+
+          .illustration {
+            @include movingTop(0.5s) {
+            }
+
+            @include mq(breakpoint(medium)) {
+              @include movingLeft(0.5s) {
+              }
+            }
+          }
         }
 
         @include mq(breakpoint(large)) {
@@ -59,23 +74,22 @@
           display: flex;
           justify-content: center;
           align-items: center;
-
-          @include movingTop(0.5s) {
-          }
+          transition: all 0.2s ease;
 
           .icon {
             margin-top: 0.12rem;
             height: 60%;
             width: 60%;
-          }
-        }
-
-        .illustration {
-          @include movingTop(0.5s) {
+            color: clr-neutral(900);
           }
 
-          @include mq(breakpoint(medium)) {
-            @include movingLeft(0.5s) {
+          &:hover,
+          &:focus-visible {
+            background: clr-primary(300);
+            border: 1px solid clr-primary(300);
+
+            .icon {
+              color: clr-neutral(100);
             }
           }
         }
@@ -118,6 +132,16 @@
             @include mq(breakpoint(large)) {
               justify-content: center;
             }
+
+            .button {
+              &-regular,
+              &-complementary {
+                &:hover,
+                &:focus-visible {
+                  box-shadow: 0 2px 8px rgba(black, 0.4);
+                }
+              }
+            }
           }
         }
       }
@@ -128,14 +152,14 @@
         @include mq(breakpoint(medium)) {
           align-items: center;
           justify-content: space-between;
-        }
 
-        .illustration {
-          @include movingRight(0.5s) {
-          }
-
-          @include mq(breakpoint(medium)) {
+          .illustration {
             @include movingRight(0.5s) {
+            }
+
+            @include mq(breakpoint(medium)) {
+              @include movingRight(0.5s) {
+              }
             }
           }
         }
@@ -146,7 +170,9 @@
       &-container {
         margin: 3rem 0;
 
-        @include movingTop(0.3s) {
+        @include mq(breakpoint(medium)) {
+          @include movingTop(0.3s) {
+          }
         }
       }
 

@@ -1,0 +1,15 @@
+@use '../functions' as *;
+
+.swiper {
+  &-container.slider-container {
+    padding: 2rem 0 4rem;
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+
+  &-pagination-bullet-active {
+    background: clr-primary(300);
+  }
+}

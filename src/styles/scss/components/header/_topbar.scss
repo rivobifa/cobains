@@ -34,6 +34,10 @@ $topbar-width: calc(
         flex-direction: column;
 
         @include hvr-btn() {
+          .nav-text {
+            color: clr-primary(300);
+            transition: none;
+          }
         }
       }
 
@@ -42,16 +46,16 @@ $topbar-width: calc(
         font-weight: 500;
         line-height: 32px;
         color: clr-neutral(700);
-
-        &:hover,
-        &:focus-visible {
-          color: clr-primary(300);
-          transition: none;
-        }
       }
     }
 
     .active {
+      @include hvr-btn() {
+        .nav-text {
+          color: clr-neutral(900);
+        }
+      }
+
       .nav {
         &-text {
           color: clr-neutral(900);

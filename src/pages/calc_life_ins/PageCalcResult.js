@@ -326,11 +326,6 @@ const PageCalcResult = ({ userData }) => {
           </div>
         </div>
       </section>
-      {/* {Object.keys(userData).map((key, index) => (
-          <div className='result-input' key={index}>
-            {key}: {userData[key]}
-          </div>
-        ))} */}
     </div>
   );
 };

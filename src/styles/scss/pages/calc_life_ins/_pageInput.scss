@@ -244,10 +244,10 @@ li.MuiMenuItem-root {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 0.875rem;
 
       label {
         margin: -1.25rem 0;
+        font-size: 0.875rem;
       }
 
       input {
@@ -271,9 +271,11 @@ li.MuiMenuItem-root {
         }
       }
 
-      & > div {
+      & > small {
         color: clr-neutral(600);
         white-space: pre;
+        text-transform: uppercase;
+        font-size: 0.875rem;
       }
     }
   }
@@ -281,6 +283,11 @@ li.MuiMenuItem-root {
   input[type='submit'],
   .input-toggle label {
     width: 100%;
+
+    &:hover,
+    &:focus-visible {
+      transform: none;
+    }
   }
 
   input[type='submit'] {
