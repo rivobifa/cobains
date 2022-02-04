@@ -213,11 +213,9 @@ export const InfoButton = ({ control, form, dependenceInfo }) => {
         render={({ field: { onChange } }) => (
           <label className='info-icon-container'>
             <input type='checkbox' onChange={onChange} />
-            <div className='info-icon-box'>
-              <IconContext.Provider value={{ className: 'info-icon' }}>
-                <AiIcons.AiOutlineInfoCircle />
-              </IconContext.Provider>
-            </div>
+            <IconContext.Provider value={{ className: 'info-icon' }}>
+              <AiIcons.AiOutlineInfoCircle />
+            </IconContext.Provider>
           </label>
         )}
       />
