@@ -238,9 +238,19 @@ li.MuiMenuItem-root {
       justify-content: center;
       align-items: center;
 
+      & > small,
+      label {
+        font-size: 0.8rem;
+      }
+
+      & > small {
+        color: clr-neutral(600);
+        white-space: pre;
+        text-transform: uppercase;
+      }
+
       label {
         margin: -1.25rem 0;
-        font-size: 0.875rem;
       }
 
       input {
@@ -262,13 +272,6 @@ li.MuiMenuItem-root {
             box-shadow: none;
           }
         }
-      }
-
-      & > small {
-        color: clr-neutral(600);
-        white-space: pre;
-        text-transform: uppercase;
-        font-size: 0.875rem;
       }
     }
   }

@@ -87,7 +87,7 @@ export const DataHome = {
       ],
       button: {
         regular: 'Lihat Detail',
-        pathRegular: DataLinkPage.calc_input,
+        pathRegular: DataLinkPage.calc_home,
       },
     },
   ],

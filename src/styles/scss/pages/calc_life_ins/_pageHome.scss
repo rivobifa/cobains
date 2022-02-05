@@ -156,13 +156,14 @@
 
     &-level {
       margin: 0;
-      display: flex;
+      display: none;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
 
       @include mq(breakpoint(large)) {
         margin: 1rem 0;
+        display: flex;
       }
 
       &:first-child {

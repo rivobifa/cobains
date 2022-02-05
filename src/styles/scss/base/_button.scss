@@ -7,8 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans';
-    text-transform: capitalize;
     box-sizing: border-box;
     border-radius: 2rem;
     border: none;
@@ -16,8 +14,8 @@
     background: clr-primary(300);
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: smaller;
-    letter-spacing: 1px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: transform 0.2s ease;
 
@@ -25,7 +23,7 @@
       color: clr-neutral(100);
       background: rgba(clr-primary(300), 0.9);
       box-shadow: 0 2px 8px clr-primary(100);
-      transform: scale(1.08);
+      transform: scale(1.075);
     }
   }
 

@@ -258,8 +258,6 @@ section .content a:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans";
-  text-transform: capitalize;
   box-sizing: border-box;
   border-radius: 2rem;
   border: none;
@@ -267,8 +265,8 @@ section .content a:focus-visible {
   background: #9b8cc0;
   font-family: "Poppins";
   font-weight: 700;
-  font-size: smaller;
-  letter-spacing: 1px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: transform 0.2s ease;
 }
@@ -278,14 +276,14 @@ section .content a:focus-visible {
   color: white;
   background: rgba(155, 140, 192, 0.9);
   box-shadow: 0 2px 8px #d5cee4;
-  transform: scale(1.08);
+  transform: scale(1.075);
 }
 .button-regular:focus-visible {
   outline: 2px solid #9b8cc0;
   color: white;
   background: rgba(155, 140, 192, 0.9);
   box-shadow: 0 2px 8px #d5cee4;
-  transform: scale(1.08);
+  transform: scale(1.075);
 }
 .button-complementary {
   border: 1px solid #a39daa;
@@ -1670,7 +1668,7 @@ section .content a:focus-visible {
 }
 .page-container.page-calc-home .content-level {
   margin: 0;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -1678,6 +1676,7 @@ section .content a:focus-visible {
 @media (min-width: 1024px) {
   .page-container.page-calc-home .content-level {
     margin: 1rem 0;
+    display: flex;
   }
 }
 .page-container.page-calc-home .content-level:first-child .content-box:first-child {
@@ -2002,9 +2001,17 @@ li.MuiMenuItem-root {
   justify-content: center;
   align-items: center;
 }
+.input-container .input-toggle > small,
+.input-container .input-toggle label {
+  font-size: 0.8rem;
+}
+.input-container .input-toggle > small {
+  color: #a39daa;
+  white-space: pre;
+  text-transform: uppercase;
+}
 .input-container .input-toggle label {
   margin: -1.25rem 0;
-  font-size: 0.875rem;
 }
 .input-container .input-toggle input {
   display: none;
@@ -2029,12 +2036,6 @@ li.MuiMenuItem-root {
 .input-container .input-toggle input:checked + label:focus-visible {
   outline: 2px solid #9b8cc0;
   box-shadow: none;
-}
-.input-container .input-toggle > small {
-  color: #a39daa;
-  white-space: pre;
-  text-transform: uppercase;
-  font-size: 0.875rem;
 }
 .input-container input[type=submit],
 .input-container .input-toggle label {
