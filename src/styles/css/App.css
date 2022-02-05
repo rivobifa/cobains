@@ -2001,10 +2001,6 @@ li.MuiMenuItem-root {
   justify-content: center;
   align-items: center;
 }
-.input-container .input-toggle > small,
-.input-container .input-toggle label {
-  font-size: 0.8rem;
-}
 .input-container .input-toggle > small {
   color: #a39daa;
   white-space: pre;

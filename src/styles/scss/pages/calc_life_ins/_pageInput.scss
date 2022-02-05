@@ -238,11 +238,6 @@ li.MuiMenuItem-root {
       justify-content: center;
       align-items: center;
 
-      & > small,
-      label {
-        font-size: 0.8rem;
-      }
-
       & > small {
         color: clr-neutral(600);
         white-space: pre;
