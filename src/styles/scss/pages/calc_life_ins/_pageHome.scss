@@ -26,13 +26,12 @@
         justify-content: flex-start;
 
         @include mq(breakpoint(medium)) {
-          margin-top: -6rem;
+          margin-top: -3rem;
           padding: 0 2rem;
           height: 100vh;
           min-height: 38rem;
           max-height: 45.875rem;
           flex-direction: row;
-          align-items: flex-start;
           align-items: center;
           justify-content: space-between;
 
@@ -75,8 +74,8 @@
 
             .button {
               &-regular {
-                width: 100%;
                 margin: 0;
+                width: 100%;
               }
 
               &-complementary {
@@ -97,12 +96,14 @@
             }
           }
 
-          @include mq(760px) {
+          @include mq(800px) {
             flex-direction: row;
+            justify-content: flex-start;
 
             .button {
               &-regular {
                 margin: 0;
+                width: auto;
               }
 
               &-complementary {
@@ -110,7 +111,7 @@
               }
 
               &-separator {
-                flex-grow: 1;
+                flex-grow: 0;
               }
             }
           }
@@ -118,7 +119,7 @@
       }
 
       &-second {
-        padding: 5rem 0 1rem;
+        padding: 5rem 0 2rem;
 
         @include mq(breakpoint(medium)) {
           padding: 3rem 0 0;
@@ -146,7 +147,7 @@
       }
 
       &-third {
-        margin-top: 0;
+        padding-top: 5rem;
 
         @include mq(breakpoint(medium)) {
           flex-direction: row-reverse;
@@ -160,6 +161,7 @@
           svg {
             height: 90%;
             width: 90%;
+            transform: scale(-1, 1);
           }
 
           @include mq(breakpoint(medium)) {
@@ -181,19 +183,29 @@
           }
         }
 
-        .content-link {
-          .button-regular {
-            margin: 0.25rem 0;
-            width: 100%;
+        .content {
+          &-container {
+            flex-shrink: 1.5;
 
-            @include mq(760px) {
-              width: auto;
-              margin: 0;
+            @include mq(breakpoint(medium)) {
+              margin-top: 1.25rem;
             }
           }
 
-          @include mq(breakpoint(large)) {
-            margin-top: 3rem;
+          &-link {
+            .button-regular {
+              margin: 0.25rem 0;
+              width: 100%;
+
+              @include mq(800px) {
+                margin: 0;
+                width: auto;
+              }
+            }
+
+            @include mq(breakpoint(large)) {
+              margin-top: 3rem;
+            }
           }
         }
       }

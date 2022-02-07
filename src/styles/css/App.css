@@ -1254,7 +1254,6 @@ section .content a:focus-visible {
     min-height: 38rem;
     max-height: 45.875rem;
     flex-direction: row;
-    align-items: flex-start;
     align-items: center;
     justify-content: space-between;
   }
@@ -1273,6 +1272,9 @@ section .content a:focus-visible {
   }
   .page-container.page-home section.section-main .illustration {
     animation: movingTop 0.5s ease-in-out 1;
+  }
+  .page-container.page-home section.section-main .illustration svg {
+    transform: scale(-1, 1);
   }
   @keyframes movingTop {
     0% {
@@ -1309,21 +1311,26 @@ section .content a:focus-visible {
   color: #9e7acd;
 }
 .page-container.page-home section.section-main a.bullet-button {
+  position: relative;
   padding: 0.5rem;
   height: 2rem;
   width: 2rem;
+  display: block;
   border-radius: 100%;
   border: 1px solid #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 0.2s ease;
 }
 .page-container.page-home section.section-main a.bullet-button .icon {
-  margin-top: 0.12rem;
-  height: 60%;
-  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1rem;
+  width: 1rem;
   color: #333333;
+  transform: translate(-50%, -50%);
+}
+.page-container.page-home section.section-main a.bullet-button .icon:last-child {
+  opacity: 0;
 }
 .page-container.page-home section.section-main a.bullet-button:hover, .page-container.page-home section.section-main a.bullet-button:focus-visible {
   background: #9e7acd;
@@ -1331,6 +1338,15 @@ section .content a:focus-visible {
 }
 .page-container.page-home section.section-main a.bullet-button:hover .icon, .page-container.page-home section.section-main a.bullet-button:focus-visible .icon {
   color: white;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.page-container.page-home section.section-main a.bullet-button:hover .icon:first-child, .page-container.page-home section.section-main a.bullet-button:focus-visible .icon:first-child {
+  transform: translate(-50%, -67%);
+}
+.page-container.page-home section.section-main a.bullet-button:hover .icon:last-child, .page-container.page-home section.section-main a.bullet-button:focus-visible .icon:last-child {
+  opacity: 1;
+  transform: translate(-50%, -33%);
 }
 .page-container.page-home section.section-second {
   padding: 2rem 0;
@@ -1391,11 +1407,15 @@ section .content a:focus-visible {
 @media (min-width: 640px) {
   .page-container.page-home section.section-third {
     padding-bottom: 3rem;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
   }
   .page-container.page-home section.section-third .illustration {
     animation: movingRight 0.5s ease-in-out 1;
+  }
+  .page-container.page-home section.section-third .illustration svg {
+    transform: scale(1);
   }
   @keyframes movingRight {
     0% {
@@ -1499,13 +1519,12 @@ section .content a:focus-visible {
 }
 @media (min-width: 640px) {
   .page-container.page-calc-home section.section-main {
-    margin-top: -6rem;
+    margin-top: -3rem;
     padding: 0 2rem;
     height: 100vh;
     min-height: 38rem;
     max-height: 45.875rem;
     flex-direction: row;
-    align-items: flex-start;
     align-items: center;
     justify-content: space-between;
   }
@@ -1579,8 +1598,8 @@ section .content a:focus-visible {
     flex-direction: row;
   }
   .page-container.page-calc-home section.section-main .content-link .button-regular {
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
   .page-container.page-calc-home section.section-main .content-link .button-complementary {
     flex-shrink: 1.25;
@@ -1597,22 +1616,24 @@ section .content a:focus-visible {
     margin: 0.25rem 0;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 800px) {
   .page-container.page-calc-home section.section-main .content-link {
     flex-direction: row;
+    justify-content: flex-start;
   }
   .page-container.page-calc-home section.section-main .content-link .button-regular {
     margin: 0;
+    width: auto;
   }
   .page-container.page-calc-home section.section-main .content-link .button-complementary {
     flex-shrink: 1.25;
   }
   .page-container.page-calc-home section.section-main .content-link .button-separator {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 }
 .page-container.page-calc-home section.section-second {
-  padding: 5rem 0 1rem;
+  padding: 5rem 0 2rem;
 }
 @media (min-width: 640px) {
   .page-container.page-calc-home section.section-second {
@@ -1646,7 +1667,7 @@ section .content a:focus-visible {
   }
 }
 .page-container.page-calc-home section.section-third {
-  margin-top: 0;
+  padding-top: 5rem;
 }
 @media (min-width: 640px) {
   .page-container.page-calc-home section.section-third {
@@ -1659,6 +1680,7 @@ section .content a:focus-visible {
 .page-container.page-calc-home section.section-third .illustration svg {
   height: 90%;
   width: 90%;
+  transform: scale(-1, 1);
 }
 @media (min-width: 640px) {
   .page-container.page-calc-home section.section-third .illustration {
@@ -1689,14 +1711,22 @@ section .content a:focus-visible {
     padding-bottom: 6rem;
   }
 }
+.page-container.page-calc-home section.section-third .content-container {
+  flex-shrink: 1.5;
+}
+@media (min-width: 640px) {
+  .page-container.page-calc-home section.section-third .content-container {
+    margin-top: 1.25rem;
+  }
+}
 .page-container.page-calc-home section.section-third .content-link .button-regular {
   margin: 0.25rem 0;
   width: 100%;
 }
-@media (min-width: 760px) {
+@media (min-width: 800px) {
   .page-container.page-calc-home section.section-third .content-link .button-regular {
-    width: auto;
     margin: 0;
+    width: auto;
   }
 }
 @media (min-width: 1024px) {

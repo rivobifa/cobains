@@ -10,7 +10,7 @@ import { ReactComponent as IllustrationSuccess } from '../assets/illustration/th
 import { ReactComponent as IllustrationResearch1 } from '../assets/illustration/theme-2/analytics-1.svg';
 import { ReactComponent as IllustrationResearch2 } from '../assets/illustration/theme-2/analytics-2.svg';
 import { ReactComponent as IllustrationFast } from '../assets/illustration/theme-2/bicycle.svg';
-import { ReactComponent as IllustrationGadget } from '../assets/illustration/theme-2/gadgetWoman.svg';
+import { ReactComponent as IllustrationGadget } from '../assets/illustration/theme-2/gadgetMan-2.svg';
 import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/theme-2/analytics-3.svg';
 import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/theme-2/shoppingWoman.svg';
 

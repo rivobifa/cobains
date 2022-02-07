@@ -25,6 +25,7 @@ const HomePage = () => {
           >
             <IconContext.Provider value={{ className: 'icon' }}>
               {DataHome.section[0].button.icon}
+              {DataHome.section[0].button.icon}
             </IconContext.Provider>
           </Link>
         </div>
