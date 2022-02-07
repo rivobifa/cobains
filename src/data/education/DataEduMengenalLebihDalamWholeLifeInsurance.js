@@ -1,24 +1,21 @@
-import { DataLinkPage } from './DataLink';
+import { DataLinkPage } from '../DataLink';
 
-export const DataWholeLifeIns = {
-  path: DataLinkPage.edu_WholeLifeIns,
+const DataArticle = {
+  path: DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance,
   section: [
     {
       title: [
         {
-          text: 'Apa itu ',
+          text: 'Mengenal Lebih Dalam ',
         },
         {
           text: 'Whole Life Insurance',
           type: 'bold-italic',
         },
-        {
-          text: ' ?',
-        },
       ],
       subInfo: {
         author: 'Rivo Bifa',
-        linkProfile: DataLinkPage.author_Rivo,
+        linkProfile: DataLinkPage.author_rivoBifa,
         timestamp: 'Rabu, 25 Januari 2022',
         location: 'Jakarta',
       },
@@ -27,83 +24,122 @@ export const DataWholeLifeIns = {
           paragraph: [
             [
               {
-                text: 'Sesuai dengan namanya, ',
+                text: 'Artikel ini akan membahas bagaimana produk ',
               },
               {
                 text: 'Whole Life Insurance',
                 type: 'ins-term',
               },
               {
-                text: '  (Asuransi Jiwa Seumur Hidup) merupakan produk asuransi jiwa dengan ',
+                text: ' digunakan serta hubungannya dengan tabel mortalita yang menyebabkan ',
               },
               {
                 text: 'Manfaat Asuransi',
                 type: 'ins-term',
               },
               {
-                text: ' yang akan diterima jika Peserta mengalami kematian kapan pun kematian tersebut terjadi. Kalimat ini ',
+                text: ' dari produk ',
+              },
+
+              {
+                text: 'Whole Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' tidak selalu diberikan sebagai santunan kepada ahli waris yang ditinggalkan.',
+              },
+            ],
+          ],
+        },
+        {
+          image: [],
+        },
+      ],
+    },
+    {
+      content: [
+        {
+          paragraph: [
+            [
+              {
+                text: 'Sebelumnya ',
               },
               {
                 text: 'gue',
                 type: 'italic',
               },
               {
-                text: '  kutip dari Pak Sudarto selaku ahli asuransi.',
-              },
-            ],
-          ],
-        },
-      ],
-    },
-    {
-      content: [
-        {
-          quote: {
-            content: [
-              {
-                text: 'Polis ',
+                text: ' udah buat artikel tentang penjelasan jenis produk asuransi jiwa, di sana ada definisi dari ',
               },
               {
                 text: 'Whole Life Insurance',
                 type: 'ins-term',
               },
               {
-                text: ' menyatakan bahwa klaim kematian akan dibayar kapan saja kematian itu terjadi.',
+                text: '. Kalau ',
               },
-            ],
-            author: 'Sudarto, 1976:62',
-            source: {
-              text: 'Dasar-Dasar Ilmu Pasti Asuransi Jiwa',
-            },
-          },
-        },
-        {
-          paragraph: [
-            [
               {
-                text: 'Next',
+                text: 'lo',
                 type: 'italic',
               },
               {
-                text: ', kita bakal ngomongin bagaimana hubungannya dengan tabel mortalita serta perilaku grafiknya.',
+                text: ' mau ',
+              },
+              {
+                text: 'lo',
+                type: 'italic',
+              },
+              {
+                text: ' bisa baca di ',
+              },
+              {
+                text: 'Jenis Produk Asuransi Jiwa',
+                type: 'link-page',
+                path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
               },
             ],
-          ],
-        },
-      ],
-    },
-    {
-      title: [
-        {
-          text: 'Hubungannya dengan Tabel Mortalita',
-        },
-      ],
-      content: [
-        {
-          paragraph: [
             [
               {
-                text: 'Dari penjelasan Pak Sudarto, kita bisa menyimpulkan bahwa ',
+                text: 'In case',
+                type: 'italic',
+              },
+              {
+                text: ' temen-temen lupa apa itu ',
+              },
+              {
+                text: 'Whole Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ', ',
+              },
+              {
+                text: 'gue',
+                type: 'italic',
+              },
+              {
+                text: ' coba kasih penjelasan sesingkat mungkin ya.',
+              },
+            ],
+            [
+              {
+                text: 'Whole Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' merupakan produk asuransi jiwa dengan ',
+              },
+              {
+                text: 'Manfaat Asuransi',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang akan diterima jika Peserta meninggal (tanpa batas periode).',
+              },
+            ],
+            [
+              {
+                text: 'Nah dari penjelasan tersebut, kita bisa menyimpulkan bahwa ',
               },
               {
                 text: 'Whole Life Insurance',
@@ -144,12 +180,12 @@ export const DataWholeLifeIns = {
                 text: ' soal ',
               },
               {
-                text: 'Apa itu Term Life Insurance?',
+                text: 'Jenis Produk Asuransi Jiwa',
                 type: 'link-page',
-                path: DataLinkPage.edu_TermLifeIns,
+                path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
               },
               {
-                text: ' Kalau udah balik lagi sini yakk.',
+                text: '. Kalau udah balik lagi sini ya.',
               },
             ],
             [
@@ -159,17 +195,24 @@ export const DataWholeLifeIns = {
             ],
             [
               {
-                text: 'Ternyata dalam praktiknya konsep tersebut tidak sepenuhnya benar, tapi juga ',
+                text: 'Ternyata dalam praktiknya konsep tersebut ',
               },
               {
                 text: 'nggak',
                 type: 'italic',
               },
               {
-                text: ' sepenuhnya salah. Coba deh inget lagi, salah satu faktor utama dalam membentuk asumsi pada asuransi jiwa apa?',
+                text: ' sepenuhnya benar, tapi juga ',
               },
               {
-                text: ' Yups',
+                text: 'nggak',
+                type: 'italic',
+              },
+              {
+                text: ' sepenuhnya salah. Coba deh inget lagi, salah satu faktor utama dalam membentuk asumsi pada asuransi jiwa apa? ',
+              },
+              {
+                text: 'Yups',
                 type: 'italic',
               },
               {
@@ -222,7 +265,7 @@ export const DataWholeLifeIns = {
                 type: 'italic',
               },
               {
-                text: ' bukan?',
+                text: ' bukan? Ya memang sedikit kontra dengan teori di atas, tapi memang ini lah realitanya.',
               },
             ],
             [
@@ -249,14 +292,14 @@ export const DataWholeLifeIns = {
                 path: DataLinkPage.calc_home,
               },
               {
-                text: ' ',
+                text: ', ',
               },
               {
                 text: 'lo',
                 type: 'italic',
               },
               {
-                text: ' bakal nemuin kalau produk asuransi jiwa seperti itu, ',
+                text: ' bakal nemuin kalau produk asuransi jiwa yang seperti itu, ',
               },
               {
                 text: 'Endowment Insurance',
@@ -270,12 +313,48 @@ export const DataWholeLifeIns = {
                 type: 'ins-term',
               },
               {
-                text: '. ',
+                text: '. Apalagi kalau produk ',
+              },
+              {
+                text: 'Endowment Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: '-nya dengan periode pertanggungan yang pendek. Meskipun begitu, produk ',
+              },
+              {
+                text: 'Endowment Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' tetap akan bernilai sama dengan produk ',
+              },
+              {
+                text: 'Whole Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' kalau periode pertanggungannya hingga batas mortalita. Hal ini ',
+              },
+              {
+                text: 'gue',
+                type: 'italic',
+              },
+              {
+                text: 'coba jelasin di artikel selanjutnya yaitu ',
+              },
+              {
+                text: 'Endowment Insurance vs Whole Life Insurance',
+                type: 'link-page',
+                path: DataLinkPage.edu_endowmentInsuranceVsWholeLifeInsurance,
+              },
+              {
+                text: '.',
               },
             ],
             [
               {
-                text: 'Fyi',
+                text: 'For your information',
                 type: 'italic',
               },
               {
@@ -313,7 +392,14 @@ export const DataWholeLifeIns = {
                 type: 'ins-term',
               },
               {
-                text: ' yang akan diterima jika terjadi kematian (tanpa batas periode). Intepretasi klaim dari produk ini tidak selalu harus terjadi kematian. Namun juga bisa saat Peserta telah melewati batas mortalita.',
+                text: ' yang akan diterima jika terjadi kematian (tanpa batas periode). Intepretasi ',
+              },
+              {
+                text: 'Klaim',
+                type: 'ins-term',
+              },
+              {
+                text: ' dari produk ini tidak selalu harus terjadi kematian. Namun juga bisa saat Peserta telah melewati batas mortalita.',
               },
             ],
           ],
@@ -322,6 +408,8 @@ export const DataWholeLifeIns = {
     },
   ],
 };
+
+export default DataArticle;
 
 export const DataPreviewSideContent = {
   title: [
@@ -333,16 +421,7 @@ export const DataPreviewSideContent = {
     {
       title: [
         {
-          text: 'Apa itu ',
-          type: 'bold',
-        },
-        {
-          text: 'Term Life Insurance',
-          type: 'bold-italic',
-        },
-        {
-          text: ' ?',
-          type: 'bold',
+          text: 'Jenis Produk Asuransi Jiwa',
         },
       ],
       content: [
@@ -352,14 +431,20 @@ export const DataPreviewSideContent = {
       ],
       button: {
         text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_TermLifeIns,
+        path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
       },
     },
     {
       title: [
         {
-          text: 'Endowment vs Pure Endowment',
+          text: 'Endowment Insurance ',
+        },
+        {
+          text: 'vs',
           type: 'bold',
+        },
+        {
+          text: ' Whole Life Insurance',
         },
       ],
       content: [
@@ -369,7 +454,7 @@ export const DataPreviewSideContent = {
       ],
       button: {
         text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_EndowmentVsPureEndowment,
+        path: DataLinkPage.edu_endowmentInsuranceVsWholeLifeInsurance,
       },
     },
   ],

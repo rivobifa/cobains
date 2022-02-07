@@ -8,17 +8,16 @@
 
   a {
     cursor: pointer;
-    color: $clr_acc2_header;
-    color: clr-neutral(900);
+    color: clr-neutral(1000);
     text-decoration: none;
 
     @include hvr-btn() {
       background: transparent;
+      color: $clr_acc2_header;
     }
 
     span {
       font-family: 'Open Sans';
-      // font-size: larger;
       font-weight: 700;
       color: $clr_acc2_header;
     }

@@ -52,13 +52,13 @@ $topbar-width: calc(
     .active {
       @include hvr-btn() {
         .nav-text {
-          color: clr-neutral(900);
+          color: clr-neutral(1000);
         }
       }
 
       .nav {
         &-text {
-          color: clr-neutral(900);
+          color: clr-neutral(1000);
           font-weight: 700;
           font-size: 0.92rem;
         }

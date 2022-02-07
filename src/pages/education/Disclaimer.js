@@ -1,4 +1,4 @@
-import { DataDisclaimer } from '../../data/DataDisclaimer';
+import { DataDisclaimer } from '../../data/education/DataDisclaimer';
 import { FormatText } from '../../functions/FormatText';
 
 const Disclaimer = ({ data }) => {

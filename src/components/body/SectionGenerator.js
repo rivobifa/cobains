@@ -30,7 +30,7 @@ export const RegularText = ({ data, dataChild }) => {
             ? dataChild.map((val, i) => {
                 return (
                   <div key={i} className='sub-content'>
-                    {val.title && <Title data={val.title} />}
+                    {val.title && <Title dataChild={val.title} />}
                     {val.content && (
                       <div className='content'>
                         <Content data={val.content} />
@@ -46,9 +46,20 @@ export const RegularText = ({ data, dataChild }) => {
   );
 };
 
-export const Title = ({ data }) => {
+export const Title = ({ data, dataChild }) => {
   return (
-    <h1 className='title'>{data.map((text, i) => FormatText({ text, i }))}</h1>
+    <>
+      {data && (
+        <h1 className='title outline-1'>
+          {data.map((text, i) => FormatText({ text, i }))}
+        </h1>
+      )}
+      {dataChild && (
+        <h2 className='title outline-2'>
+          {dataChild.map((text, i) => FormatText({ text, i }))}
+        </h2>
+      )}
+    </>
   );
 };
 
@@ -126,11 +137,23 @@ export const List = ({ data }) => {
       {data.map((val, i) => {
         return (
           <li key={i} className='content-list-item'>
-            <span className='content-list-text'>
-              {val.map((text, i) => {
-                return FormatText({ text, i });
-              })}
-            </span>
+            {val.list ? (
+              <ul className='content-list'>
+                <li className='content-list-item'>
+                  <span className='content-list-text'>
+                    {val.map((text, i) => {
+                      return FormatText({ text, i });
+                    })}
+                  </span>
+                </li>
+              </ul>
+            ) : (
+              <span className='content-list-text'>
+                {val.map((text, i) => {
+                  return FormatText({ text, i });
+                })}
+              </span>
+            )}
           </li>
         );
       })}
@@ -149,14 +172,32 @@ export const Quote = ({ data }) => {
         </span>
       </p>
       <p className='content-quote-author'>
-        <span>{data.author}</span>
+        {data.author.path ? (
+          <a
+            href={data.author.path}
+            target='_blank'
+            rel='noreferrer'
+            className='content-quote-author-text'
+          >
+            {data.author.text}
+          </a>
+        ) : (
+          <span className='content-quote-author-text'>{data.author.text}</span>
+        )}
         {data.source &&
           (data.source.path ? (
-            <a href={data.source.path} target='_blank' rel='noreferrer'>
+            <a
+              href={data.source.path}
+              target='_blank'
+              rel='noreferrer'
+              className='content-quote-author-source'
+            >
               {data.source.text}
             </a>
           ) : (
-            <span>{data.source.text}</span>
+            <span className='content-quote-author-source'>
+              {data.source.text}
+            </span>
           ))}
       </p>
     </div>

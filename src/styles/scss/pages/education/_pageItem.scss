@@ -23,11 +23,20 @@
       }
     }
 
-    & > .title {
+    .title {
       font-size: 1.8rem;
 
       @include mq(breakpoint(medium)) {
         font-size: 2rem;
+      }
+
+      &.outline-2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        @include mq(breakpoint(medium)) {
+          font-size: 1.8rem;
+        }
       }
     }
 

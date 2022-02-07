@@ -2,17 +2,17 @@ import React from 'react';
 import { ReactComponent as IconLinkedin } from '../assets/icon/linkedin.svg';
 import { ReactComponent as IconInstagram } from '../assets/icon/instagram.svg';
 import { ReactComponent as IconTwitter } from '../assets/icon/twitter.svg';
-import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/exhaustedMan.svg';
-import { ReactComponent as IllustrationElderly } from '../assets/illustration/elderly.svg';
-import { ReactComponent as IllustrationUmbrella } from '../assets/illustration/umbrella.svg';
-import { ReactComponent as IllustrationSport } from '../assets/illustration/tennis.svg';
-import { ReactComponent as IllustrationSuccess } from '../assets/illustration/success.svg';
-import { ReactComponent as IllustrationResearch } from '../assets/illustration/analytics1.svg';
-import { ReactComponent as IllustrationResearch2 } from '../assets/illustration/analytics2.svg';
-import { ReactComponent as IllustrationFast } from '../assets/illustration/bicycle.svg';
-import { ReactComponent as IllustrationGadget } from '../assets/illustration/gadgetWoman.svg';
-import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/analytics3.svg';
-import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/shoppingWoman.svg';
+import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/theme-2/exhaustedMan.svg';
+import { ReactComponent as IllustrationElderly } from '../assets/illustration/theme-2/elderly.svg';
+import { ReactComponent as IllustrationUmbrella } from '../assets/illustration/theme-2/umbrella.svg';
+import { ReactComponent as IllustrationSport } from '../assets/illustration/theme-2/tennis.svg';
+import { ReactComponent as IllustrationSuccess } from '../assets/illustration/theme-2/success.svg';
+import { ReactComponent as IllustrationResearch1 } from '../assets/illustration/theme-2/analytics-1.svg';
+import { ReactComponent as IllustrationResearch2 } from '../assets/illustration/theme-2/analytics-2.svg';
+import { ReactComponent as IllustrationFast } from '../assets/illustration/theme-2/bicycle.svg';
+import { ReactComponent as IllustrationGadget } from '../assets/illustration/theme-2/gadgetWoman.svg';
+import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/theme-2/analytics-3.svg';
+import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/theme-2/shoppingWoman.svg';
 
 export const Wrapper = (data) => {
   return (
@@ -23,7 +23,7 @@ export const Wrapper = (data) => {
 };
 
 export const DataIllustration = {
-  research: Wrapper(<IllustrationResearch />),
+  research1: Wrapper(<IllustrationResearch1 />),
   research2: Wrapper(<IllustrationResearch2 />),
   pageNotFound: Wrapper(<IllustrationPageNotFound />),
   elderly: Wrapper(<IllustrationElderly />),

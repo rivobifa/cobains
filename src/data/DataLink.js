@@ -4,20 +4,22 @@ import * as RiIcons from 'react-icons/ri';
 
 export const DataLinkPage = {
   home: '/',
-  calc_home: '/KalkulatorAsuransiJiwa',
-  calc_input: '/KalkulatorAsuransiJiwa/Input',
-  calc_result: '/KalkulatorAsuransiJiwa/Hasil',
-  edu: '/Edukasi',
-  edu_PureEndowment: '/Edukasi/PureEndowment',
-  edu_WholeLifeIns: '/Edukasi/WholeLifeInsurance',
-  edu_TermLifeIns: '/Edukasi/TermLifeInsurance',
-  edu_EndowmentIns: '/Edukasi/EndowmentInsurance',
-  edu_EndowmentVsPureEndowment: '/Edukasi/EndowmentVsPureEndowment',
+  about: '/tentang-kami',
+  author_rivoBifa: '/author/rivo-bifa',
+  404: '/page-not-found',
+  calc_home: '/kalkulator-asuransi',
+  calc_lifeIns_input: '/kalkulator-asuransi/asuransi-jiwa/input',
+  calc_lifeIns_result: '/kalkulator-asuransi/asuransi-jiwa/hasil',
+  edu_home: '/edukasi',
+  edu_apaItuBottomryRespondia: '/edukasi/apa-itu-bottomry-respondia',
+  edu_jenisProdukAsuransiJiwa: '/edukasi/jenis-produk-asuransi-jiwa',
+  edu_mengenalLebihDalamWholeLifeInsurance:
+    '/edukasi/mengenal-lebih-dalam-whole-life-insurance',
+  edu_endowmentInsuranceVsWholeLifeInsurance:
+    '/edukasi/endowment-insurance-vs-whole-life-insurance',
+  edu_endowmentinsuranceVsPureEndowment: '/Edukasi/endowment-vs-pure-endowment',
   edu_netoVsBruto: '/Edukasi/NetoVsBruto',
   edu_createAssumption: '/Edukasi/MembuatAsumsiAkturiaAsuransiJiwa',
-  about: '/TentangKami',
-  author_Rivo: '/Author/RivoBifa',
-  404: '/PageNotFound',
 };
 
 export const DataNav = [
@@ -47,7 +49,7 @@ export const DataNav = [
   },
   {
     title: 'Edukasi',
-    path: DataLinkPage.edu,
+    path: DataLinkPage.edu_home,
     class: 'nav-education',
     icon: <MdIcons.MdOutlineSchool />,
     // iconClosed: <RiIcons.RiArrowDownSFill />,

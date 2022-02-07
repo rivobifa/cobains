@@ -31,24 +31,28 @@ export const Button = ({
             {regular}
           </Link>
         ))}
-      {complementary &&
-        (normalLinkComplementary ? (
-          <a
-            className='button-regular'
-            href={pathRegular ? pathRegular : '#'}
-            onClick={refRegular ? refRegular : null}
-          >
-            {regular}
-          </a>
-        ) : (
-          <Link
-            className='button-edu button-regular button-complementary'
-            to={pathComplementary ? pathComplementary : '#'}
-            onClick={refComplementary ? refComplementary : null}
-          >
-            {complementary}
-          </Link>
-        ))}
+      {complementary && (
+        <>
+          <div className='button-separator'></div>
+          {normalLinkComplementary ? (
+            <a
+              className='button-regular'
+              href={pathRegular ? pathRegular : '#'}
+              onClick={refRegular ? refRegular : null}
+            >
+              {regular}
+            </a>
+          ) : (
+            <Link
+              className='button-edu button-regular button-complementary'
+              to={pathComplementary ? pathComplementary : '#'}
+              onClick={refComplementary ? refComplementary : null}
+            >
+              {complementary}
+            </Link>
+          )}
+        </>
+      )}
     </div>
   );
 };

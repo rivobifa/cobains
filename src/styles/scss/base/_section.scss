@@ -1,6 +1,6 @@
 @use '../functions' as *;
 
-$clr_acc1_section: clr-neutral(900);
+$clr_acc1_section: clr-neutral(1000);
 $clr_acc2_section: clr-primary(300);
 $clr_acc3_section: clr-neutral(100);
 
@@ -65,7 +65,7 @@ section {
     .timestamp,
     .separator,
     .location {
-      color: rgba(clr-neutral(900), 0.65);
+      color: rgba(clr-neutral(1000), 0.65);
     }
   }
 
@@ -105,7 +105,7 @@ section {
       margin: 1.5rem 0;
       padding-left: 1rem;
       color: rgba(clr-neutral(600), 0.75);
-      border-left: 0.3rem solid rgba(clr-neutral(500), 1);
+      border-left: 0.3rem solid rgba(clr-neutral(300), 1);
 
       &-text {
         margin: 0;
@@ -113,11 +113,8 @@ section {
 
         span {
           line-height: 1rem;
+          color: clr-neutral(700);
         }
-      }
-
-      span {
-        color: clr-neutral(700);
       }
 
       &-author {
@@ -125,27 +122,29 @@ section {
         margin: 0;
         margin-top: 1.5rem;
 
-        span {
+        &-text,
+        &-source {
           display: block;
-          font-weight: 700;
           font-size: smaller;
+          text-transform: none;
+        }
 
-          &:first-child {
-            color: clr-primary(300);
-          }
+        &-text {
+          font-weight: 700;
+          color: clr-primary(300);
+        }
 
-          &:last-child {
-            color: rgba(clr-neutral(700), 1);
-            font-style: italic;
-            text-transform: none;
-          }
+        &-source {
+          font-weight: 700;
+          font-style: italic;
+          color: clr-neutral(700);
         }
       }
     }
 
     a {
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: $clr_acc2_section;
 
       @include hvr-btn() {

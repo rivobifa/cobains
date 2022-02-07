@@ -1,12 +1,14 @@
 @use '../../functions' as *;
 
 .page-container.page-404 {
-  width: 100vw;
+  height: 100vh;
+  min-height: 32rem;
+  width: 100%;
   max-width: breakpoint(large);
 
   section.section-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
 
@@ -26,22 +28,6 @@
     }
   }
 
-  section > .content-link {
-    display: flex;
-
-    @include mq(breakpoint(medium)) {
-      display: none;
-    }
-  }
-
-  .content-container > .content-link {
-    display: none;
-
-    @include mq(breakpoint(medium)) {
-      display: flex;
-    }
-  }
-
   .content-link {
     margin-top: 2rem;
     width: 100%;
@@ -56,10 +42,6 @@
 
     @include mq(breakpoint(medium)) {
       margin-top: 2rem;
-    }
-
-    @include mq(breakpoint(large)) {
-      margin-top: 3rem;
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
@@ -75,11 +57,15 @@
         }
       }
     }
+
+    @include mq(breakpoint(large)) {
+      margin-top: 3rem;
+    }
   }
 
   .illustration {
     padding: 0 1rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 4rem 0;
 
     @include mq(breakpoint(medium)) {
       margin: 1rem 0 0 3rem;

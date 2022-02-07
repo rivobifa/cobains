@@ -12,10 +12,8 @@ import PageCalcInput from '../../pages/calc_life_ins/PageCalcInput';
 import PageCalcResult from '../../pages/calc_life_ins/PageCalcResult';
 
 import PageEducation from '../../pages/education/HomePage';
-// import PureEndowment from '../../pages/education/PureEndowment';
-import WholeLifeIns from '../../pages/education/WholeLifeIns';
-// import TermLifeIns from '../../pages/education/TermLifeIns';
-// import EndowmentIns from '../../pages/education/EndowmentIns';
+import JenisProdukAsuransiJiwa from '../../pages/education/JenisProdukAsuransiJiwa';
+import MengenalLebihDalamWholeLifeInsurance from '../../pages/education/MengenalLebihDalamWholeLifeInsurance';
 
 const Body = () => {
   const [userData, setUserData] = useState({});
@@ -27,30 +25,22 @@ const Body = () => {
         <Route path={DataLinkPage.home} exact element={<PageHome />} />
         <Route path={DataLinkPage.calc_home} element={<PageCalcHome />} />
         <Route
-          path={DataLinkPage.calc_input}
+          path={DataLinkPage.calc_lifeIns_input}
           element={<PageCalcInput setUserData={setUserData} />}
         />
         <Route
-          path={DataLinkPage.calc_result}
+          path={DataLinkPage.calc_lifeIns_result}
           element={<PageCalcResult userData={userData} />}
         />
-        <Route path={DataLinkPage.edu} element={<PageEducation />} />
-        {/* <Route
-          path={DataLinkPage.edu_WholeLifeIns}
-          element={<PureEndowment />}
-        /> */}
+        <Route path={DataLinkPage.edu_home} element={<PageEducation />} />
         <Route
-          path={DataLinkPage.edu_WholeLifeIns}
-          element={<WholeLifeIns />}
-        />
-        {/* <Route
-          path={DataLinkPage.edu_WholeLifeIns}
-          element={<TermLifeIns />}
+          path={DataLinkPage.edu_jenisProdukAsuransiJiwa}
+          element={<JenisProdukAsuransiJiwa />}
         />
         <Route
-          path={DataLinkPage.edu_WholeLifeIns}
-          element={<EndowmentIns />}
-        /> */}
+          path={DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance}
+          element={<MengenalLebihDalamWholeLifeInsurance />}
+        />
         <Route path='*' exact element={<PageNotFound />} />
       </Routes>
       <Footer />

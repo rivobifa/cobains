@@ -53,14 +53,14 @@ export const DataHomeCalc = {
           paragraph: [
             [
               {
-                text: 'Perhitungan menggunakan ',
+                text: 'Untuk produk asuransi jiwa menggunakan ',
               },
               {
                 text: 'asumsi neto',
                 type: 'ins-term',
               },
               {
-                text: '.',
+                text: ' dari formula komutasi Chester Wallace Jr. Jordan.',
               },
             ],
           ],
@@ -69,7 +69,7 @@ export const DataHomeCalc = {
       button: {
         regular: 'Mulai Sekarang',
         complementary: 'Pelajari',
-        pathRegular: DataLinkPage.calc_input,
+        pathRegular: DataLinkPage.calc_lifeIns_input,
       },
     },
     {
@@ -123,7 +123,7 @@ export const DataHomeCalc = {
       ],
       button: {
         regular: 'Buat Tabel',
-        pathRegular: DataLinkPage.calc_input,
+        pathRegular: DataLinkPage.calc_lifeIns_input,
       },
     },
   ],
@@ -157,7 +157,7 @@ export const DataHomeCalc = {
 };
 
 export const DataResultCalc = {
-  path: DataLinkPage.calc_input,
+  path: DataLinkPage.calc_lifeIns_input,
   findPremium: {
     title: 'Nilai Premi Neto',
     subTitle: 'Yang harus dibayar untuk produk',
@@ -324,7 +324,7 @@ export const DataInputCalc = {
 
 export const DataFormInput = {
   add: {
-    path: DataLinkPage.calc_result,
+    path: DataLinkPage.calc_lifeIns_result,
     toggleAdv: {
       name: 'toggleAdv',
       open: {
@@ -520,7 +520,7 @@ export const DataFormInput = {
       content: [
         [
           {
-            text: 'Jumlah manfaat yang ingin diterima.',
+            text: 'Jumlah manfaat yang ingin diterima ketika terjadi klaim.',
           },
         ],
       ],

@@ -168,7 +168,7 @@ $width-input-3: calc(
         width: $width-input-1;
         border-radius: 35px;
         border: 1px solid transparent;
-        color: clr-neutral(900);
+        color: clr-neutral(1000);
 
         @include hvr-btn() {
           background: transparent;

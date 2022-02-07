@@ -34,12 +34,6 @@ const PageCalcHome = () => {
           />
         </div>
         {illustration.gadget}
-        <Button
-          regular={DataHomeCalc.section[0].button.regular}
-          pathRegular={DataHomeCalc.section[0].button.pathRegular}
-          complementary={DataHomeCalc.section[0].button.complementary}
-          refComplementary={scrollToSectionSecond}
-        />
       </section>
       <section ref={sectionSecond} className='section-second'>
         <RegularText data={DataHomeCalc.section[1]} />
@@ -75,11 +69,7 @@ const PageCalcHome = () => {
             pathRegular={DataHomeCalc.section[2].button.pathRegular}
           />
         </div>
-        {illustration.research}
-        <Button
-          regular={DataHomeCalc.section[2].button.regular}
-          pathRegular={DataHomeCalc.section[2].button.pathRegular}
-        />
+        {illustration.research1}
       </section>
     </div>
   );

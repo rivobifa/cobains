@@ -12,7 +12,18 @@ import Loader from '../../components/body/Loader';
 // import useResultCalcLifeIns from '../../functions/useResultCalcLifeIns';
 // import useUserData from '../../functions/useUserData';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+
+import useWindowDimension from '../../functions/useWindowDimension';
+import { DataBreakpoint } from '../../data/DataBreakpoint';
+
 const PageCalcResult = ({ userData }) => {
+  const { screenWidth } = useWindowDimension();
+  const breakpoint = DataBreakpoint;
+
   const {
     user,
     iSeries,
@@ -93,46 +104,63 @@ const PageCalcResult = ({ userData }) => {
             </span>
           </small>
         </div>
-        <div
-          className={`content-container ${
-            user.aPremium === true && 'flex-reverse'
-          }`}
-        >
-          {(user.tsi && <Card cost={cost} user={user} />) ||
-            (user.premium && <Card cost={cost} user={user} />)}
-          {user.aPremium === true || user.toggleAdv ? (
-            (user.tsi && (
-              <Card cost={cost} user={user} installment={user.installment} />
-            )) ||
-            (user.premium && (
-              <Card cost={cost} user={user} installment={user.installment} />
-            ))
-          ) : !installmentCard ? (
-            <ButtonCard toggleButton={toggleInstallmentCard} />
-          ) : (
-            (user.tsi && (
-              <Card
-                toggleButton={toggleInstallmentCard}
-                cost={cost}
-                user={user}
-                installment={user.installment}
-              />
-            )) ||
-            (user.premium && (
-              <Card
-                toggleButton={toggleInstallmentCard}
-                cost={cost}
-                user={user}
-                installment={user.installment}
-              />
-            ))
-          )}
+        <div className='slider-centered'>
+          <Swiper
+            slidesPerView={'auto'}
+            centeredSlides={screenWidth < breakpoint.medium}
+            spaceBetween={screenWidth < breakpoint.medium ? 30 : 0}
+            grabCursor={true}
+            className={`slider-container content-container ${
+              user.aPremium === true && 'flex-reverse'
+            }`}
+          >
+            <SwiperSlide>
+              {(user.tsi && <Card cost={cost} user={user} />) ||
+                (user.premium && <Card cost={cost} user={user} />)}
+            </SwiperSlide>
+            <SwiperSlide>
+              {user.aPremium === true || user.toggleAdv ? (
+                (user.tsi && (
+                  <Card
+                    cost={cost}
+                    user={user}
+                    installment={user.installment}
+                  />
+                )) ||
+                (user.premium && (
+                  <Card
+                    cost={cost}
+                    user={user}
+                    installment={user.installment}
+                  />
+                ))
+              ) : !installmentCard ? (
+                <ButtonCard toggleButton={toggleInstallmentCard} />
+              ) : (
+                (user.tsi && (
+                  <Card
+                    toggleButton={toggleInstallmentCard}
+                    cost={cost}
+                    user={user}
+                    installment={user.installment}
+                  />
+                )) ||
+                (user.premium && (
+                  <Card
+                    toggleButton={toggleInstallmentCard}
+                    cost={cost}
+                    user={user}
+                    installment={user.installment}
+                  />
+                ))
+              )}
+            </SwiperSlide>
+          </Swiper>
         </div>
         {detailDisplay && (
           <CardDetail user={user} toggleDetailDisplay={toggleDetailDisplay} />
         )}
       </section>
-
       <section className='section-summary'>
         <div className='title-box'>
           <h1 className='result-title title'>{form.summary.title}</h1>
@@ -153,7 +181,6 @@ const PageCalcResult = ({ userData }) => {
           </div>
         )}
       </section>
-
       <section className='section-interest'>
         <div className='title-box'>
           <h1 className='result-title title'>{form.interest.title}</h1>

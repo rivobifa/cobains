@@ -31,7 +31,7 @@ li.MuiMenuItem-root {
   }
 
   .MuiInputBase-input {
-    color: clr-neutral(900);
+    color: clr-neutral(1000);
     font-weight: 500;
     font-family: 'Open Sans';
 
@@ -64,7 +64,7 @@ li.MuiMenuItem-root {
       justify-content: space-between;
       align-items: center;
       font-size: 0.8rem;
-      color: clr-neutral(900);
+      color: clr-neutral(1000);
 
       &-error,
       .required {
@@ -220,7 +220,7 @@ li.MuiMenuItem-root {
         height: 0.875rem;
 
         &:checked + .input-label label {
-          color: clr-neutral(900);
+          color: clr-neutral(1000);
         }
       }
     }
@@ -308,7 +308,7 @@ li.MuiMenuItem-root {
       box-sizing: border-box;
       border-radius: 4px;
       background: clr-neutral(100);
-      box-shadow: 0 2px 12px rgba(clr-neutral(900), 0.5);
+      box-shadow: 0 2px 12px rgba(clr-neutral(1000), 0.5);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;

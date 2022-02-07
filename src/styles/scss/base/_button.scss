@@ -1,6 +1,11 @@
 @use '../functions' as *;
 
 .button {
+  &-separator {
+    height: 1px;
+    width: 1rem;
+  }
+
   &-regular {
     cursor: pointer;
     padding: 1rem 2rem;
@@ -35,7 +40,7 @@
     @include hvr-btn() {
       box-shadow: 0 2px 8px rgba(clr-neutral(300), 0.75);
       background: clr-neutral(100);
-      color: clr-neutral(900);
+      color: clr-neutral(1000);
     }
   }
 }

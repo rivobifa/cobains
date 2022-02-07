@@ -13,7 +13,7 @@ const PageNotFound = () => {
           <Button regular='Kembali' pathRegular={link.home} normalLinkRegular />
         </div>
         {illustration.pageNotFound}
-        <Button regular='Kembali' pathRegular={link.home} normalLinkRegular />
+        {/* <Button regular='Kembali' pathRegular={link.home} normalLinkRegular /> */}
       </section>
     </div>
   );

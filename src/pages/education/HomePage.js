@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import { DataEducation } from '../../data/DataEducation';
+import DataEdu from '../../data/education/DataEdu';
 import {
   RegularText,
   Title,
@@ -9,27 +9,28 @@ import {
 } from '../../components/body/SectionGenerator';
 
 const HomePage = () => {
-  const article = DataEducation.article;
+  const article = DataEdu.article;
 
   return (
     <div className='page-container page-education'>
       <section className='section-main'>
         <div className='banner-container'>
-          <RegularText data={DataEducation.banner} />
+          <RegularText data={DataEdu.banner} />
         </div>
       </section>
       <section className='section-second'>
         <div className='content-container'>
           <div className='content-box'>
             <div className='heading'>
-              <RegularText data={DataEducation.section} />
+              <RegularText data={DataEdu.section} />
             </div>
-            <div className='article-container'>
-              <ArticleBox
-                data={article.wholeLifeIns.content}
-                link={article.wholeLifeIns.path}
-              />
-            </div>
+            {article.map((val, i) => {
+              return (
+                <div key={i} className='article-container'>
+                  <ArticleBox data={val.content} link={val.path} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -54,7 +55,7 @@ export const ArticleBox = ({ data, link }) => {
 };
 
 export const ArticleLink = ({ link, data }) => {
-  const button = DataEducation.button;
+  const button = DataEdu.button;
 
   return (
     <div className='article-link'>

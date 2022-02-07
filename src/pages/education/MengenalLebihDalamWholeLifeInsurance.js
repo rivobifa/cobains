@@ -1,23 +1,22 @@
-import {
-  DataWholeLifeIns,
+import DataArticle, {
   DataPreviewSideContent,
-} from '../../data/DataEduWholeLifeIns';
-import Disclaimer from '../../components/body/Disclaimer';
+} from '../../data/education/DataEduMengenalLebihDalamWholeLifeInsurance';
+import Disclaimer from './Disclaimer';
 import SideContent from '../../components/body/SideContent';
 import { RegularText } from '../../components/body/SectionGenerator';
 
-const WholeLifeIns = () => {
+const Article = () => {
   return (
     <div className='body-page'>
       <div className='page-container page-education-item page-wholelifeins'>
         <section className='section-main'>
           <article className='content-container'>
             <RegularText
-              data={DataWholeLifeIns.section[0]}
-              dataChild={DataWholeLifeIns.section.slice(1, 3)}
+              data={DataArticle.section[0]}
+              dataChild={DataArticle.section.slice(1, 2)}
             />
             <div className='content-container-conclusion'>
-              <RegularText data={DataWholeLifeIns.conclusion[0]} />
+              <RegularText data={DataArticle.conclusion[0]} />
             </div>
             <Disclaimer />
           </article>
@@ -28,4 +27,4 @@ const WholeLifeIns = () => {
   );
 };
 
-export default WholeLifeIns;
+export default Article;

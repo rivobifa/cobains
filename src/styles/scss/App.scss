@@ -15,11 +15,12 @@ html {
 body {
   overflow-x: hidden;
   margin: 0 auto;
+  background: clr-neutral(300);
   height: auto;
   font-family: 'Open Sans', 'Poppins', 'Lora', 'Noto Sans Math', sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: clr-neutral(900);
+  color: clr-neutral(1000);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   align-items: center;
@@ -33,7 +34,7 @@ code {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: clr-neutral(900);
+  color: clr-neutral(1000);
 }
 
 input {

@@ -115,24 +115,6 @@
         transform: scale(1.1);
       }
 
-      &:first-child {
-        margin-left: 3rem;
-      }
-
-      &:last-child {
-        margin-right: 3rem;
-      }
-
-      @include mq(800px) {
-        &:first-child {
-          margin: 0 3rem 0 0;
-        }
-
-        &:last-child {
-          margin: 0 0 0 3rem;
-        }
-      }
-
       p {
         margin: 0;
       }
@@ -255,7 +237,7 @@
 
     small {
       font-weight: 700;
-      color: clr-neutral(900);
+      color: clr-neutral(1000);
       text-transform: capitalize;
     }
 
@@ -270,7 +252,7 @@
     .nominal {
       font-weight: 700;
       font-family: 'Poppins';
-      color: clr-neutral(900);
+      color: clr-neutral(1000);
     }
 
     &.active {
@@ -452,7 +434,7 @@
           width: 1rem;
           height: 1rem;
           border-radius: 100%;
-          box-shadow: 0 0 2px rgba(clr-neutral(900), 0.25);
+          box-shadow: 0 0 2px rgba(clr-neutral(1000), 0.25);
           background: clr-neutral(100);
           transition: all 0.3s ease-in-out;
         }
