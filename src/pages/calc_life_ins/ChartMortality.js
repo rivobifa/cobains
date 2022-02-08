@@ -77,7 +77,7 @@ const ChartMortality = ({ mortality, user }) => {
       width: 2,
       dashArray: [0, 4],
     },
-    colors: ['hsl(171, 100%, 38%)', 'hsl(258, 29%, 65%)'],
+    colors: ['hsl(171, 100%, 38%)', 'hsl(266, 45%, 64%)'],
     plotOptions: {
       bar: {
         horizontal: false,

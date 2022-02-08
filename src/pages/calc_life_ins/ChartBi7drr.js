@@ -19,7 +19,6 @@ const ChartMortality = () => {
     fill: {
       type: 'gradient',
       gradient: {
-        // shade: 'dark',
         shadeIntensity: 1,
         opacityFrom: 0.7,
         opacityTo: 0.9,
@@ -43,7 +42,7 @@ const ChartMortality = () => {
       curve: 'smooth',
       width: 2,
     },
-    colors: ['hsl(258, 29%, 65%)'],
+    colors: ['hsl(266, 45%, 64%)'],
     plotOptions: {
       bar: {
         horizontal: false,

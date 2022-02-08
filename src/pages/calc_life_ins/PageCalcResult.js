@@ -167,11 +167,7 @@ const PageCalcResult = ({ userData }) => {
             className={`${summaryDisplay && 'show'}`}
           ></button>
         </div>
-        {summaryDisplay && (
-          <div className='table-container table-commutation'>
-            <TableSummary user={user} />
-          </div>
-        )}
+        {summaryDisplay && <TableSummary user={user} />}
       </section>
       <section className='section-interest'>
         <div className='title-box'>
@@ -204,15 +200,13 @@ const PageCalcResult = ({ userData }) => {
           ></button>
         </div>
         {interestDisplay && (
-          <div className='table-container table-interest'>
-            <TableInterest
-              user={user}
-              iSeries={iSeries}
-              interest={interest}
-              discountFactor={discountFactor}
-              forceOfInterest={forceOfInterest}
-            />
-          </div>
+          <TableInterest
+            user={user}
+            iSeries={iSeries}
+            interest={interest}
+            discountFactor={discountFactor}
+            forceOfInterest={forceOfInterest}
+          />
         )}
       </section>
       {!user.interest && (
@@ -244,11 +238,7 @@ const PageCalcResult = ({ userData }) => {
               </div>
             </div>
           )}
-          {bi7drrTableDisplay && (
-            <div className='table-container table-bi7drr'>
-              <TableBi7drr iSeries={iSeries} />
-            </div>
-          )}
+          {bi7drrTableDisplay && <TableBi7drr iSeries={iSeries} />}
         </section>
       )}
       <section className='section-chart'>
@@ -308,13 +298,11 @@ const PageCalcResult = ({ userData }) => {
           ></button>
         </div>
         {commutationDisplay && (
-          <div className='table-container table-commutation'>
-            <TableCommutation
-              user={user}
-              pairCommutation={pairCommutation}
-              installmentCard={installmentCard}
-            />
-          </div>
+          <TableCommutation
+            user={user}
+            pairCommutation={pairCommutation}
+            installmentCard={installmentCard}
+          />
         )}
       </section>
       <section className='section-link'>
