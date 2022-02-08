@@ -1,24 +1,20 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Card, CardDetail, ButtonCard } from './Card';
+import { Card, ButtonCard } from './Card';
 import TableSummary from './TableSummary';
 import TableInterest from './TableInterest';
 import TableBi7drr from './TableBi7drr';
 import TableCommutation from './TableCommutation';
 import ChartBi7drr from './ChartBi7drr';
 import ChartMortality from './ChartMortality';
-import { DataResultCalc as form } from '../../data/DataCalcLifeIns';
-import Loader from '../../components/body/Loader';
-// import useResultCalcLifeIns from '../../functions/useResultCalcLifeIns';
-// import useUserData from '../../functions/useUserData';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
-
 import useWindowDimension from '../../functions/useWindowDimension';
 import { DataBreakpoint } from '../../data/DataBreakpoint';
+import { DataResultCalc as form } from '../../data/DataCalcLifeIns';
+import { Button } from '../../components/body/Button';
+import Loader from '../../components/body/Loader';
+import SwiperCustom from '../../components/body/SwiperCustom';
+import { SwiperSlide } from 'swiper/react';
+// import useResultCalcLifeIns from '../../functions/useResultCalcLifeIns';
+// import useUserData from '../../functions/useUserData';
 
 const PageCalcResult = ({ userData }) => {
   const { screenWidth } = useWindowDimension();
@@ -37,11 +33,6 @@ const PageCalcResult = ({ userData }) => {
     // pairProduct,
     cost,
   } = userData;
-
-  const [detailDisplay, setDetailDisplay] = useState(false);
-  const toggleDetailDisplay = () => {
-    setDetailDisplay((show) => !show);
-  };
 
   const [installmentCard, setInstallmentCard] = useState(false);
   const toggleInstallmentCard = () => {
@@ -81,12 +72,16 @@ const PageCalcResult = ({ userData }) => {
   // const { resultCalcLifeIns } = useResultCalcLifeIns();
   // const { userData } = useUserData();
 
+  console.log(userData);
+
   if (!user) {
     console.log('fetching data...');
-    return <Loader path={form.path} />;
+    return (
+      <div className='page-container page-calc-result fullHeight'>
+        <Loader path={form.path} />
+      </div>
+    );
   }
-
-  console.log(userData);
 
   return (
     <div className='page-container page-calc-result'>
@@ -104,14 +99,14 @@ const PageCalcResult = ({ userData }) => {
             </span>
           </small>
         </div>
-        <div className='slider-centered'>
-          <Swiper
-            slidesPerView={'auto'}
+        <div className='content-container'>
+          <SwiperCustom
+            pagination={screenWidth < breakpoint.medium}
             centeredSlides={screenWidth < breakpoint.medium}
-            spaceBetween={screenWidth < breakpoint.medium ? 30 : 0}
-            grabCursor={true}
-            className={`slider-container content-container ${
-              user.aPremium === true && 'flex-reverse'
+            spaceBetween={screenWidth < breakpoint.medium ? 80 : 0}
+            grabCursor={screenWidth < breakpoint.medium}
+            className={`slider-container ${
+              user.aPremium === true ? 'flex-reverse' : ''
             }`}
           >
             <SwiperSlide>
@@ -155,11 +150,8 @@ const PageCalcResult = ({ userData }) => {
                 ))
               )}
             </SwiperSlide>
-          </Swiper>
+          </SwiperCustom>
         </div>
-        {detailDisplay && (
-          <CardDetail user={user} toggleDetailDisplay={toggleDetailDisplay} />
-        )}
       </section>
       <section className='section-summary'>
         <div className='title-box'>
@@ -336,22 +328,12 @@ const PageCalcResult = ({ userData }) => {
             )}
           </small>
         </div>
-        <div className='link-container'>
-          <div className='button-container'>
-            <Link
-              className='button-calc button-regular'
-              to={form.link.goCalc.path}
-            >
-              {form.link.goCalc.text}
-            </Link>
-            <Link
-              className='button-edu button-regular button-complementary'
-              to={form.link.goEdu.path}
-            >
-              {form.link.goEdu.text}
-            </Link>
-          </div>
-        </div>
+        <Button
+          regular={form.link.goCalc.text}
+          pathRegular={form.link.goCalc.path}
+          complementary={form.link.goEdu.text}
+          refComplementary={form.link.goEdu.path}
+        />
       </section>
     </div>
   );

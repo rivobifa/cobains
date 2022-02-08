@@ -147,9 +147,11 @@
       }
 
       &-third {
-        padding-top: 5rem;
+        padding-top: 7rem;
 
         @include mq(breakpoint(medium)) {
+          margin-top: 0;
+          padding-top: 4rem;
           flex-direction: row-reverse;
         }
 
@@ -349,7 +351,7 @@
 
   .illustration {
     padding: 0 1rem;
-    margin: 2rem 0 4rem 0;
+    margin: 0 0 3rem 0;
 
     @include mq(breakpoint(medium)) {
       margin: 1rem 0 0 3rem;

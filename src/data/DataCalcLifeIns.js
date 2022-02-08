@@ -224,11 +224,11 @@ export const DataResultCalc = {
     },
     goCalc: {
       text: 'Coba Lagi',
-      path: DataLinkPage.calc_input,
+      path: DataLinkPage.calc_lifeIns_input,
     },
     goEdu: {
       text: 'Pelajari Asuransi',
-      path: DataLinkPage.edu,
+      path: DataLinkPage.edu_home,
     },
   },
 };

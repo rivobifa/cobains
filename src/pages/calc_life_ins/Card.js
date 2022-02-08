@@ -26,14 +26,6 @@ export const ButtonCard = ({ toggleButton }) => {
   );
 };
 
-export const CardDetail = ({ user, toggleDetailDisplay }) => {
-  return (
-    <div className='card-detail-container'>
-      <div></div>
-    </div>
-  );
-};
-
 export const Card = ({ cost, user, installment, toggleButton }) => {
   const form = DataResultCalc.card;
 

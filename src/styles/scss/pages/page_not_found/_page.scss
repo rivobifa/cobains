@@ -1,8 +1,7 @@
 @use '../../functions' as *;
 
 .page-container.page-404 {
-  height: 100vh;
-  min-height: 32rem;
+  height: calc(100vh - 10rem);
   width: 100%;
   max-width: breakpoint(large);
 

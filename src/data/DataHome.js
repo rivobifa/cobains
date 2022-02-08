@@ -57,7 +57,7 @@ export const DataHome = {
       ],
       button: {
         regular: 'Pelajari Asuransi',
-        pathRegular: DataLinkPage.edu,
+        pathRegular: DataLinkPage.edu_home,
         complementary: 'Lihat Lainnya',
       },
     },

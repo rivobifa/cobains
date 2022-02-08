@@ -4,9 +4,9 @@ import { DataHomeCalc } from '../../data/DataCalcLifeIns';
 import { RegularText } from '../../components/body/SectionGenerator';
 import { Button } from '../../components/body/Button';
 import { IconContext } from 'react-icons';
-import SwiperCustom from '../../components/body/SwiperCustom';
 import useWindowDimension from '../../functions/useWindowDimension';
 import { DataBreakpoint } from '../../data/DataBreakpoint';
+import SwiperCustom from '../../components/body/SwiperCustom';
 import { SwiperSlide } from 'swiper/react';
 
 const PageCalcHome = () => {
@@ -40,6 +40,9 @@ const PageCalcHome = () => {
         <div className='content-container-level'>
           {screenWidth < breakpoint.large ? (
             <SwiperCustom
+              pagination
+              centeredSlides
+              grabCursor
               children={DataHomeCalc.card.map((val, i) => {
                 return (
                   <SwiperSlide key={i}>

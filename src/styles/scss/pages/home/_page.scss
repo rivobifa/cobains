@@ -81,10 +81,6 @@
             width: 1rem;
             color: clr-neutral(1000);
             transform: translate(-50%, -50%);
-
-            &:last-child {
-              opacity: 0;
-            }
           }
 
           &:hover,
@@ -102,7 +98,6 @@
               }
 
               &:last-child {
-                opacity: 1;
                 transform: translate(-50%, -33%);
               }
             }
@@ -175,6 +170,7 @@
         padding-bottom: 0;
 
         @include mq(breakpoint(medium)) {
+          margin-top: 0;
           padding-bottom: 3rem;
           flex-direction: row-reverse;
           align-items: center;
