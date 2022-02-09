@@ -1,4 +1,3 @@
-// import * as AiIcons from 'react-icons/ai';
 import * as MdIcons from 'react-icons/md';
 import * as RiIcons from 'react-icons/ri';
 
@@ -34,35 +33,11 @@ export const DataNav = [
     path: DataLinkPage.calc_home,
     class: 'nav-calc',
     icon: <RiIcons.RiCalculatorLine />,
-    // iconClosed: <RiIcons.RiArrowDownSFill />,
-    // iconOpened: <RiIcons.RiArrowUpSFill />,
-    // subNav: [
-    //   {
-    //     title: 'Asuransi Jiwa',
-    //     path: '/kalkulatorAsuransi-asuransiJiwa',
-    //   },
-    //   {
-    //     title: 'Asuransi Umum',
-    //     path: '/kalkulatorAsuransi-asuransiUmum',
-    //   },
-    // ],
   },
   {
     title: 'Edukasi',
     path: DataLinkPage.edu_home,
     class: 'nav-education',
     icon: <MdIcons.MdOutlineSchool />,
-    // iconClosed: <RiIcons.RiArrowDownSFill />,
-    // iconOpened: <RiIcons.RiArrowUpSFill />,
-    // subNav: [
-    //   {
-    //     title: 'Asuransi Jiwa',
-    //     path: '/edukasiAsuransi-asuransiJiwa',
-    //   },
-    //   {
-    //     title: 'Asuransi Umum',
-    //     path: '/edukasiAsuransi-asuransiUmum',
-    //   },
-    // ],
   },
 ];

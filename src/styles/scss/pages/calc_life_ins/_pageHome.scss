@@ -230,7 +230,7 @@
         overflow-x: auto;
 
         @include mq(breakpoint(large)) {
-          padding: 1.5rem 0;
+          padding: 1.5rem 0 2rem;
           flex-direction: column;
           justify-content: center;
         }

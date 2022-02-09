@@ -320,7 +320,7 @@ const PageCalcResult = ({ userData }) => {
           regular={form.link.goCalc.text}
           pathRegular={form.link.goCalc.path}
           complementary={form.link.goEdu.text}
-          refComplementary={form.link.goEdu.path}
+          pathComplementary={form.link.goEdu.path}
         />
       </section>
     </div>

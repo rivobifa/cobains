@@ -37,10 +37,10 @@ export const Button = ({
           {normalLinkComplementary ? (
             <a
               className='button-regular'
-              href={pathRegular ? pathRegular : '#'}
-              onClick={refRegular ? refRegular : null}
+              href={pathComplementary ? pathComplementary : '#'}
+              onClick={refComplementary ? refComplementary : null}
             >
-              {regular}
+              {complementary}
             </a>
           ) : (
             <Link

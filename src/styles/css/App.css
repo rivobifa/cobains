@@ -1758,7 +1758,7 @@ section .content a:focus-visible {
 }
 @media (min-width: 1024px) {
   .page-container.page-calc-home .content-container-level {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 2rem;
     flex-direction: column;
     justify-content: center;
   }
