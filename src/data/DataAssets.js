@@ -1,7 +1,7 @@
-import React from 'react';
 import { ReactComponent as IconLinkedin } from '../assets/icon/linkedin.svg';
 import { ReactComponent as IconInstagram } from '../assets/icon/instagram.svg';
 import { ReactComponent as IconTwitter } from '../assets/icon/twitter.svg';
+
 import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/theme-1/exhaustedMan.svg';
 import { ReactComponent as IllustrationElderly } from '../assets/illustration/theme-1/elderly.svg';
 import { ReactComponent as IllustrationUmbrella } from '../assets/illustration/theme-1/umbrella.svg';
@@ -14,42 +14,53 @@ import { ReactComponent as IllustrationGadget } from '../assets/illustration/the
 import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/theme-1/analytics-3.svg';
 import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/theme-1/shoppingWoman.svg';
 
-export const Wrapper = (data) => {
+import { ReactComponent as PAMengenalLebihDalamWholeLifeInsurance } from '../assets/preview-article/pa_mengenal-lebih-dalam-whole-life-insurance.svg';
+
+export const DataPreviewArticle = {
+  mengenalLebihDalamWholeLifeInsurance: (
+    <PAMengenalLebihDalamWholeLifeInsurance />
+  ),
+};
+
+export const Wrapper = ({ data, illustration, previewArticle }) => {
   return (
-    <div className='illustration' title='Powered by getIllustrations'>
+    <div
+      title={`${illustration && 'Powered by getIllustrations'}`}
+      className={`${illustration ? 'illustration' : ''}`}
+    >
       {data}
     </div>
   );
 };
 
 export const DataIllustration = {
-  research1: Wrapper(<IllustrationResearch1 />),
-  research2: Wrapper(<IllustrationResearch2 />),
-  pageNotFound: Wrapper(<IllustrationPageNotFound />),
-  elderly: Wrapper(<IllustrationElderly />),
-  umbrella: Wrapper(<IllustrationUmbrella />),
-  sport: Wrapper(<IllustrationSport />),
-  success: Wrapper(<IllustrationSuccess />),
-  fast: Wrapper(<IllustrationFast />),
-  gadget: Wrapper(<IllustrationGadget />),
-  packageBundle: Wrapper(<IllustrationPackageBundle />),
-  packageIndividual: Wrapper(<IllustrationPackageIndividual />),
+  research1: <Wrapper illustration data={<IllustrationResearch1 />} />,
+  research2: <Wrapper illustration data={<IllustrationResearch2 />} />,
+  pageNotFound: <Wrapper illustration data={<IllustrationPageNotFound />} />,
+  elderly: <Wrapper illustration data={<IllustrationElderly />} />,
+  umbrella: <Wrapper illustration data={<IllustrationUmbrella />} />,
+  sport: <Wrapper illustration data={<IllustrationSport />} />,
+  success: <Wrapper illustration data={<IllustrationSuccess />} />,
+  fast: <Wrapper illustration data={<IllustrationFast />} />,
+  gadget: <Wrapper illustration data={<IllustrationGadget />} />,
+  packageBundle: <Wrapper illustration data={<IllustrationPackageBundle />} />,
+  packageIndividual: (
+    <Wrapper illustration data={<IllustrationPackageIndividual />} />
+  ),
+};
+
+export const WrapperIconSocmed = (data, href) => {
+  return <a href={href}>{data}</a>;
 };
 
 export const DataIconSocMed = {
-  linkedin: (
-    <a href='https://www.linkedin.com/in/rivobifa'>
-      <IconLinkedin />
-    </a>
+  linkedin: WrapperIconSocmed(
+    <IconLinkedin />,
+    'https://www.linkedin.com/in/rivobifa',
   ),
-  instagram: (
-    <a href='https://www.instagram.com/anotherbeef'>
-      <IconInstagram />
-    </a>
+  instagram: WrapperIconSocmed(
+    <IconInstagram />,
+    'https://www.instagram.com/anotherbeef',
   ),
-  twitter: (
-    <a href='https://www.twitter.com/rbifa_'>
-      <IconTwitter />
-    </a>
-  ),
+  twitter: WrapperIconSocmed(<IconTwitter />, 'https://www.twitter.com/rbifa_'),
 };

@@ -39,13 +39,25 @@
         }
       }
     }
+  }
 
-    &-conclusion {
-      margin: 4rem 0;
+  .preview-article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
-      .title {
-        font-weight: 400;
-      }
+    svg {
+      width: 20rem;
+    }
+  }
+
+  .conclusion-container {
+    margin: 2rem 0;
+    padding: 2rem 0;
+
+    .title {
+      font-weight: 400;
     }
   }
 }

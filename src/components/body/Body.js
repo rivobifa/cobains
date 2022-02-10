@@ -12,8 +12,10 @@ import PageCalcInput from '../../pages/calc_life_ins/PageCalcInput';
 import PageCalcResult from '../../pages/calc_life_ins/PageCalcResult';
 
 import PageEducation from '../../pages/education/HomePage';
-import JenisProdukAsuransiJiwa from '../../pages/education/JenisProdukAsuransiJiwa';
-import MengenalLebihDalamWholeLifeInsurance from '../../pages/education/MengenalLebihDalamWholeLifeInsurance';
+import {
+  JenisProdukAsuransiJiwa,
+  MengenalLebihDalamWholeLifeInsurance,
+} from '../../pages/education/ArticlePage';
 
 const Body = () => {
   const [userData, setUserData] = useState({});

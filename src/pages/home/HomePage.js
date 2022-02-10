@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { DataIllustration as illustration } from '../../data/DataAssets';

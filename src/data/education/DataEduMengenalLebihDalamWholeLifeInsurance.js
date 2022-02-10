@@ -1,4 +1,5 @@
 import { DataLinkPage } from '../DataLink';
+import { DataPreviewArticle } from '../DataAssets';
 
 const DataArticle = {
   path: DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance,
@@ -50,9 +51,8 @@ const DataArticle = {
               },
             ],
           ],
-        },
-        {
-          image: [],
+          previewArticle:
+            DataPreviewArticle.mengenalLebihDalamWholeLifeInsurance,
         },
       ],
     },

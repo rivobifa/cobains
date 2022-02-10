@@ -3018,10 +3018,20 @@ li.MuiMenuItem-root {
     font-size: 1.8rem;
   }
 }
-.page-container.page-education-item .content-container-conclusion {
-  margin: 4rem 0;
+.page-container.page-education-item .preview-article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.page-container.page-education-item .content-container-conclusion .title {
+.page-container.page-education-item .preview-article-container svg {
+  width: 20rem;
+}
+.page-container.page-education-item .conclusion-container {
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.page-container.page-education-item .conclusion-container .title {
   font-weight: 400;
 }
 

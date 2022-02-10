@@ -43,6 +43,14 @@ const DataEdu = {
       content: MengenalLebihDalamWholeLifeInsurance.section[0],
     },
   ],
+  disclaimer: {
+    title: 'Catatan',
+    content: [
+      {
+        text: 'Artikel ini dibuat berdasarkan data yang terbatas. Namun, tetap relevan dengan topik yang bersumber baik dari dalam negeri maupun luar negeri.',
+      },
+    ],
+  },
 };
 
 export default DataEdu;
