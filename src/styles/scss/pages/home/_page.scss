@@ -106,8 +106,12 @@
       }
 
       &-second {
-        padding: 2rem 0;
+        padding: 2rem 0 0;
         background: clr-neutral(1000);
+
+        @include mq(425px) {
+          padding: 2rem 0;
+        }
 
         @include mq(breakpoint(large)) {
           width: 100vw;
@@ -139,6 +143,12 @@
           &-link {
             margin-top: 3rem;
 
+            .button-complementary {
+              border: none;
+              background: none;
+              color: clr-neutral(100);
+            }
+
             @include mq(425px) {
               flex-direction: row;
               align-items: center;
@@ -149,6 +159,11 @@
                   width: auto;
                   margin: 0;
                 }
+
+                &-complementary {
+                  background: clr-neutral(100);
+                  color: clr-neutral(900);
+                }
               }
             }
 
@@ -158,6 +173,17 @@
                 &:hover,
                 &:focus-visible {
                   box-shadow: 0 2px 8px rgba(black, 0.4);
+                }
+              }
+
+              &-complementary {
+                &:hover,
+                &:focus-visible {
+                  background: clr-neutral(700);
+
+                  @include mq(425px) {
+                    background: clr-neutral(100);
+                  }
                 }
               }
             }

@@ -53,11 +53,33 @@
   }
 
   .conclusion-container {
-    margin: 2rem 0;
-    padding: 2rem 0;
+    margin: 1rem 0;
+    padding: 1rem 0;
 
     .title {
       font-weight: 400;
+    }
+  }
+
+  .disclaimer {
+    &-title {
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      font-family: 'Poppins';
+      font-weight: 400;
+      text-transform: uppercase;
+      color: clr-neutral(700);
+      border-bottom: 1px solid clr-neutral(500);
+    }
+
+    &-content {
+      margin: 0;
+
+      small {
+        font-size: 0.75rem;
+        color: clr-neutral(700);
+        line-height: 1.75rem;
+      }
     }
   }
 }

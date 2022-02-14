@@ -27,13 +27,16 @@ $topbar-width: calc(
       &-calc,
       &-education {
         padding: 0 1.25rem;
-        border-radius: 2rem;
+        // border-radius: 2rem;
+        border-radius: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
         @include hvr-btn() {
+          background: none;
+
           .nav-text {
             color: clr-primary(300);
             transition: none;
@@ -67,7 +70,7 @@ $topbar-width: calc(
           width: 1.5rem;
           height: 3px;
           border: 0;
-          border-radius: 1rem;
+          border-radius: 2rem;
           background: $clr_acc2_header;
         }
       }

@@ -163,25 +163,27 @@ export const List = ({ data }) => {
   return (
     <ul className='content-list'>
       {data.map((val, i) => {
-        return (
-          <li key={i} className='content-list-item'>
-            {val.list ? (
-              <ul className='content-list'>
+        return val.list ? (
+          val.list.map((value, i) => {
+            return (
+              <ul key={i} className='content-list'>
                 <li className='content-list-item'>
                   <span className='content-list-text'>
-                    {val.map((text, i) => {
+                    {value.map((text, i) => {
                       return FormatText({ text, i });
                     })}
                   </span>
                 </li>
               </ul>
-            ) : (
-              <span className='content-list-text'>
-                {val.map((text, i) => {
-                  return FormatText({ text, i });
-                })}
-              </span>
-            )}
+            );
+          })
+        ) : (
+          <li key={i} className='content-list-item'>
+            <span className='content-list-text'>
+              {val.map((text, i) => {
+                return FormatText({ text, i });
+              })}
+            </span>
           </li>
         );
       })}

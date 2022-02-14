@@ -206,7 +206,7 @@ export const ToggleCustomMortalityOpen = ({
   dependence,
 }) => {
   return (
-    <div className={`${form.class}${dependence !== true ? '-open' : '-close'}`}>
+    <div className={`${form.class}${dependence !== true ? '-close' : '-open'}`}>
       <Controller
         name={form.name}
         control={control}

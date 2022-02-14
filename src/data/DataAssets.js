@@ -14,9 +14,13 @@ import { ReactComponent as IllustrationGadget } from '../assets/illustration/the
 import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/theme-1/analytics-3.svg';
 import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/theme-1/shoppingWoman.svg';
 
+import { ReactComponent as PAApaItuBottomryRespondia } from '../assets/preview-article/pa_apa-itu-bottomry-respondia.svg';
 import { ReactComponent as PAMengenalLebihDalamWholeLifeInsurance } from '../assets/preview-article/pa_mengenal-lebih-dalam-whole-life-insurance.svg';
 
 export const DataPreviewArticle = {
+  apaItuBottomryRespondia: (
+    <PAApaItuBottomryRespondia />
+  ),
   mengenalLebihDalamWholeLifeInsurance: (
     <PAMengenalLebihDalamWholeLifeInsurance />
   ),

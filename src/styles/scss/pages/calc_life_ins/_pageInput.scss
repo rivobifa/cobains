@@ -239,6 +239,8 @@ li.MuiMenuItem-root {
       align-items: center;
 
       & > small {
+        font-family: 'Poppins';
+        font-size: 0.75rem;
         color: clr-neutral(600);
         white-space: pre;
         text-transform: uppercase;
@@ -246,6 +248,7 @@ li.MuiMenuItem-root {
 
       label {
         margin: -1.25rem 0;
+        border: none;
       }
 
       input {
@@ -394,7 +397,7 @@ li.MuiMenuItem-root {
     }
 
     &-toggle {
-      &-open {
+      &-close {
         margin: 3rem 0 2rem;
         display: flex;
         justify-content: flex-start;
@@ -416,7 +419,7 @@ li.MuiMenuItem-root {
         }
       }
 
-      &-close {
+      &-open {
         margin: -0.25rem -0.75rem 0 1rem;
         display: flex;
         justify-content: center;
@@ -472,6 +475,11 @@ li.MuiMenuItem-root {
       }
 
       &-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.35rem;
+
         &-container {
           position: relative;
           margin: 0.5rem 0 1rem;
@@ -507,11 +515,6 @@ li.MuiMenuItem-root {
           }
         }
 
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 0.35rem;
-
         label {
           cursor: pointer;
           position: relative;
@@ -521,7 +524,8 @@ li.MuiMenuItem-root {
           font-size: 0.875rem;
           display: flex;
           align-items: center;
-          border-radius: 2rem;
+          // border-radius: 2rem;
+          border-radius: 0.5rem;
           border: 1px solid clr-neutral(600);
           color: clr-neutral(600);
           -webkit-user-select: none;
@@ -539,7 +543,7 @@ li.MuiMenuItem-root {
             height: 0.875rem;
             width: 0.875rem;
             box-sizing: border-box;
-            border: 0.2rem solid clr-neutral(500);
+            border: 0.25rem solid clr-neutral(500);
             background: transparent;
             border-radius: 100%;
           }

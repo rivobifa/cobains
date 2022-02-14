@@ -19,6 +19,10 @@ export const DataLinkPage = {
   edu_endowmentinsuranceVsPureEndowment: '/Edukasi/endowment-vs-pure-endowment',
   edu_netoVsBruto: '/Edukasi/NetoVsBruto',
   edu_createAssumption: '/Edukasi/MembuatAsumsiAkturiaAsuransiJiwa',
+  edu_mengenalLebihDalamSejarahAsuransi:
+    '/edukasi/mengenal-lebih-dalam-sejarah-asuransi',
+  edu_mengapaHalamanPolisSangatBanyak:
+    '/edukasi/mengapa-halaman-polis-sangat-banyak',
 };
 
 export const DataNav = [

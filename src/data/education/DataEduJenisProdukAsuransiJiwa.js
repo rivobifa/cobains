@@ -116,7 +116,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Produk ini tidak memproteksi Peserta dari finansial jika meninggal, melainkan “jaminan pembayaran manfaat bila Peserta masih hidup”. Salah satu fungsinya adalah sebagai tabungan yang dapat menghindari inflasi.',
+                text: 'Produk ini tidak memproteksi kerugian finansial jika Peserta meninggal, melainkan “jaminan pembayaran manfaat bila Peserta masih hidup”. Salah satu fungsinya adalah sebagai tabungan yang dapat menghindari inflasi.',
               },
             ],
             [
@@ -149,7 +149,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' akan memberikan nilai yang lebih tinggi jika dibandingkan tingkat bunga saja. Contoh jika orang tersebut berusia 35 tahun menyimpan uang sebesar Rp 490 juta di bank dengan tingkat bunga 3% selama 20 tahun mungkin di akhir tahun ke-20 hanya memperoleh sekitar Rp 880 juta saja, tapi jika ia membeli produk ',
+                text: ' akan memberikan nilai yang lebih tinggi jika dibandingkan tingkat bunga saja. Misalnya, orang tersebut berusia 35 tahun menyimpan uang sebesar Rp 490 juta di bank dengan tingkat bunga 3% selama 20 tahun mungkin di akhir tahun ke-20 hanya memperoleh sekitar Rp 880 juta saja, tapi jika ia membeli produk ',
               },
               {
                 text: 'Pure Endowment',
@@ -315,7 +315,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Proteksi pada produk ini dapat didefinisikan sebagai “proteksi finansial jika meninggal” dan berlaku mulai dari Peserta secara sah membeli produk sampai dengan jangka waktu yang tertulis di dalam polis. Maka dari itu, ',
+                text: 'Proteksi pada produk ini dapat didefinisikan sebagai “proteksi kerugian finansial jika Peserta meninggal” dan berlaku mulai dari Peserta secara sah membeli produk sampai dengan jangka waktu yang tertulis di dalam polis. Maka dari itu, ',
               },
               {
                 text: 'Klaim',
@@ -467,7 +467,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Proteksi pada produk ini dapat didefinisikan sebagai “proteksi finansial jika meninggal” dan berlaku mulai dari Peserta secara sah membeli produk sampai dengan ia meninggal. Maka dari itu, ',
+                text: 'Proteksi pada produk ini dapat didefinisikan sebagai “proteksi kerugian finansial jika Peserta meninggal” dan berlaku mulai dari Peserta secara sah membeli produk sampai dengan ia meninggal. Maka dari itu, ',
               },
               {
                 text: 'Klaim',

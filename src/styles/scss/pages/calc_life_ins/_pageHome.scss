@@ -290,8 +290,9 @@
 
       &:hover,
       &:focus-visible {
+        border-color: rgba(clr-neutral(300), 0.25);
+        box-shadow: 0px 14px 12px -4px rgba(clr-neutral(300), 0.45);
         transform: scale(1.15);
-        box-shadow: 0px 22px 12px -12px rgba(clr-neutral(300), 0.35);
       }
 
       .box {
@@ -338,6 +339,14 @@
         margin: 0.25rem 0;
         width: 100%;
       }
+    }
+  }
+
+  .swiper-slide-active {
+    .content-box {
+      border-color: rgba(clr-neutral(300), 0.25);
+      box-shadow: 0px 14px 12px -4px rgba(clr-neutral(300), 0.45);
+      transform: scale(1.15);
     }
   }
 

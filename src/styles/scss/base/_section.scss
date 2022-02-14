@@ -85,19 +85,8 @@ section {
     }
 
     &-list {
-      list-style: none;
-
       &-item {
         margin-bottom: 0.5rem;
-      }
-
-      &-item:before {
-        content: '\2022';
-        display: inline-block;
-        font-weight: bold;
-        width: 1rem;
-        margin-left: -1rem;
-        color: $clr_acc1_section;
       }
     }
 

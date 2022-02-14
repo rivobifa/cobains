@@ -13,8 +13,9 @@ import PageCalcResult from '../../pages/calc_life_ins/PageCalcResult';
 
 import PageEducation from '../../pages/education/HomePage';
 import {
-  JenisProdukAsuransiJiwa,
   MengenalLebihDalamWholeLifeInsurance,
+  JenisProdukAsuransiJiwa,
+  ApaItuBottomryRespondia,
 } from '../../pages/education/ArticlePage';
 
 const Body = () => {
@@ -36,12 +37,16 @@ const Body = () => {
         />
         <Route path={DataLinkPage.edu_home} element={<PageEducation />} />
         <Route
+          path={DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance}
+          element={<MengenalLebihDalamWholeLifeInsurance />}
+        />
+        <Route
           path={DataLinkPage.edu_jenisProdukAsuransiJiwa}
           element={<JenisProdukAsuransiJiwa />}
         />
         <Route
-          path={DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance}
-          element={<MengenalLebihDalamWholeLifeInsurance />}
+          path={DataLinkPage.edu_apaItuBottomryRespondia}
+          element={<ApaItuBottomryRespondia />}
         />
         <Route path='*' exact element={<PageNotFound />} />
       </Routes>
