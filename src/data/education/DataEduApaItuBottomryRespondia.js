@@ -1401,7 +1401,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'dan',
+                text: ' dan ',
               },
               {
                 text: 'Respondia',
@@ -1436,7 +1436,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'dan',
+                text: ' dan ',
               },
               {
                 text: 'Respondia',
@@ -1457,10 +1457,10 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: 'yang membahas tentang ini di ',
+                text: ' yang membahas tentang ini di ',
               },
               {
-                text: '',
+                text: 'Mengenal Lebih Dalam Sejarah Asuransi',
                 type: 'link-page',
                 path: DataLinkPage.edu_mengenalLebihDalamSejarahAsuransi,
               },

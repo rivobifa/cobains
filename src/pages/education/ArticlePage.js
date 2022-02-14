@@ -46,7 +46,7 @@ export const ApaItuBottomryRespondia = () => {
   return (
     <ArticleGenerator
       data={DataArticle.section[0]}
-      dataChild={DataArticle.section.slice(1, 5)}
+      dataChild={DataArticle.section.slice(1, 6)}
       dataConclusion={DataArticle.conclusion[0]}
       DataPreviewSideContent={DPSC}
       className='page-apaItuBottomryRespondia'

@@ -34,7 +34,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <div className='white-space' />
+      <div className='white-space top' />
+      <div className='white-space bottom' />
     </div>
   );
 };
