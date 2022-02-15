@@ -38,7 +38,7 @@ $topbar-width: calc(
           background: none;
 
           .nav-text {
-            color: clr-primary(300);
+            color: clr-primary(400);
             transition: none;
           }
         }
@@ -54,6 +54,8 @@ $topbar-width: calc(
 
     .active {
       @include hvr-btn() {
+        background: none;
+
         .nav-text {
           color: clr-neutral(1000);
         }
