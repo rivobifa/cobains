@@ -1,5 +1,4 @@
 @use '../../functions' as *;
-@use './header' as *;
 
 .logo {
   font-family: 'Poppins';
@@ -13,13 +12,13 @@
 
     @include hvr-btn() {
       background: transparent;
-      color: $clr_acc2_header;
+      color: clr-primary(300);
     }
 
     span {
       font-family: 'Open Sans';
       font-weight: 700;
-      color: $clr_acc2_header;
+      color: clr-primary(300);
     }
   }
 }

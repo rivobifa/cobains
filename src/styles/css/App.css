@@ -404,7 +404,7 @@ section .content a:focus-visible {
   height: 2px;
   border: 0;
   border-radius: 2.5rem;
-  background: #545454;
+  background: #333333;
   transition: all 0.3s ease-in-out;
 }
 .hamburger-line:first-child {
@@ -446,7 +446,7 @@ section .content a:focus-visible {
   align-items: flex-start;
   flex-direction: column;
   border-radius: 0 0 8px 0;
-  box-shadow: 2px 4px 4px rgba(84, 84, 84, 0.0875);
+  box-shadow: 2px 4px 4px rgba(51, 51, 51, 0.075);
   background: white;
   transition: all 0.3s ease-in-out;
   z-index: 100;
@@ -474,27 +474,27 @@ section .content a:focus-visible {
 .navigation-side .sidebar .nav-home:focus-visible, .navigation-side .sidebar .nav-calc:focus-visible, .navigation-side .sidebar .nav-education:focus-visible {
   outline: 2px solid #9e7acd;
 }
+.navigation-side .sidebar .nav-icon, .navigation-side .sidebar .nav-text {
+  color: #333333;
+}
 .navigation-side .sidebar .nav-icon {
   margin-right: 1rem;
   transform: scale(1.25);
-  color: #545454;
 }
 .navigation-side .sidebar .nav-text {
   font-size: 1rem;
   font-weight: 500;
-  color: #545454;
 }
 .navigation-side .sidebar .active {
-  background: #9e7acd;
+  background: rgba(214, 200, 234, 0.35);
 }
 .navigation-side .sidebar .active:hover {
   background: #9e7acd;
 }
-.navigation-side .sidebar .active .nav-icon {
-  color: white;
+.navigation-side .sidebar .active .nav-icon, .navigation-side .sidebar .active .nav-text {
+  color: #8559c0;
 }
 .navigation-side .sidebar .active .nav-text {
-  color: white;
   font-weight: 600;
 }
 .navigation-side .sidebar.transition-none {
@@ -678,7 +678,7 @@ section .content a:focus-visible {
 .search-left::before, .search-right::before {
   content: "";
   position: absolute;
-  border: 2px solid #545454;
+  border: 2px solid #333333;
   width: 9px;
   height: 16px;
   transition: all 0.1s ease-in-out;
@@ -715,7 +715,7 @@ section .content a:focus-visible {
   width: 100%;
   height: 100%;
   border-radius: 32px;
-  background: #545454;
+  background: #333333;
   transform: rotate(-45deg) translateY(150%);
   transition: all 0.3s ease;
 }
@@ -731,7 +731,7 @@ section .content a:focus-visible {
   display: none;
 }
 .search-focused-mobile {
-  border: 0.5px solid #545454;
+  border: 0.5px solid #333333;
   box-shadow: inset 0 1px 1px rgba(163, 157, 170, 0.15), 0 2px 4px rgba(222, 222, 222, 0.25);
 }
 .search-focused .search-form {

@@ -1,9 +1,5 @@
 @use '../../functions' as *;
 
-$clr_acc1_header: clr-neutral(100);
-$clr_acc2_header: clr-primary(300);
-$clr_acc3_header: clr-neutral(800);
-
 .header {
   position: sticky;
   top: 0;

@@ -1,5 +1,4 @@
 @use '../../functions' as *;
-@use './header' as *;
 
 $width-input-1: calc(
   275px + (535 - 275) * ((100vw - breakpoint(small)) / (640 - 375))
@@ -76,7 +75,7 @@ $width-input-3: calc(
     &::before {
       content: '';
       position: absolute;
-      border: 2px solid $clr_acc3_header;
+      border: 2px solid clr-neutral(1000);
       width: 9px;
       height: 16px;
       transition: all 0.1s ease-in-out;
@@ -120,7 +119,7 @@ $width-input-3: calc(
       width: 100%;
       height: 100%;
       border-radius: 32px;
-      background: $clr_acc3_header;
+      background: clr-neutral(1000);
       transform: rotate(-45deg) translateY(150%);
       transition: all 0.3s ease;
     }
@@ -140,7 +139,7 @@ $width-input-3: calc(
     }
 
     &-mobile {
-      border: 0.5px solid $clr_acc3_header;
+      border: 0.5px solid clr-neutral(1000);
       box-shadow: inset 0 1px 1px rgba(clr-neutral(600), 15%),
         0 2px 4px rgba(clr-neutral(300), 0.25);
     }

@@ -1,5 +1,4 @@
 @use '../../functions' as *;
-@use './header' as *;
 
 .hamburger {
   cursor: pointer;
@@ -25,7 +24,7 @@
     height: 2px;
     border: 0;
     border-radius: 2.5rem;
-    background: $clr_acc3_header;
+    background: clr-neutral(1000);
     transition: all 0.3s ease-in-out;
   }
 

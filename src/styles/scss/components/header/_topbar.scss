@@ -1,5 +1,4 @@
 @use '../../functions' as *;
-@use './header' as *;
 
 $topbar-width: calc(
   360px + (380 - 360) * ((100vw - breakpoint(medium)) / (1024 - 640))
@@ -27,7 +26,6 @@ $topbar-width: calc(
       &-calc,
       &-education {
         padding: 0 1.25rem;
-        // border-radius: 2rem;
         border-radius: 0.5rem;
         display: flex;
         justify-content: center;
@@ -73,7 +71,7 @@ $topbar-width: calc(
           height: 3px;
           border: 0;
           border-radius: 2rem;
-          background: $clr_acc2_header;
+          background: clr-primary(300);
         }
       }
     }

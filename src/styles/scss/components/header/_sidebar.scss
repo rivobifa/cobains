@@ -1,5 +1,4 @@
 @use '../../functions' as *;
-@use './header' as *;
 
 .navigation-side {
   @include mq(breakpoint(medium)) {
@@ -19,8 +18,8 @@
     align-items: flex-start;
     flex-direction: column;
     border-radius: 0 0 8px 0;
-    box-shadow: 2px 4px 4px rgba($clr_acc3_header, 0.0875);
-    background: $clr_acc1_header;
+    box-shadow: 2px 4px 4px rgba(clr-neutral(1000), 0.075);
+    background: clr-neutral(100);
     transition: all 0.3s ease-in-out;
     z-index: 100;
 
@@ -49,33 +48,36 @@
         }
       }
 
+      &-icon,
+      &-text {
+        color: clr-neutral(1000);
+      }
+
       &-icon {
         margin-right: 1rem;
         transform: scale(1.25);
-        color: $clr_acc3_header;
       }
 
       &-text {
         font-size: 1rem;
         font-weight: 500;
-        color: $clr_acc3_header;
       }
     }
 
     .active {
-      background: $clr_acc2_header;
+      background: rgba(clr-primary(100), 0.35);
 
       &:hover {
         background: clr-primary(300);
       }
 
       .nav {
-        &-icon {
-          color: clr-neutral(100);
+        &-icon,
+        &-text {
+          color: clr-primary(400);
         }
 
         &-text {
-          color: clr-neutral(100);
           font-weight: 600;
         }
       }
