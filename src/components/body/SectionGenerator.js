@@ -25,38 +25,36 @@ export const RegularText = ({
   scrollToConclusion,
 }) => {
   return (
-    data && (
-      <>
-        {data.title && <Title data={data.title} />}
-        {data.subInfo && <SubInfo data={data.subInfo} />}
-        {data.content && (
-          <div className='content'>
-            <Content
-              data={data.content}
-              previewArticle={previewArticle}
-              scrollToConclusion={scrollToConclusion && scrollToConclusion}
-            />
-            {dataChild
-              ? dataChild.map((val, i) => {
-                  return (
-                    <div key={i} className='sub-content'>
-                      {val.title && <Title dataChild={val.title} />}
-                      {val.content && (
-                        <div className='content'>
-                          <Content
-                            data={val.content}
-                            previewArticle={previewArticle}
-                          />
-                        </div>
-                      )}
-                    </div>
-                  );
-                })
-              : null}
-          </div>
-        )}
-      </>
-    )
+    <>
+      {data.title && <Title data={data.title} />}
+      {data.subInfo && <SubInfo data={data.subInfo} />}
+      {data.content && (
+        <div className='content'>
+          <Content
+            data={data.content}
+            previewArticle={previewArticle}
+            scrollToConclusion={scrollToConclusion && scrollToConclusion}
+          />
+          {dataChild
+            ? dataChild.map((val, i) => {
+                return (
+                  <div key={i} className='sub-content'>
+                    {val.title && <Title dataChild={val.title} />}
+                    {val.content && (
+                      <div className='content'>
+                        <Content
+                          data={val.content}
+                          previewArticle={previewArticle}
+                        />
+                      </div>
+                    )}
+                  </div>
+                );
+              })
+            : null}
+        </div>
+      )}
+    </>
   );
 };
 
@@ -126,15 +124,25 @@ export const Content = ({ data, previewArticle, scrollToConclusion }) => {
         {content.paragraph && <Paragraph data={content.paragraph} />}
         {content.list && <List data={content.list} />}
         {content.quote && <Quote data={content.quote} />}
-        {previewArticle && (
+        {content.previewArticle && previewArticle && (
           <PreviewArticle
             data={content.previewArticle}
             onClick={scrollToConclusion}
           />
         )}
+        {content.image && <Image data={content.image} />}
+        {content.slider && <Slider data={content.slider} />}
       </div>
     );
   });
+};
+
+export const Slider = () => {
+  return;
+};
+
+export const Image = ({ data }) => {
+  return <div className='image-container'>{data}</div>;
 };
 
 export const PreviewArticle = ({ data, onClick }) => {
