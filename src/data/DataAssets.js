@@ -34,6 +34,7 @@ import GoodsRespondia from '../assets/image/goods-respondentia.png';
 export const WrapperImage = ({
   data,
   className,
+  title,
   caption,
   captionIllustration,
   source,
@@ -46,12 +47,12 @@ export const WrapperImage = ({
 
   return (
     <div
-      title={caption}
+      title={title || caption}
       className={`image-wrapper image-mind-map ${className} ${
         imageOverlay ? 'overlay' : ''
       }`}
     >
-      <img className='image' src={data} alt={caption} />
+      <img className='image' src={data} alt={title || caption} />
       <button className='image-button' onClick={toggleImageOverlay}>
         <IconContext.Provider value={{ className: 'icon' }}>
           {imageOverlay ? (
@@ -79,7 +80,12 @@ export const DataImageMindMap = {
     <WrapperImage
       data={MMBagaimanaKontrakBottomryDijalankan}
       className='bagaimana-kontrak-bottomry-dijalankan'
-      caption={<>Bagaimana Kontrak <i>Bottomry</i> dijalankan</>}
+      caption={
+        <>
+          Bagaimana Kontrak <i>Bottomry</i> Dijalankan
+        </>
+      }
+      title='Bagaimana Kontrak Bottomry Dijalankan'
       original
     />
   ),
@@ -92,6 +98,7 @@ export const DataImageMindMap = {
           Perbandingan <i>Bottomry Respondia</i> dengan Asuransi Modern
         </>
       }
+      title='Perbandingan Bottomry Respondia dengan Asuransi Modern'
       original
     />
   ),
@@ -102,45 +109,45 @@ export const DataImage = {
     <WrapperImage
       data={MesopotamiaShip}
       className='mesopotamia-ship'
-      caption='Ilustrasi Kapal Kuno'
-      source='Ekspedisi Tigris - Untuk membuktikan kemungkinan kontak lintas samudera kuno'
+      captionIllustration
+      caption='Kapal Kuno'
+      source='Ekspedisi Tigris - Untuk Membuktikan Kemungkinan Kontak Lintas Samudera Kuno'
     />
   ),
   arabianCaravan: (
     <WrapperImage
       data={ArabianCaravan}
       className='arabian-caravan'
-      caption='Karavan Arab'
       captionIllustration
-      source={
-        <>
-          Joseph Austin Banwell <i>Orientalist Painting</i>
-        </>
-      }
+      caption='Karavan Arab'
+      source='Joseph Austin Banwell - Orientalist Painting'
     />
   ),
   ancientGreekPirates: (
     <WrapperImage
       data={AncientGreekPirates}
       className='acient-greek-pirates'
-      caption={<i>Perils on The Sea (War)</i>}
       captionIllustration
+      caption={<i>Perils on The Sea (War)</i>}
+      title='Perils on The Sea (War)'
     />
   ),
   personalLiability: (
     <WrapperImage
       data={PersonalLiability}
       className='personal-liability'
-      caption={<i>Personal Liability</i>}
       captionIllustration
+      caption={<i>Personal Liability</i>}
+      title='Personal Liability'
     />
   ),
   stormAtSea: (
     <WrapperImage
       data={StormAtSea}
       className='storm-at-sea'
-      caption={<i>Perils on The Sea (Sea Storm)</i>}
       captionIllustration
+      caption={<i>Perils on The Sea (Sea Storm)</i>}
+      title='Perils on The Sea (Sea Storm)'
       source='Miguel Angel Estevez'
     />
   ),
@@ -148,12 +155,8 @@ export const DataImage = {
     <WrapperImage
       data={GoodsRespondia}
       className='goods-respondentia'
-      caption={
-        <>
-          Barang Dagangan <i>Respondia</i>
-        </>
-      }
       captionIllustration
+      caption='Barang Dagangan Respondia'
     />
   ),
 };
