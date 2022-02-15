@@ -45,14 +45,28 @@ export const WrapperImage = ({
     setImageOverlay((show) => !show);
   };
 
+  const illustration = 'Ilustrasi';
+
   return (
     <div
-      title={title || caption}
+      title={
+        captionIllustration
+          ? `${illustration} ${title || caption}`
+          : title || caption
+      }
       className={`image-wrapper image-mind-map ${className} ${
         imageOverlay ? 'overlay' : ''
       }`}
     >
-      <img className='image' src={data} alt={title || caption} />
+      <img
+        className='image'
+        src={data}
+        alt={
+          captionIllustration
+            ? `${illustration} ${title || caption}`
+            : title || caption
+        }
+      />
       <button className='image-button' onClick={toggleImageOverlay}>
         <IconContext.Provider value={{ className: 'icon' }}>
           {imageOverlay ? (
@@ -65,7 +79,13 @@ export const WrapperImage = ({
       <div className='image-text'>
         <div className='image-ornament'></div>
         <h3 className='image-caption'>
-          {captionIllustration ? <>Ilustrasi {caption}</> : caption}
+          {captionIllustration ? (
+            <>
+              {illustration} {caption}
+            </>
+          ) : (
+            caption
+          )}
         </h3>
         <small className='image-source'>
           Sumber: <b>{source || (original && 'cobains.id') || '-'}</b>
