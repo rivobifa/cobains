@@ -79,7 +79,7 @@ export const DataImageMindMap = {
     <WrapperImage
       data={MMBagaimanaKontrakBottomryDijalankan}
       className='bagaimana-kontrak-bottomry-dijalankan'
-      caption={`Bagaimana Kontrak ${(<i>Bottomry</i>)} dijalankan`}
+      caption={<>Bagaimana Kontrak <i>Bottomry</i> dijalankan</>}
       original
     />
   ),
