@@ -15,8 +15,6 @@ const SwiperCustom = ({
 }) => {
   SwiperCore.use(pagination ? [Pagination] : '');
 
-  console.log(centeredSlides && centeredSlides);
-
   return (
     <Swiper
       slidesPerView={slidesperView || 'auto'}
