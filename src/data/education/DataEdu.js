@@ -1,5 +1,5 @@
 import * as GoIcons from 'react-icons/go';
-// import ApaItuBottomryRespondia from './DataEduApaItuBottomryRespondia';
+import ApaItuBottomryRespondia from './DataEduApaItuBottomryRespondia';
 import JenisProdukAsuransiJiwa from './DataEduJenisProdukAsuransiJiwa';
 import MengenalLebihDalamWholeLifeInsurance from './DataEduMengenalLebihDalamWholeLifeInsurance';
 
@@ -38,10 +38,10 @@ const DataEdu = {
       path: JenisProdukAsuransiJiwa.path,
       content: JenisProdukAsuransiJiwa.section[0],
     },
-    // {
-    //   path: ApaItuBottomryRespondia.path,
-    //   content: ApaItuBottomryRespondia.section[0],
-    // },
+    {
+      path: ApaItuBottomryRespondia.path,
+      content: ApaItuBottomryRespondia.section[0],
+    },
   ],
   disclaimer: {
     title: 'Catatan',

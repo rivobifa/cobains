@@ -1,5 +1,5 @@
 import { DataLinkPage } from '../DataLink';
-import { DataPreviewArticle } from '../DataAssets';
+import { DataPreviewArticle, DataImage, DataImageMindMap } from '../DataAssets';
 
 const DataArticle = {
   path: DataLinkPage.edu_apaItuBottomryRespondia,
@@ -53,6 +53,8 @@ const DataArticle = {
               },
             ],
           ],
+        },
+        {
           previewArticle: DataPreviewArticle.apaItuBottomryRespondia,
         },
       ],
@@ -359,9 +361,9 @@ const DataArticle = {
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image: DataImage.mesopotamiaShip,
+        },
         {
           paragraph: [
             [
@@ -702,7 +704,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: '.',
+                text: '. ',
               },
               {
                 text: 'The lender',
@@ -714,9 +716,9 @@ const DataArticle = {
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image: DataImage.personalLiability,
+        },
         {
           paragraph: [
             [
@@ -817,19 +819,26 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'adalah untuk menggunakan kapal atau sesuatu yang berkaitan dengan kapal dan bukan selain itu meskipun Pemilik kapal itu sendiri boleh menggunakan uang pinjamannya untuk hal lain karena memang itu kapal miliknya.',
+                text: ' adalah untuk menggunakan kapal atau sesuatu yang berkaitan dengan kapal dan bukan selain itu meskipun Pemilik kapal itu sendiri boleh menggunakan uang pinjamannya untuk hal lain karena memang itu kapal miliknya.',
               },
             ],
             [
               {
-                text: 'Kalau lo masih bingung coba liat skema ini:',
+                text: 'Kalau ',
+              },
+              {
+                text: 'lo',
+                type: 'ins-term',
+              },
+              {
+                text: ' masih bingung coba liat skema ini:',
               },
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image: DataImageMindMap.bagaimanaKontrakBottomryDijalankan,
+        },
         {
           paragraph: [
             [
@@ -839,6 +848,9 @@ const DataArticle = {
               {
                 text: 'Bottomry',
                 type: 'ins-term',
+              },
+              {
+                text: ' ',
               },
               {
                 text: 'nggak',
@@ -892,7 +904,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'gue',
+                text: ' gue ',
                 type: 'italic',
               },
               {
@@ -959,7 +971,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: '” atau bisa kita bilang dirinya sendiri yang menjadi jaminannya.',
+                text: ' ” atau bisa kita bilang dirinya sendiri yang menjadi jaminannya.',
               },
             ],
             [
@@ -1238,14 +1250,14 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Barang dagangan pada kontrak ini bermacam-macam mulai dari tanah liat (batu bata), perunggu, tekstil, minyak, ikan, hingga biji-bijian.',
+                text: 'Oiya Barang dagangan pada kontrak ini bermacam-macam mulai dari tanah liat (batu bata), perunggu, tekstil, minyak, ikan, hingga biji-bijian.',
               },
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image: DataImage.goodsRespondia,
+        },
         {
           paragraph: [
             [
@@ -1497,9 +1509,9 @@ const DataArticle = {
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image: DataImage.ancientGreekPirates,
+        },
         {
           paragraph: [
             [
@@ -1654,6 +1666,13 @@ const DataArticle = {
                 text: ', sedangkan asuransi modern sudah lebih luas lagi.',
               },
             ],
+          ],
+        },
+        {
+          image: DataImage.stormAtSea,
+        },
+        {
+          paragraph: [
             [
               {
                 text: 'Asuransi modern memiliki cara kerja di mana premi dibayarkan terlebih dahulu kemudian klaim akan dibayarkan jika risiko terjadi dan sesuai kontrak polis, tapi klaim tidak akan dibayarkan jika risiko tidak terjadi. Lain hal dengan ',
@@ -1675,9 +1694,10 @@ const DataArticle = {
             ],
           ],
         },
-        // {
-        //   image: ''
-        // },
+        {
+          image:
+            DataImageMindMap.perbandinganBottomryRespondiaDenganAsuransiModern,
+        },
         {
           paragraph: [
             [
@@ -1715,7 +1735,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'adalah keduanya diwajibkan untuk melekatkan klausul (peraturan) sejelas mungkin dalam kontraknya supaya kalau terjadi ',
+                text: ' adalah keduanya diwajibkan untuk melekatkan klausul (peraturan) sejelas mungkin dalam kontraknya supaya kalau terjadi ',
               },
               {
                 text: 'despute',

@@ -15,7 +15,7 @@ import PageEducation from '../../pages/education/HomePage';
 import {
   MengenalLebihDalamWholeLifeInsurance,
   JenisProdukAsuransiJiwa,
-  // ApaItuBottomryRespondia,
+  ApaItuBottomryRespondia,
 } from '../../pages/education/ArticlePage';
 
 const Body = () => {
@@ -44,10 +44,10 @@ const Body = () => {
           path={DataLinkPage.edu_jenisProdukAsuransiJiwa}
           element={<JenisProdukAsuransiJiwa />}
         />
-        {/* <Route
+        <Route
           path={DataLinkPage.edu_apaItuBottomryRespondia}
           element={<ApaItuBottomryRespondia />}
-        /> */}
+        />
         <Route path='*' exact element={<PageNotFound />} />
       </Routes>
       <Footer />
