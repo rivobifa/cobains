@@ -27,7 +27,7 @@ const DataArticle = {
       subInfo: {
         author: 'Rivo Bifa',
         linkProfile: DataLinkPage.author_rivoBifa,
-        timestamp: 'Rabu, 18 Januari 2022',
+        timestamp: 'Selasa, 18 Januari 2022',
         location: 'Jakarta',
       },
       content: [
@@ -217,6 +217,9 @@ const DataArticle = {
               {
                 text: 'skurttt',
                 type: 'italic',
+              },
+              {
+                text: '...',
               },
             ],
           ],
@@ -528,9 +531,13 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'kalau:',
+                text: ' kalau:',
               },
             ],
+          ],
+        },
+        {
+          list: [
             [
               {
                 text: 'Dia bisa memperoleh uang dengan cara lain. Sejak dulu memang sudah diajarkan untuk jauh-jauh dari utang piutang, tapi hal ini masih bisa ditolerir kalau dasar pernyataan ',
@@ -574,6 +581,10 @@ const DataArticle = {
                 text: ' karena ia tidak bisa membayar utang.',
               },
             ],
+          ],
+        },
+        {
+          paragraph: [
             [
               {
                 text: 'Intinya, ',

@@ -17,7 +17,7 @@ const DataArticle = {
       subInfo: {
         author: 'Rivo Bifa',
         linkProfile: DataLinkPage.author_rivoBifa,
-        timestamp: 'Rabu, 25 Januari 2022',
+        timestamp: 'Selasa, 25 Januari 2022',
         location: 'Jakarta',
       },
       content: [
