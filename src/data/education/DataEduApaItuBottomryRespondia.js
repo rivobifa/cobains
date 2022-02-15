@@ -895,7 +895,7 @@ const DataArticle = {
           ],
         },
         {
-          image: DataImageMindMap.arabianCaravan,
+          image: DataImage.arabianCaravan,
         },
       ],
     },
