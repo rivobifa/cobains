@@ -865,7 +865,7 @@ section .content a:focus-visible {
 }
 .body .page-container > section:nth-child(1) {
   margin-top: 0;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 @media (min-width: 1024px) {
   .body .page-container > section:nth-child(1) {
@@ -3024,13 +3024,7 @@ li.MuiMenuItem-root {
   padding-top: 8rem;
 }
 .page-container.page-education-item section.section-main {
-  padding-top: 2rem;
   padding-bottom: 3rem;
-}
-@media (min-width: 1024px) {
-  .page-container.page-education-item section.section-main {
-    padding-top: 4rem;
-  }
 }
 .page-container.page-education-item .content-container span {
   line-height: 1.8rem;

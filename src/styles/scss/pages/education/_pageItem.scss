@@ -6,12 +6,7 @@
   }
 
   section.section-main {
-    padding-top: 2rem;
     padding-bottom: 3rem;
-
-    @include mq(breakpoint(large)) {
-      padding-top: 4rem;
-    }
   }
 
   .content-container {
