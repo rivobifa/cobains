@@ -3069,6 +3069,7 @@ li.MuiMenuItem-root {
   border-radius: 4px;
 }
 .page-container.page-education-item .image-container {
+  margin: 1.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3156,7 +3157,6 @@ li.MuiMenuItem-root {
 }
 .page-container.page-education-item .image-wrapper {
   position: relative;
-  margin: 1rem 0;
   width: 18.75rem;
   display: flex;
   justify-content: center;
