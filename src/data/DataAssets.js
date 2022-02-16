@@ -181,7 +181,7 @@ export const DataImage = {
   ),
 };
 
-export const DataPreviewArticle = {
+export const DataPreviewArticleImage = {
   apaItuBottomryRespondia: <PAApaItuBottomryRespondia />,
   mengenalLebihDalamWholeLifeInsurance: (
     <PAMengenalLebihDalamWholeLifeInsurance />

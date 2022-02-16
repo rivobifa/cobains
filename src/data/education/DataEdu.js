@@ -1,7 +1,9 @@
 import * as GoIcons from 'react-icons/go';
-import ApaItuBottomryRespondia from './DataEduApaItuBottomryRespondia';
-import JenisProdukAsuransiJiwa from './DataEduJenisProdukAsuransiJiwa';
-import MengenalLebihDalamWholeLifeInsurance from './DataEduMengenalLebihDalamWholeLifeInsurance';
+import {
+  DPA_ApaItuBottomryRespondia,
+  DPA_JenisProdukAsuransiJiwa,
+  DPA_MengenalLebihDalamWholeLifeInsurance,
+} from './DataPreviewArticle';
 
 const DataEdu = {
   banner: {
@@ -31,16 +33,16 @@ const DataEdu = {
   },
   article: [
     {
-      path: MengenalLebihDalamWholeLifeInsurance.path,
-      content: MengenalLebihDalamWholeLifeInsurance.section[0],
+      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
+      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
     },
     {
-      path: JenisProdukAsuransiJiwa.path,
-      content: JenisProdukAsuransiJiwa.section[0],
+      path: DPA_JenisProdukAsuransiJiwa.path,
+      content: DPA_JenisProdukAsuransiJiwa.section[0],
     },
     {
-      path: ApaItuBottomryRespondia.path,
-      content: ApaItuBottomryRespondia.section[0],
+      path: DPA_ApaItuBottomryRespondia.path,
+      content: DPA_ApaItuBottomryRespondia.section[0],
     },
   ],
   disclaimer: {

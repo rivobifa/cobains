@@ -1,64 +1,12 @@
 import { DataLinkPage } from '../DataLink';
-import { DataPreviewArticle, DataImage, DataImageMindMap } from '../DataAssets';
+import { DataImage, DataImageMindMap } from '../DataAssets';
+import {
+  DPA_JenisProdukAsuransiJiwa,
+  DPA_MengenalLebihDalamWholeLifeInsurance,
+} from './DataPreviewArticle';
 
 const DataArticle = {
-  path: DataLinkPage.edu_apaItuBottomryRespondia,
   section: [
-    {
-      title: [
-        {
-          text: 'Apa itu ',
-        },
-        {
-          text: 'Bottomry',
-          type: 'bold-italic',
-        },
-        {
-          text: ' dan ',
-        },
-        {
-          text: 'Respondia',
-          type: 'bold-italic',
-        },
-        {
-          text: ' ?',
-        },
-      ],
-      subInfo: {
-        author: 'Rivo Bifa',
-        linkProfile: DataLinkPage.author_rivoBifa,
-        timestamp: 'Selasa, 18 Januari 2022',
-        location: 'Jakarta',
-      },
-      content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Artikel ini membahas tentang kontrak ',
-              },
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' dan kontrak ',
-              },
-              {
-                text: 'Respondia',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang dikenal oleh kalangan pelaku asuransi sebagai kontrak jadul dari praktik mirip asuransi.',
-              },
-            ],
-          ],
-        },
-        {
-          previewArticle: DataPreviewArticle.apaItuBottomryRespondia,
-        },
-      ],
-    },
     {
       content: [
         {
@@ -114,7 +62,7 @@ const DataArticle = {
                 text: ' maupun ',
               },
               {
-                text: 'Offline',
+                text: 'offline',
                 type: 'italic',
               },
               {
@@ -184,28 +132,14 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' keliru nantinya karena kekeliruan ini bisa jadi ',
+                text: ' keliru nantinya, karena kekeliruan ini bisa jadi ',
               },
               {
                 text: 'domino effect',
                 type: 'italic',
               },
               {
-                text: ', yang',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' ada abisnya kalau ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' diperbaiki. ',
+                text: ' yang tidak ada abisnya kalau tidak diperbaiki. ',
               },
               {
                 text: 'Yogss',
@@ -292,7 +226,7 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Dari definisi di atas kita bisa ngejabarin dalam ',
+                text: 'Dari definisi di atas, kita bisa ngejabarin dalam ',
               },
               {
                 text: 'human language',
@@ -306,7 +240,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' adalah sebuah kontrak di mana seseorang (Peminjam) meminjam uang untuk menggunakan kapalnya dengan jaminannya adalah kapalnya itu sendiri kepada orang lain (Pemberi pinjaman), dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan tadi, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang yang dipinjam tadi beserta bunga.',
+                text: ' adalah sebuah kontrak di mana seseorang (Peminjam) meminjam uang untuk menggunakan kapalnya dengan jaminannya adalah kapalnya itu sendiri kepada orang lain (Pemberi pinjaman), dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang yang dipinjam beserta bunga.',
               },
             ],
             [
@@ -359,7 +293,7 @@ const DataArticle = {
                 type: 'bold-italic',
               },
               {
-                text: ' merujuk pada “kapal” dan bisa kita bilang bahwa kapal yang menjadi jaminannya.',
+                text: ' merujuk pada “kapal” atau dengan kata lain kapal yang menjadi jaminannya.',
               },
             ],
           ],
@@ -371,57 +305,57 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Berbeda dengan zaman sekarang, praktik bisnis yang menggunakan barang yang dapat berpindah tempat sebagai jaminan, umumnya tidak memperbolehkan barang jaminan tersebut untuk digunakan, tapi tetap akan dirawat oleh si Pemberi pinjaman. Kita ambil contoh untuk ini adalah praktik gadai. Semisal ',
+                text: 'Berbeda dengan zaman sekarang, praktik bisnis yang menggunakan barang yang dapat berpindah tempat sebagai jaminan, umumnya tidak memperbolehkan barang jaminan tersebut untuk digunakan, tapi tetap akan dirawat oleh si Pemberi pinjaman. Kita ambil contoh untuk ini adalah praktik gadai. Semisal, ',
               },
               {
                 text: 'lo',
                 type: 'italic',
               },
               {
-                text: ' mau gadai motor, nah itu motor ',
+                text: ' mau gadai motor maka motor tersebut ',
               },
               {
                 text: 'nggak',
                 type: 'italic',
               },
               {
-                text: ' bisa ',
-              },
-              {
-                text: 'lo',
-                type: 'italic',
-              },
-              {
-                text: ' pakai selagi masih dalam periode gadai karena khawatir kalau digunakan nanti mengalami kemerosotan nilai (depresiasi). Untuk kasus ',
+                text: ' bisa digunakan selama masih dalam periode gadai karena khawatir kalau digunakan nanti mengalami kemerosotan nilai (depresiasi). Namun, untuk kasus ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' ini diperbolehkan menggunakan kapal walaupun kapal tersebut jaminannya.',
+                text: ' ini diperbolehkan menggunakan kapal walaupun kapal tersebut digunakan pula sebagai barang jaminan pada kontrak.',
               },
             ],
             [
               {
-                text: 'Walaupun begitu, tetep agak sedikit aneh ya. Ngapain orang minjem uang buat pake kapalnya tapi jaminannya kapal itu sendiri?',
+                text: 'Mungkin masih agak sedikit aneh ya. Kok ada sih orang minjem uang dengan jaminan kapal tapi untuk menggunakan kapalnya itu sendiri?',
               },
             ],
             [
               {
-                text: 'Ya mau gimana lagi karena biaya berlayar ',
+                text: 'Alasannya bisa bermacam-macam, salah satunya adalah karena biaya berlayar yang ',
               },
               {
                 text: 'nggak',
                 type: 'italic',
               },
               {
-                text: ' murah. Ada banyak komponen biaya seperti menggaji awak kapal, membeli stok pangan, apalagi kalau kapal itu rusak tengah jalan, nah loh. Selain itu, barangkali Peminjam mau, ia juga bisa membeli barang-barang dagangan dengan uang pinjamanya untuk di jual di tempat tujuan pelayaran. Hasil dagangan tersebut sebagian digunakan untuk membayar utang tersebut. Kalau gini berarti perlu tambahan modal dan sumbernya ya pinjaman itu tadi.',
+                text: ' murah. Peminjam membutuhkan modal tambahan karena terdapat banyak komponen biaya seperti menggaji awak kapal, membeli stok pangan, atau memperbaiki kerusakan/ menyelamatkan kapal pada saat di tengah perjalanan. Selain itu, Peminjam juga bisa membeli barang-barang dagangan dengan uang pinjamanya untuk di jual di tempat tujuan pelayaran. Hasil dagangan tersebut sebagian digunakan untuk membayar utang atas kontrak ',
+              },
+              {
+                text: 'Bottomry',
+                type: 'ins-term',
+              },
+              {
+                text: '.',
               },
             ],
             [
               {
-                text: 'Di sini kita bisa membuat kategori dari pihak yang berkepentingan di dalam kontrak ini, yaitu:',
+                text: 'Dalam praktiknya, terdapat pihak-pihak yang berkepentingan di dalam kontrak ini, yaitu:',
               },
             ],
           ],
@@ -477,21 +411,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' atau Nahkoda menjadi opsional karena bisa saja Pemilik kapal yang menjadi Nahkoda atau Pemilik kapal memberi tugas kepada orang lain untuk menjadi Nahkoda dari kapalnya atau ada orang yang memang berprofesi sebagai Nahkoda, tapi ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' punya kapal kemudian ia menyewa kapal orang lain. Kondisi ini mirip seperti supir taksi di mana Supir ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' selalu yang punya kendaraan tapi mungkin ia dipekerjakan oleh perusahaan taksi atau ia menyewa mobil untuk digunakan sebagai taksi.',
+                text: ' atau Nahkoda menjadi opsional karena bisa saja Pemilik kapal yang menjadi Nahkoda, atau Pemilik kapal memberi tugas kepada orang lain untuk menjadi Nahkoda dari kapalnya, atau ada orang yang memang berprofesi sebagai Nahkoda, tetapi menyewa kapal orang lain karena ia tidak punya kapal. Kondisi ini mirip seperti supir taksi di mana Supir tidak selalu yang mempunyai kendaraan, tapi mungkin ia dipekerjakan oleh perusahaan taksi, atau ia menyewa mobil untuk digunakan sebagai taksi.',
               },
             ],
             [
@@ -503,35 +423,35 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' dimana pun dan kapan pun, bahkan uang pinjamannya itu boleh dipakai bukan untuk menggunakan kapalnya. Hal ini jelas karena kapal itu milik dia jadi ya terserah dia. Di lain sisi, ',
+                text: ' di mana pun dan kapan pun, bahkan uang pinjamannya itu boleh dipakai bukan untuk menggunakan kapalnya. Hal ini jelas karena ia pemilik kapal jadi ya terserah dia. Di lain sisi, ',
               },
               {
-                text: 'The master nggak',
+                text: 'The master ',
                 type: 'italic',
               },
               {
-                text: ' boleh sembarangan buat kontrak ',
+                text: ' tidak bisa secara bebas membuat kontrak ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' karena dia bukan yang punya kapal. ',
+                text: ' karena dia bukan pemilik kapal. ',
               },
               {
-                text: 'The master nggak',
+                text: 'The master ',
                 type: 'italic',
               },
               {
-                text: ' boleh membuat kontrak ',
+                text: ' tidak boleh membuat kontrak ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' kalau:',
+                text: ' apabila:',
               },
             ],
           ],
@@ -552,14 +472,7 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Dia bisa berkomunikasi dengan Pemilik kapal. Dengan kata lain, ia ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' boleh membuat kontrak ',
+                text: 'Dia bisa berkomunikasi dengan Pemilik kapal. Dengan kata lain, ia tidak boleh membuat kontrak ',
               },
               {
                 text: 'Bottomry',
@@ -571,14 +484,7 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Dia bisa mendapatkan uang atau persediaan yang diperlukan atas kredit dirinya sendiri. Hal ini cukup jelas karena kapal bukan miliknya dan akan menjadi masalah yang lebih besar jika setelah kontrak berakhir kapal yang bukan miliknya itu di ambil oleh ',
-              },
-              {
-                text: 'The lender',
-                type: 'italic',
-              },
-              {
-                text: ' karena ia tidak bisa membayar utang.',
+                text: 'Dia bisa mendapatkan uang atau persediaan yang diperlukan atas kredit dirinya sendiri. Hal ini cukup jelas karena ia bukan pemilik kapal. Selain itu, akan menjadi masalah yang lebih besar jika setelah kontrak berakhir ia tidak bisa membayar utang.',
               },
             ],
           ],
@@ -601,7 +507,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' tapi cuma keadaan tertentu aja atau saat pinjaman benar-benar diperlukan untuk kelanjutan pelayaran yang aman. Tentu saja ',
+                text: ' tapi pada saat keadaan tertentu aja atau saat pinjaman benar-benar diperlukan untuk kelanjutan pelayaran yang aman. Tentu saja, ',
               },
               {
                 text: 'The lender',
@@ -613,14 +519,14 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Nah terus kalau kontrak ',
+                text: 'Setelah kontrak ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' udah dibuat, nantinya akan ada tiga keputusan, yaitu:',
+                text: ' dibuat, nantinya akan ada tiga keputusan, yaitu:',
               },
             ],
           ],
@@ -641,7 +547,7 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Apabila kapal tidak selamat tapi ',
+                text: 'Apabila kapal tidak selamat, tapi ',
               },
               {
                 text: 'The lender',
@@ -667,7 +573,7 @@ const DataArticle = {
             ],
             [
               {
-                text: 'Apabila kapal selamat, maka ',
+                text: 'Apabila kapal selamat maka ',
               },
               {
                 text: 'The borrower',
@@ -694,7 +600,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' di sini berarti apabila ',
+                text: ' secara harfiah memiliki arti "tanggung jawab pribadi". Hal ini mengartikan bahwa apabila ',
               },
               {
                 text: 'The borrower',
@@ -755,33 +661,26 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ', sedangkan Pemilik kapal tidak. Pemilik kapal cuma bertanggung jawab atas nilai dari kapal yang dijamin itu. Di lain sisi, kalau kontrak ',
+                text: ', sedangkan Pemilik kapal tidak. Pemilik kapal hanya bertanggung jawab atas nilai dari kapal yang dijamin itu. Di lain sisi, kalau kontrak ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: 'dibuat oleh Pemilik kapal ya sudah jelas dirinya juga menjadi jaminan ',
+                text: 'dibuat oleh Pemilik kapal ya sudah jelas dirinya juga ikut bertanggung jawab ',
               },
               {
                 text: '(personal liable)',
                 type: 'italic',
               },
               {
-                text: ' kalau ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' bisa bayar uang pinjaman beserta bunga.',
+                text: ' kalau tidak bisa membayar uang pinjaman beserta bunga.',
               },
             ],
             [
               {
-                text: 'Nah ini salah satu alasan kenapa ',
+                text: 'Nah, hal tersebut adalah salah satu alasan kenapa ',
               },
               {
                 text: 'The master nggak',
@@ -795,7 +694,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' sembarangan. ',
+                text: ' secara bebas. ',
               },
               {
                 text: 'The lender',
@@ -809,8 +708,16 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' bukan pemilik kapal. Selain itu, ',
+                text: ' bukan pemilik kapal sehingga tidak dapat dianggap sebagai kontrak ',
               },
+              {
+                text: 'Bottomry',
+                type: 'ins-term',
+              },
+              {
+                text: '. Selain itu, ',
+              },
+
               {
                 text: 'The master',
                 type: 'italic',
@@ -830,7 +737,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' adalah untuk menggunakan kapal atau sesuatu yang berkaitan dengan kapal dan bukan selain itu meskipun Pemilik kapal itu sendiri boleh menggunakan uang pinjamannya untuk hal lain karena memang itu kapal miliknya.',
+                text: ' adalah untuk menggunakan kapal atau sesuatu yang berkaitan dengan kapal dan bukan selain itu meskipun Pemilik kapal itu sendiri boleh menggunakan uang pinjamannya untuk hal lain karena memang ia pemiliknya.',
               },
             ],
             [
@@ -861,21 +768,14 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' selalu berupa kapal, melainkan dapat berupa apapun itu yang penting alat pengangkut. Bukti sejarah mencatat bahwa sebenarnya jalur darat adalah jalur transportasi pertama yang digunakan pada kontrak ',
+                text: ' tidak selalu berupa kapal, melainkan dapat berupa alat pengangkut lainnya. Bukti sejarah mencatat bahwa jalur darat adalah jalur transportasi pertama yang digunakan pada kontrak ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ', dimana pada waktu itu banyak pelancong atau pedagang dengan ',
+                text: ', di mana pada waktu itu banyak pelancong atau pedagang dengan ',
               },
               {
                 text: 'caravan',
@@ -1067,7 +967,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' mungkin mengharapkan kedatangan barang dagangan tersebut karena itu artinya barang tersebut tidak laku atau tidak ada yang mau membeli. Dalam beberapa kasus mungkin bisa terjadi, tapi umumnya barang dagangan akan terjual. Maka dari itu, ',
+                text: ' mungkin berharap barang tersebut tidak laku atau tidak ada yang mau membeli. Dalam beberapa kasus mungkin bisa terjadi, tapi umumnya barang dagangan akan terjual. Maka dari itu, ',
               },
               {
                 text: 'The lender',
@@ -1088,14 +988,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' ada harapan barang dagangan itu kembali atau ',
-              },
-              {
-                text: 'nggak',
-                type: 'italic',
-              },
-              {
-                text: ' kejual.',
+                text: ' ada harapan barang dagangan itu kembali.',
               },
             ],
             [
@@ -1135,23 +1028,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' barang dagangannya yang tidak laku tersebut.',
-              },
-            ],
-            [
-              {
-                text: 'Personal liable',
-                type: 'italic',
-              },
-              {
-                text: ' di sini juga tidak langsung menjadikan ',
-              },
-              {
-                text: 'The borrower',
-                type: 'italic',
-              },
-              {
-                text: ' atau keluarganya sebagai budak, melainkan ada tahapannya. ',
+                text: ' barang dagangannya yang tidak laku tersebut. Jika barang dagangan tersebut sudah terjual maka ',
               },
               {
                 text: 'The borrower',
@@ -1172,7 +1049,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: '. Kemudian Jika tetap tidak bisa, ',
+                text: '. Kemudian jika tetap tidak bisa atau tidak cukup, ',
               },
               {
                 text: 'The lender',
@@ -1219,7 +1096,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' akan kurang memungkinkan kalau cuma bergantung ke barang dagangan sehingga langsung melekat pada ',
+                text: ' akan kurang memungkinkan kalau hanya bergantung ke barang dagangan sehingga langsung melekat pada ',
               },
               {
                 text: 'personal liability',
@@ -1291,7 +1168,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' cuma boleh membuat kontrak pada saat-saat tertentu saja atau saat pinjaman benar benar dibutuhkan. Keputusan di ',
+                text: ' hanya boleh membuat kontrak pada saat-saat tertentu saja atau saat pinjaman benar benar dibutuhkan. Keputusan di ',
               },
               {
                 text: 'Respondia',
@@ -1305,7 +1182,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ', bedanya ada tambahan keputusan yaitu apabila kapal tidak selamat, hilang, atau hancur tapi ',
+                text: ', bedanya ada tambahan keputusan yaitu apabila kapal tidak selamat, hilang, atau hancur, tetapi ',
               },
               {
                 text: 'The borrower',
@@ -1377,6 +1254,16 @@ const DataArticle = {
                 text: 'Busk v Fearon',
                 type: 'italic',
               },
+              {
+                text: '. Dalam kontrak tersebut, Fearon  ',
+              },
+              {
+                text: '(The borrower)',
+                type: 'italic',
+              },
+              {
+                text: ' diwajibkan untuk membayar kembali pinjaman dengan  ',
+              },
             ],
           ],
         },
@@ -1398,7 +1285,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Walaupun kapalnya hilang atau rusak karena api, musuh, perang, atau kejadian serupa. Oiya, perlu dicatat bahwa ini semua tergantung pada kontrak yang disepakati sehingga dapat berbeda satu sama lain. Kontrak yang dijelaskan di sini adalah kontrak yang berlaku pada umumnya.',
+                text: 'Utang atas kontrak tersebut wajib dibayar walaupun kapalnya hilang atau rusak karena api, musuh, perang, atau kejadian serupa. Oiya, perlu dicatat bahwa ini semua tergantung pada kontrak yang disepakati sehingga dapat berbeda satu sama lain. Kontrak yang dijelaskan di sini adalah kontrak yang berlaku pada umumnya.',
               },
             ],
           ],
@@ -1469,30 +1356,33 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' yang kita kenal. Kalau mau tau jelasnya, ',
+                text: ' yang kita kenal.',
               },
-              {
-                text: 'lo',
-                type: 'italic',
-              },
-              {
-                text: ' bisa baca tulisan ',
-              },
-              {
-                text: 'gue',
-                type: 'italic',
-              },
-              {
-                text: ' yang membahas tentang ini di ',
-              },
-              {
-                text: 'Mengenal Lebih Dalam Sejarah Asuransi',
-                type: 'link-page',
-                path: DataLinkPage.edu_mengenalLebihDalamSejarahAsuransi,
-              },
-              {
-                text: '.',
-              },
+              // {
+              //   text: ' Kalau mau tau jelasnya, ',
+              // },
+              // {
+              //   text: 'lo',
+              //   type: 'italic',
+              // },
+              // {
+              //   text: ' bisa baca tulisan ',
+              // },
+              // {
+              //   text: 'gue',
+              //   type: 'italic',
+              // },
+              // {
+              //   text: ' yang membahas tentang ini di ',
+              // },
+              // {
+              //   text: 'Mengenal Lebih Dalam Sejarah Asuransi',
+              //   type: 'link-page',
+              //   path: DataLinkPage.edu_mengenalLebihDalamSejarahAsuransi,
+              // },
+              // {
+              //   text: '.',
+              // },
             ],
             [
               {
@@ -1530,7 +1420,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Udah kapalnya dirampok, hilang, hancur terus sampe rumah ditagih utang lagi, hadeh… Tapi ya ',
+                text: 'Udah kapalnya dirampok, hilang, hancur terus sampe rumah ditagih utang lagi, hadeh… Tapi ya, ',
               },
               {
                 text: 'agreement',
@@ -1545,14 +1435,45 @@ const DataArticle = {
                 path: 'https://www.history.com/topics/ancient-history/hammurabi',
               },
               {
-                text: ' sehingga menjadi ',
+                text: ' khususnya pada pasal 104 yang berbunyi:',
+              },
+            ],
+          ],
+        },
+        {
+          quote: {
+            content: [
+              {
+                text: '104. If a merchant give an agent corn, wool, oil, or any other goods to transport, the agent shall give a receipt for the amount, and compensate the merchant therefor. Then he shall obtain a receipt form the merchant for the money that he gives the merchant.',
+                type: 'italic',
+              },
+            ],
+            author: {
+              text: 'CODE OF HAMMURABI',
+              path: 'https://avalon.law.yale.edu/ancient/hamframe.asp',
+            },
+          },
+        },
+        {
+          paragraph: [
+            [
+              {
+                text: 'Sejak saat itu, perjanjian ini menjadi ',
               },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' yang kita kenal.',
+                text: ' dan ',
+              },
+              {
+                text: 'Respondia',
+                type: 'ins-term',
+              },
+
+              {
+                text: ' yang kita kenal dan berkembang menjadi asuransi modern hingga sekarang.',
               },
             ],
           ],
@@ -1615,7 +1536,7 @@ const DataArticle = {
                 type: 'bold-italic',
               },
               {
-                text: '. Berbeda dengan kontrak jadul, dalam ',
+                text: '. Berbeda dengan kontrak mirip asuransi, dalam ',
               },
               {
                 text: 'Bottomry',
@@ -1629,7 +1550,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ' dikenal ',
+                text: ' dikenal istilah ',
               },
               {
                 text: 'should be exposed to the perils of the sea (the risk)',
@@ -1643,7 +1564,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' harus menghabiskan pinjamannya untuk melakukan pelayaran atau perjalanan, baik itu membeli barang dagangan, memperbaiki kapal, menyewa awak kapal, dan lain sebagainya yang pasti akan berhadapan dengan risiko-risiko dalam perjalanan itu sendiri, seperti ombak laut, kebakaran, perampokan, dan lain-lain. Jika tidak berhadapan dengan risiko maka itu dianggap sebagai kontrak pinjaman biasa.',
+                text: ' harus menghabiskan pinjamannya untuk melakukan pelayaran atau perjalanan, baik itu membeli barang dagangan, memperbaiki kapal, menyewa awak kapal, dan lain sebagainya yang pasti akan berhadapan dengan risiko-risiko dalam perjalanan itu sendiri, seperti ombak laut, kebakaran, perampokan, dan lain-lain. Jika tidak berhadapan dengan risiko maka dianggap sebagai kontrak pinjaman biasa.',
               },
             ],
             [
@@ -1669,7 +1590,21 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ', begitu juga dengan risiko yang ada pada Tertanggung (nasabah asuransi) yang akan dialihkan ke Perusahaan asuransi. Namun, risiko pada masa itu hanya terkonsentrasi pada ',
+                text: ', begitu juga dengan risiko yang ada pada Tertanggung (nasabah asuransi) yang akan dialihkan ke Perusahaan asuransi. Namun, risiko pada kontrak ',
+              },
+              {
+                text: 'Bottomry',
+                type: 'ins-term',
+              },
+              {
+                text: ' dan ',
+              },
+              {
+                text: 'Respondia',
+                type: 'ins-term',
+              },
+              {
+                text: ' hanya terkonsentrasi pada ',
               },
               {
                 text: 'Perils on The Sea & Perils of The Sea',
@@ -1703,17 +1638,9 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: ', kontrak ini memiliki cara kerja dimana “klaim” dibayarkan terlebih dahulu, kemudian “klaim” tersebut akan dikembalikan ditambah dengan “premi" jika risiko tidak terjadi, tapi tidak akan dibayarkan jika risiko terjadi dan sesuai kontrak.',
+                text: ', kontrak ini memiliki cara kerja di mana “klaim” dibayarkan terlebih dahulu, kemudian “klaim” tersebut akan dikembalikan ditambah dengan “premi" jika risiko tidak terjadi, tapi tidak akan dibayarkan jika risiko terjadi dan sesuai kontrak.',
               },
             ],
-          ],
-        },
-        {
-          image:
-            DataImageMindMap.perbandinganBottomryRespondiaDenganAsuransiModern,
-        },
-        {
-          paragraph: [
             [
               {
                 text: '“Klaim” pada ',
@@ -1733,23 +1660,17 @@ const DataArticle = {
                 text: ' merujuk pada uang pinjaman, sedangkan “premi” merujuk pada tambahan bunga yang berlaku. Nah biar mudah pahaminnya, coba liat gambar di bawah ini.',
               },
             ],
+          ],
+        },
+        {
+          image:
+            DataImageMindMap.perbandinganBottomryRespondiaDenganAsuransiModern,
+        },
+        {
+          paragraph: [
             [
               {
-                text: 'Bagian yang terpenting dari asuransi modern atau ',
-              },
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' dan ',
-              },
-              {
-                text: 'Respondia',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah keduanya diwajibkan untuk melekatkan klausul (peraturan) sejelas mungkin dalam kontraknya supaya kalau terjadi ',
+                text: 'Bagian yang terpenting dari asuransi modern dan praktik mirip asuransi adalah keduanya diwajibkan untuk melekatkan klausul (peraturan) sejelas mungkin dalam kontraknya. Hal ini bertujuan apabila terjadi ',
               },
               {
                 text: 'despute',
@@ -1770,7 +1691,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' maka dapat cepat terselesaikan dengan baik. Contoh kasus gue ambil dari ',
+                text: ' maka dapat terselesaikan dengan baik dan cepat. Contoh kasus gue ambil dari ',
               },
               {
                 text: 'Busk v Fearon and Others',
@@ -1876,43 +1797,15 @@ export const DataPreviewSideContent = {
   ],
   content: [
     {
-      title: [
-        {
-          text: 'Jenis Produk Asuransi Jiwa',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
-      },
+      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
+      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
     },
     {
-      title: [
-        {
-          text: 'Endowment Insurance ',
-        },
-        {
-          text: 'vs',
-          type: 'bold',
-        },
-        {
-          text: ' Whole Life Insurance',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_endowmentInsuranceVsWholeLifeInsurance,
-      },
+      path: DPA_JenisProdukAsuransiJiwa.path,
+      content: DPA_JenisProdukAsuransiJiwa.section[0],
     },
   ],
+  button: {
+    text: 'Baca Selengkapnya',
+  },
 };

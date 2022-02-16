@@ -1,61 +1,11 @@
 import { DataLinkPage } from '../DataLink';
-import { DataPreviewArticle } from '../DataAssets';
+import {
+  DPA_ApaItuBottomryRespondia,
+  DPA_JenisProdukAsuransiJiwa,
+} from './DataPreviewArticle';
 
 const DataArticle = {
-  path: DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance,
   section: [
-    {
-      title: [
-        {
-          text: 'Mengenal Lebih Dalam ',
-        },
-        {
-          text: 'Whole Life Insurance',
-          type: 'bold-italic',
-        },
-      ],
-      subInfo: {
-        author: 'Rivo Bifa',
-        linkProfile: DataLinkPage.author_rivoBifa,
-        timestamp: 'Selasa, 25 Januari 2022',
-        location: 'Jakarta',
-      },
-      content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Artikel ini akan membahas bagaimana produk ',
-              },
-              {
-                text: 'Whole Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' digunakan serta hubungannya dengan tabel mortalita yang menyebabkan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' dari produk ',
-              },
-
-              {
-                text: 'Whole Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' tidak selalu diberikan sebagai santunan kepada ahli waris yang ditinggalkan.',
-              },
-            ],
-          ],
-          previewArticle:
-            DataPreviewArticle.mengenalLebihDalamWholeLifeInsurance,
-        },
-      ],
-    },
     {
       content: [
         {
@@ -419,43 +369,15 @@ export const DataPreviewSideContent = {
   ],
   content: [
     {
-      title: [
-        {
-          text: 'Jenis Produk Asuransi Jiwa',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
-      },
+      path: DPA_JenisProdukAsuransiJiwa.path,
+      content: DPA_JenisProdukAsuransiJiwa.section[0],
     },
     {
-      title: [
-        {
-          text: 'Endowment Insurance ',
-        },
-        {
-          text: 'vs',
-          type: 'bold',
-        },
-        {
-          text: ' Whole Life Insurance',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_endowmentInsuranceVsWholeLifeInsurance,
-      },
+      path: DPA_ApaItuBottomryRespondia.path,
+      content: DPA_ApaItuBottomryRespondia.section[0],
     },
   ],
+  button: {
+    text: 'Baca Selengkapnya',
+  },
 };

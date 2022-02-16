@@ -117,10 +117,15 @@ export const SubInfo = ({ data }) => {
   );
 };
 
-export const Content = ({ data, previewArticle, scrollToConclusion }) => {
+export const Content = ({
+  data,
+  previewArticle,
+  scrollToConclusion,
+  className,
+}) => {
   return data.map((content, i) => {
     return (
-      <div key={i}>
+      <div key={i} className={className}>
         {content.paragraph && <Paragraph data={content.paragraph} />}
         {content.list && <List data={content.list} />}
         {content.quote && <Quote data={content.quote} />}

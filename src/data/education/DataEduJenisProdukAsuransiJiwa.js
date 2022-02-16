@@ -1,65 +1,11 @@
 import { DataLinkPage } from '../DataLink';
+import {
+  DPA_ApaItuBottomryRespondia,
+  DPA_MengenalLebihDalamWholeLifeInsurance,
+} from './DataPreviewArticle';
 
 const DataArticle = {
-  path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
   section: [
-    {
-      title: [
-        {
-          text: 'Jenis Produk Asuransi Jiwa',
-        },
-      ],
-      subInfo: {
-        author: 'Rivo Bifa',
-        linkProfile: DataLinkPage.author_rivoBifa,
-        timestamp: 'Selasa, 25 Januari 2022',
-        location: 'Jakarta',
-      },
-      content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Artikel ini akan membahas tentang jenis-jenis produk dasar pada asuransi jiwa yaitu ',
-              },
-              {
-                text: 'Pure Endowment',
-                type: 'ins-term',
-              },
-              {
-                text: ', ',
-              },
-              {
-                text: 'Term Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ', ',
-              },
-
-              {
-                text: 'Whole Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ', dan ',
-              },
-
-              {
-                text: 'Endowment Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' dengan menggunakan definisi dari para ahli asuransi yang akan menambah wawasan kita semua.',
-              },
-            ],
-          ],
-        },
-        {
-          image: [],
-        },
-      ],
-    },
     {
       title: [
         {
@@ -1009,43 +955,15 @@ export const DataPreviewSideContent = {
   ],
   content: [
     {
-      title: [
-        {
-          text: 'Jenis Produk Asuransi Jiwa',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
-      },
+      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
+      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
     },
     {
-      title: [
-        {
-          text: 'Endowment Insurance ',
-        },
-        {
-          text: 'vs',
-          type: 'bold',
-        },
-        {
-          text: ' Whole Life Insurance',
-        },
-      ],
-      content: [
-        {
-          text: 'Lorem ipsum dolor sit amet. Placerat accumsan arcu, massa sit. Ali uet eget consectetur adi...',
-        },
-      ],
-      button: {
-        text: 'Baca Selengkapnya',
-        path: DataLinkPage.edu_endowmentInsuranceVsWholeLifeInsurance,
-      },
+      path: DPA_ApaItuBottomryRespondia.path,
+      content: DPA_ApaItuBottomryRespondia.section[0],
     },
   ],
+  button: {
+    text: 'Baca Selengkapnya',
+  },
 };
