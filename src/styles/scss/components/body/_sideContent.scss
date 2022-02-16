@@ -170,6 +170,17 @@
           text-decoration: underline;
         }
       }
+
+      .content-paragraph {
+        margin: 0;
+        height: 1rem * (1.6 * 3);
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 }

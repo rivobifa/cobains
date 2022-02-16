@@ -1117,6 +1117,16 @@ section .content a:focus-visible {
   background: none;
   text-decoration: underline;
 }
+.side-content .preview-content .content-paragraph {
+  margin: 0;
+  height: 4.8rem;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .loader {
   width: 3rem;
