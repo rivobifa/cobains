@@ -1,6 +1,8 @@
-import { useState } from 'react';
-import { IconContext } from 'react-icons';
-import * as BiIcons from 'react-icons/bi';
+import {
+  WrapperImage,
+  WrapperIllustration,
+  WrapperIconSocmed,
+} from './DataAssetsWrapper';
 
 import { ReactComponent as IconLinkedin } from '../assets/icon/linkedin.svg';
 import { ReactComponent as IconInstagram } from '../assets/icon/instagram.svg';
@@ -30,70 +32,7 @@ import AncientGreekPirates from '../assets/image/acient-greek-pirates.jpg';
 import PersonalLiability from '../assets/image/personal-liability.jpg';
 import StormAtSea from '../assets/image/storm-at-sea.jpg';
 import GoodsRespondia from '../assets/image/goods-respondentia.png';
-
-export const WrapperImage = ({
-  data,
-  className,
-  title,
-  caption,
-  captionIllustration,
-  source,
-  original,
-}) => {
-  const [imageOverlay, setImageOverlay] = useState(false);
-  const toggleImageOverlay = () => {
-    setImageOverlay((show) => !show);
-  };
-
-  const illustration = 'Ilustrasi';
-
-  return (
-    <div
-      title={
-        captionIllustration
-          ? `${illustration} ${title || caption}`
-          : title || caption
-      }
-      className={`image-wrapper image-mind-map ${className} ${
-        imageOverlay ? 'overlay' : ''
-      }`}
-    >
-      <img
-        className='image'
-        src={data}
-        alt={
-          captionIllustration
-            ? `${illustration} ${title || caption}`
-            : title || caption
-        }
-      />
-      <button className='image-button' onClick={toggleImageOverlay}>
-        <IconContext.Provider value={{ className: 'icon' }}>
-          {imageOverlay ? (
-            <BiIcons.BiExitFullscreen />
-          ) : (
-            <BiIcons.BiFullscreen />
-          )}
-        </IconContext.Provider>
-      </button>
-      <div className='image-text'>
-        <div className='image-ornament'></div>
-        <h3 className='image-caption'>
-          {captionIllustration ? (
-            <>
-              {illustration} {caption}
-            </>
-          ) : (
-            caption
-          )}
-        </h3>
-        <small className='image-source'>
-          Sumber: <b>{source || (original && 'cobains.id') || '-'}</b>
-        </small>
-      </div>
-    </div>
-  );
-};
+import CodeTabletHammurabi from '../assets/image/law-code-tablet-of-king-hammurabi-from-nippur.jpg';
 
 export const DataImageMindMap = {
   bagaimanaKontrakBottomryDijalankan: (
@@ -179,6 +118,15 @@ export const DataImage = {
       caption='Barang Dagangan Respondia'
     />
   ),
+  codeTabletHammurabi: (
+    <WrapperImage
+      data={CodeTabletHammurabi}
+      className='code-tablet-hammurabi'
+      caption={<i>Law Code Tablet of King Hammurabi from Nippur</i>}
+      title='Law Code Tablet of King Hammurabi from Nippur'
+      source='Osama Shukir Muhammed Amin (CC BY-NC-SA)'
+    />
+  ),
 };
 
 export const DataPreviewArticleImage = {
@@ -186,14 +134,6 @@ export const DataPreviewArticleImage = {
   mengenalLebihDalamWholeLifeInsurance: (
     <PAMengenalLebihDalamWholeLifeInsurance />
   ),
-};
-
-export const WrapperIllustration = ({ data }) => {
-  return (
-    <div title='Powered by getIllustrations' className='illustration'>
-      {data}
-    </div>
-  );
 };
 
 export const DataIllustration = {
@@ -210,10 +150,6 @@ export const DataIllustration = {
   packageIndividual: (
     <WrapperIllustration data={<IllustrationPackageIndividual />} />
   ),
-};
-
-export const WrapperIconSocmed = (data, href) => {
-  return <a href={href}>{data}</a>;
 };
 
 export const DataIconSocMed = {

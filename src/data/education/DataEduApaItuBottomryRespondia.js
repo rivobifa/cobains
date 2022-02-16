@@ -844,7 +844,7 @@ const DataArticle = {
             ],
             author: {
               text: 'A TREATISE ON THE LAW OF MARINE INSURANCE, BOTTOMRY, AND RESPONDENTIA',
-              path: 'https://books.google.co.id/books?id=qKlXAAAAcAAJ&ots=6fT7daj7yc&dq=a%20treatise%20on%20the%20law%20of%20marine%20insurance%2C%20bottomry%2C%20and%20respondentia&lr&pg=PR1#v=onepage&q&f=false',
+              path: 'https://books.google.co.id/books?id=qKlXAAAAcAAJ&dq=a%20treatise%20on%20the%20law%20of%20marine%20insurance%2C%20bottomry%2C%20and%20respondentia&lr&pg=PA574#v=onepage&q&f=true',
             },
           },
         },
@@ -1248,44 +1248,7 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' selamat ya dia harus bertanggung jawab. Contoh kasus gue ambil dari ',
-              },
-              {
-                text: 'Busk v Fearon',
-                type: 'italic',
-              },
-              {
-                text: '. Dalam kontrak tersebut, Fearon  ',
-              },
-              {
-                text: '(The borrower)',
-                type: 'italic',
-              },
-              {
-                text: ' diwajibkan untuk membayar kembali pinjaman dengan  ',
-              },
-            ],
-          ],
-        },
-        {
-          quote: {
-            content: [
-              {
-                text: '...a proportional average on all goods carried out and acquired during the voyage which should be save...',
-                type: 'italic',
-              },
-            ],
-            author: {
-              text: 'Kontrak Respondia Busk v Fearon',
-              path: 'https://books.google.co.id/books?id=x_ZCAQAAMAAJ&lpg=PA63&ots=pO3ibOOB_B&dq=fearon%20and%20douglas%20respondentia&pg=PA63#v=onepage&q&f=true',
-            },
-          },
-        },
-        {
-          paragraph: [
-            [
-              {
-                text: 'Utang atas kontrak tersebut wajib dibayar walaupun kapalnya hilang atau rusak karena api, musuh, perang, atau kejadian serupa. Oiya, perlu dicatat bahwa ini semua tergantung pada kontrak yang disepakati sehingga dapat berbeda satu sama lain. Kontrak yang dijelaskan di sini adalah kontrak yang berlaku pada umumnya.',
+                text: ' selamat ya dia harus bertanggung jawab.',
               },
             ],
           ],
@@ -1358,31 +1321,31 @@ const DataArticle = {
               {
                 text: ' yang kita kenal.',
               },
-              // {
-              //   text: ' Kalau mau tau jelasnya, ',
-              // },
-              // {
-              //   text: 'lo',
-              //   type: 'italic',
-              // },
-              // {
-              //   text: ' bisa baca tulisan ',
-              // },
-              // {
-              //   text: 'gue',
-              //   type: 'italic',
-              // },
-              // {
-              //   text: ' yang membahas tentang ini di ',
-              // },
-              // {
-              //   text: 'Mengenal Lebih Dalam Sejarah Asuransi',
-              //   type: 'link-page',
-              //   path: DataLinkPage.edu_mengenalLebihDalamSejarahAsuransi,
-              // },
-              // {
-              //   text: '.',
-              // },
+              {
+                text: ' Kalau mau tau jelasnya, ',
+              },
+              {
+                text: 'lo',
+                type: 'italic',
+              },
+              {
+                text: ' bisa baca tulisan ',
+              },
+              {
+                text: 'gue',
+                type: 'italic',
+              },
+              {
+                text: ' yang membahas tentang ini di ',
+              },
+              {
+                text: 'Mengenal Lebih Dalam Sejarah Asuransi',
+                type: 'link-page',
+                path: DataLinkPage.edu_mengenalLebihDalamSejarahAsuransi,
+              },
+              {
+                text: '.',
+              },
             ],
             [
               {
@@ -1453,6 +1416,9 @@ const DataArticle = {
               path: 'https://avalon.law.yale.edu/ancient/hamframe.asp',
             },
           },
+        },
+        {
+          image: DataImage.codeTabletHammurabi,
         },
         {
           paragraph: [
@@ -1691,7 +1657,12 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' maka dapat terselesaikan dengan baik dan cepat. Contoh kasus gue ambil dari ',
+                text: ' maka dapat terselesaikan dengan baik dan cepat.',
+              },
+            ],
+            [
+              {
+                text: 'Contoh studi kasus gue ambil dari ',
               },
               {
                 text: 'Busk v Fearon and Others',
@@ -1721,7 +1692,40 @@ const DataArticle = {
                 type: 'italic',
               },
               {
-                text: ' gagal memiliki hak atas barang yang dibeli Fearon dari hasil pinjamannya karena Busk kurang teliti dan detail dalam membuat klausul pada kontrak.',
+                text: ' gagal memiliki hak atas barang yang dibeli Fearon ',
+              },
+              {
+                text: '(The borrower)',
+                type: 'italic',
+              },
+              {
+                text: ' dari hasil pinjamannya karena Busk kurang teliti dan detail dalam membuat klausul pada kontrak. Pengadilan memutuskan bahwa kontrak ',
+              },
+              {
+                text: 'Respondia',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang dibuat oleh kedua pihak seharusnya mencantumkan klausul yang detail terkait bagian dari hak jaminan yang dimiliki ',
+              },
+              {
+                text: 'The lender',
+                type: 'italic',
+              },
+              {
+                text: ' walaupun hal tersebut "dianggap" menjadi sifat alami dari sebuah kontrak ',
+              },
+              {
+                text: 'Respondia',
+                type: 'ins-term',
+              },
+              {
+                text: '. Pengadilan mengatakan bahwa sebuah kontrak harus ditafsirkan berdasarkan isi kontrak tersebut dan bukan berdasarkan sifat umum. Hal ini sebagai pertimbangan atas perbedaan hukum di berbagai wilayah dan perbedaan pengetahuan setiap orang akan sifat umum tersebut.',
+              },
+            ],
+            [
+              {
+                text: 'Oiya, perlu dicatat bahwa ini semua tergantung pada kontrak yang disepakati sehingga dapat berbeda satu sama lain. Kontrak yang dijelaskan di sini adalah kontrak yang berlaku pada umumnya.',
               },
             ],
           ],
