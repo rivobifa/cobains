@@ -1896,8 +1896,20 @@ section .content a:focus-visible {
   }
 }
 
-.page-calc-input .input-container {
+.page-calc-input section.input-container {
   padding-bottom: 3rem;
+}
+.page-calc-input section.input-container form > .input-toggle input + label:hover, .page-calc-input section.input-container form > .input-toggle input + label:focus-visible,
+.page-calc-input section.input-container form > .input-toggle input:checked + label:hover,
+.page-calc-input section.input-container form > .input-toggle input:checked + label:focus-visible {
+  background: rgba(222, 222, 222, 0.18);
+  color: #8559c0;
+  box-shadow: none;
+}
+.page-calc-input section.input-container form > .input-toggle input + label:focus-visible,
+.page-calc-input section.input-container form > .input-toggle input:checked + label:focus-visible {
+  outline: 2px solid #9e7acd;
+  box-shadow: none;
 }
 
 li.MuiMenuItem-root {
@@ -2116,15 +2128,6 @@ li.MuiMenuItem-root {
   border: none;
   background: white;
 }
-.input-container .input-toggle input:checked + label:hover, .input-container .input-toggle input:checked + label:focus-visible {
-  background: rgba(222, 222, 222, 0.18);
-  color: #8559c0;
-  box-shadow: none;
-}
-.input-container .input-toggle input:checked + label:focus-visible {
-  outline: 2px solid #9e7acd;
-  box-shadow: none;
-}
 .input-container input[type=submit],
 .input-container .input-toggle label {
   width: 100%;
@@ -2227,6 +2230,9 @@ li.MuiMenuItem-root {
 }
 .input-container .custom-mortality-table td input:hover, .input-container .custom-mortality-table td input:focus-visible {
   outline: none;
+}
+.input-container .custom-mortality-toggle-close label:hover, .input-container .custom-mortality-toggle-close label:focus-visible, .input-container .custom-mortality-toggle-open label:hover, .input-container .custom-mortality-toggle-open label:focus-visible {
+  transform: none;
 }
 .input-container .custom-mortality-toggle-close {
   margin: 3rem 0 2rem;

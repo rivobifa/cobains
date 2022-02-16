@@ -1,8 +1,19 @@
 @use '../../functions' as *;
 
 .page-calc-input {
-  .input-container {
+  section.input-container {
     padding-bottom: 3rem;
+
+    form > .input-toggle {
+      input,
+      input:checked {
+        & + label {
+          @include hvr-btn() {
+            box-shadow: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -265,10 +276,6 @@ li.MuiMenuItem-root {
           color: clr-primary(300);
           border: none;
           background: clr-neutral(100);
-
-          @include hvr-btn() {
-            box-shadow: none;
-          }
         }
       }
     }
@@ -397,6 +404,16 @@ li.MuiMenuItem-root {
     }
 
     &-toggle {
+      &-close,
+      &-open {
+        label {
+          &:hover,
+          &:focus-visible {
+            transform: none;
+          }
+        }
+      }
+
       &-close {
         margin: 3rem 0 2rem;
         display: flex;
