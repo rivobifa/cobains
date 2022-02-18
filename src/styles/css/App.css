@@ -609,6 +609,11 @@ section .content a:focus-visible {
   transition: opacity 0.3s ease-in-out;
   z-index: 100;
 }
+@media (min-width: 640px) {
+  .header .logo {
+    z-index: 0;
+  }
+}
 .header .logo-hide {
   opacity: 0;
 }

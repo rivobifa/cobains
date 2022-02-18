@@ -28,6 +28,10 @@
     transition: opacity 0.3s ease-in-out;
     z-index: 100;
 
+    @include mq(breakpoint(medium)) {
+      z-index: 0;
+    }
+
     &-hide {
       opacity: 0;
 
