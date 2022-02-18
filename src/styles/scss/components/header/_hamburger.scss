@@ -15,7 +15,8 @@
   border: 0;
   border-radius: 2rem;
   background: transparent;
-  transition: all 0.2s 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out 0.3s, background 0s linear;
+  z-index: 1;
 
   @include hvr-btn() {
   }

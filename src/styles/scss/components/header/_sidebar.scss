@@ -1,6 +1,8 @@
 @use '../../functions' as *;
 
 .navigation-side {
+  z-index: 100;
+
   @include mq(breakpoint(medium)) {
     display: none;
   }
@@ -67,10 +69,6 @@
     .active {
       background: rgba(clr-primary(100), 0.25);
 
-      &:hover {
-        background: clr-primary(300);
-      }
-
       .nav {
         &-icon,
         &-text {
@@ -79,6 +77,17 @@
 
         &-text {
           font-weight: 600;
+        }
+      }
+
+      &:hover {
+        background: clr-primary(300);
+
+        .nav {
+          &-icon,
+          &-text {
+            color: clr-neutral(100);
+          }
         }
       }
     }

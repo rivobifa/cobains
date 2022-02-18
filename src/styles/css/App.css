@@ -19,6 +19,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: -5rem;
   padding: 0 1rem;
   min-height: 100vh;
   min-width: 100%;
@@ -391,7 +392,8 @@ section .content a:focus-visible {
   border: 0;
   border-radius: 2rem;
   background: transparent;
-  transition: all 0.2s 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out 0.3s, background 0s linear;
+  z-index: 1;
 }
 .hamburger:hover, .hamburger:focus-visible {
   background: rgba(222, 222, 222, 0.18);
@@ -428,6 +430,9 @@ section .content a:focus-visible {
   transform: rotate(-45deg) translate(4px, 7px);
 }
 
+.navigation-side {
+  z-index: 100;
+}
 @media (min-width: 640px) {
   .navigation-side {
     display: none;
@@ -488,14 +493,17 @@ section .content a:focus-visible {
 .navigation-side .sidebar .active {
   background: rgba(214, 200, 234, 0.25);
 }
-.navigation-side .sidebar .active:hover {
-  background: #9e7acd;
-}
 .navigation-side .sidebar .active .nav-icon, .navigation-side .sidebar .active .nav-text {
   color: #8559c0;
 }
 .navigation-side .sidebar .active .nav-text {
   font-weight: 600;
+}
+.navigation-side .sidebar .active:hover {
+  background: #9e7acd;
+}
+.navigation-side .sidebar .active:hover .nav-icon, .navigation-side .sidebar .active:hover .nav-text {
+  color: white;
 }
 .navigation-side .sidebar.transition-none {
   transition: none;
