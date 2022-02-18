@@ -26,6 +26,7 @@
 .header {
   .logo {
     transition: opacity 0.3s ease-in-out;
+    z-index: 100;
 
     &-hide {
       opacity: 0;

@@ -67,26 +67,19 @@
     }
 
     .active {
-      background: rgba(clr-primary(100), 0.25);
-
-      .nav {
-        &-icon,
-        &-text {
-          color: clr-primary(400);
-        }
-
-        &-text {
-          font-weight: 600;
-        }
-      }
-
-      &:hover {
-        background: clr-primary(300);
+      &,
+      &:hover,
+      &:focus-visible {
+        background: rgba(clr-primary(100), 0.25);
 
         .nav {
           &-icon,
           &-text {
-            color: clr-neutral(100);
+            color: clr-primary(400);
+          }
+
+          &-text {
+            font-weight: 600;
           }
         }
       }

@@ -393,7 +393,6 @@ section .content a:focus-visible {
   border-radius: 2rem;
   background: transparent;
   transition: all 0.2s ease-in-out 0.3s, background 0s linear;
-  z-index: 1;
 }
 .hamburger:hover, .hamburger:focus-visible {
   background: rgba(222, 222, 222, 0.18);
@@ -490,20 +489,14 @@ section .content a:focus-visible {
   font-size: 1rem;
   font-weight: 500;
 }
-.navigation-side .sidebar .active {
+.navigation-side .sidebar .active, .navigation-side .sidebar .active:hover, .navigation-side .sidebar .active:focus-visible {
   background: rgba(214, 200, 234, 0.25);
 }
-.navigation-side .sidebar .active .nav-icon, .navigation-side .sidebar .active .nav-text {
+.navigation-side .sidebar .active .nav-icon, .navigation-side .sidebar .active .nav-text, .navigation-side .sidebar .active:hover .nav-icon, .navigation-side .sidebar .active:hover .nav-text, .navigation-side .sidebar .active:focus-visible .nav-icon, .navigation-side .sidebar .active:focus-visible .nav-text {
   color: #8559c0;
 }
-.navigation-side .sidebar .active .nav-text {
+.navigation-side .sidebar .active .nav-text, .navigation-side .sidebar .active:hover .nav-text, .navigation-side .sidebar .active:focus-visible .nav-text {
   font-weight: 600;
-}
-.navigation-side .sidebar .active:hover {
-  background: #9e7acd;
-}
-.navigation-side .sidebar .active:hover .nav-icon, .navigation-side .sidebar .active:hover .nav-text {
-  color: white;
 }
 .navigation-side .sidebar.transition-none {
   transition: none;
@@ -614,6 +607,7 @@ section .content a:focus-visible {
 
 .header .logo {
   transition: opacity 0.3s ease-in-out;
+  z-index: 100;
 }
 .header .logo-hide {
   opacity: 0;
