@@ -2,7 +2,7 @@ import Chart from 'react-apexcharts';
 import { DataLifeIns } from '../../data/DataLifeIns';
 
 const ChartMortality = () => {
-  interestReverse = DataLifeIns.bi7drr.map((val) => val).reverse();
+  const interestReverse = DataLifeIns.bi7drr.map((val) => val).reverse();
   
   let yaxis = interestReverse.map(({ interest }) => interest);
   let xaxis = interestReverse.map(({ date }) => date);
