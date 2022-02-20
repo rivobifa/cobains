@@ -2,6 +2,7 @@
 
 .page-container.page-404 {
   height: calc(100vh - 10rem);
+  min-height: 25rem;
   width: 100%;
   max-width: breakpoint(large);
 

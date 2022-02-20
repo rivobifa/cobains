@@ -14,26 +14,15 @@
 }
 
 .loader-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin-top: -5rem;
-  padding: 0 1rem;
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   z-index: 80;
-}
-@media (min-width: 1024px) {
-  .loader-overlay {
-    padding: 0 2rem;
-  }
 }
 
 ::selection {
@@ -2723,7 +2712,6 @@ li.MuiMenuItem-root {
 }
 @media (min-width: 375px) {
   .page-container.page-calc-result .button-regular {
-    margin: 0 0.5rem;
     width: auto;
   }
 }
@@ -3246,8 +3234,46 @@ li.MuiMenuItem-root {
   line-height: 1.75rem;
 }
 
+.page-container.page-about {
+  height: calc(100vh - 10rem);
+  min-height: 25rem;
+}
+.page-container.page-about section.section-main {
+  padding-bottom: 3rem;
+}
+.page-container.page-about .content-container span {
+  line-height: 1.8rem;
+}
+@media (min-width: 640px) {
+  .page-container.page-about .content-container span {
+    line-height: 2rem;
+  }
+}
+.page-container.page-about .content-container .title {
+  font-size: 1.8rem;
+}
+@media (min-width: 640px) {
+  .page-container.page-about .content-container .title {
+    font-size: 2rem;
+  }
+}
+.page-container.page-about .circle {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background: #9e7acd;
+}
+.page-container.page-about .circle-container {
+  margin-top: 2rem;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .page-container.page-404 {
   height: calc(100vh - 10rem);
+  min-height: 25rem;
   width: 100%;
   max-width: 1024px;
 }

@@ -1,0 +1,43 @@
+@use '../../functions' as *;
+
+.page-container.page-about {
+  height: calc(100vh - 10rem);
+  min-height: 25rem;
+
+  section.section-main {
+    padding-bottom: 3rem;
+  }
+
+  .content-container {
+    span {
+      line-height: 1.8rem;
+
+      @include mq(breakpoint(medium)) {
+        line-height: 2rem;
+      }
+    }
+
+    .title {
+      font-size: 1.8rem;
+
+      @include mq(breakpoint(medium)) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .circle {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background: clr-primary(300);
+
+    &-container {
+      margin-top: 2rem;
+      width: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
