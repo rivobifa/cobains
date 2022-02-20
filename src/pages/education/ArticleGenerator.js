@@ -36,7 +36,11 @@ const ArticleGenerator = ({
           </article>
         </section>
       </div>
-      <SideContent socmed reverse previewData={DataPreviewSideContent} />
+      <SideContent
+        // socmed
+        reverse
+        previewData={DataPreviewSideContent}
+      />
     </div>
   );
 };

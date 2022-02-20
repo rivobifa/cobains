@@ -18,7 +18,7 @@ const PageCalcInput = ({ setUserData }) => {
         <Input setUserData={setUserData} />
       </div>
       <SideContent
-        socmed
+        // socmed
         sideInfoData={DataInputCalc.sideInfo}
         normalLinkInfo
       />

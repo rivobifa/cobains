@@ -105,9 +105,10 @@ const PageCalcResult = ({ userData }) => {
             centeredSlides={screenWidth < breakpoint.medium}
             spaceBetween={screenWidth < breakpoint.medium ? 80 : 0}
             grabCursor={screenWidth < breakpoint.medium}
-            className={`slider-container ${
-              user.aPremium === true ? 'flex-reverse' : ''
-            }`}
+            className='slider-container'
+            // className={`slider-container ${
+            //   user.aPremium === true ? 'flex-reverse' : ''
+            // }`}
           >
             <SwiperSlide>
               {(user.tsi && <Card cost={cost} user={user} />) ||

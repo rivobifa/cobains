@@ -85,16 +85,6 @@ export const Card = ({ cost, user, installment, toggleButton }) => {
           </p>
         </div>
       </div>
-      {/* <div className='content-box-footer'>
-        <button className='button-card button-detail'>
-          {form.buttonCard.detailButton}
-        </button>
-        {toggleButton && (
-          <button className='button-card button-close' onClick={toggleButton}>
-            {form.buttonCard.closeButton}
-          </button>
-        )}
-      </div> */}
     </div>
   );
 };
