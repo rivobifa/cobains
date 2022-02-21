@@ -11,7 +11,14 @@ const DataAbout = {
           paragraph: [
             [
               {
-                text: 'Kami menyediakan tools dan literatur untuk kamu yang ingin belajar seputar asuransi. Di sini, kamu bisa memperdalam pengetahuan asuransi serta bereksperimen dengan premi neto asuransi (jiwa).',
+                text: 'Kami menyediakan ',
+              },
+              {
+                text: 'tools',
+                type: 'italic',
+              },
+              {
+                text: ' dan literatur untuk kamu yang ingin belajar seputar asuransi. Di sini, kamu bisa memperdalam pengetahuan asuransi serta bereksperimen dengan premi neto asuransi (jiwa).',
               },
             ],
           ],
