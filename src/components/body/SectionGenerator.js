@@ -173,35 +173,55 @@ export const Paragraph = ({ data }) => {
 };
 
 export const List = ({ data }) => {
-  return (
-    <ul className='content-list'>
-      {data.map((val, i) => {
-        return val.list ? (
-          val.list.map((value, i) => {
-            return (
-              <ul key={i} className='content-list'>
-                <li className='content-list-item'>
-                  <span className='content-list-text'>
-                    {value.map((text, i) => {
-                      return FormatText({ text, i });
-                    })}
-                  </span>
-                </li>
-              </ul>
-            );
-          })
-        ) : (
-          <li key={i} className='content-list-item'>
-            <span className='content-list-text'>
-              {val.map((text, i) => {
-                return FormatText({ text, i });
-              })}
-            </span>
-          </li>
-        );
-      })}
-    </ul>
-  );
+  const ListItem = ({ item, j }) => {
+    return (
+      <li key={j} className='content-list-item'>
+        <span className='content-list-text'>
+          {item.map((text, i) => {
+            return FormatText({ text, i });
+          })}
+        </span>
+      </li>
+    );
+  };
+
+  const Level2 = ({ item, i }) => {
+    if (item.list) {
+      return item.list.order ? (
+        <ol key={i} type={item.list.order} className='content-list'>
+          {item.list.content.map((value, i) => {
+            return <ListItem item={value} j={i} key={i} />;
+          })}
+        </ol>
+      ) : (
+        <ul key={i} className='content-list'>
+          {item.list.content.map((value, i) => {
+            return <ListItem item={value} j={i} key={i} />
+          })}
+        </ul>
+      );
+    } else {
+      return <ListItem item={item} j={i} key={i} />;
+    }
+  };
+
+  if (data.order) {
+    return (
+      <ol type={data.order} className='content-list'>
+        {data.content.map((val, i) => {
+          return <Level2 item={val} i={i} key={i} />;
+        })}
+      </ol>
+    );
+  } else {
+    return (
+      <ul className='content-list'>
+        {data.content.map((val, i) => {
+          return <Level2 item={val} i={i} key={i} />;
+        })}
+      </ul>
+    );
+  }
 };
 
 export const Quote = ({ data }) => {

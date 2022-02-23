@@ -584,46 +584,48 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Peserta meniggal pada saat periode pertanggungan berjalan yang nantinya ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' atau ',
-              },
-              {
-                text: 'Klaim',
-                type: 'ins-term',
-              },
-              {
-                text: ' akan diterima oleh ahli waris yang ditinggalkan, atau',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Peserta meniggal pada saat periode pertanggungan berjalan yang nantinya ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' atau ',
+                },
+                {
+                  text: 'Klaim',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' akan diterima oleh ahli waris yang ditinggalkan, atau',
+                },
+              ],
+              [
+                {
+                  text: 'Peserta masih hidup pada saat periode pertanggungan berakhir yang nantinya ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' atau ',
+                },
+                {
+                  text: 'Klaim',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' akan diterima langsung oleh Peserta.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Peserta masih hidup pada saat periode pertanggungan berakhir yang nantinya ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' atau ',
-              },
-              {
-                text: 'Klaim',
-                type: 'ins-term',
-              },
-              {
-                text: ' akan diterima langsung oleh Peserta.',
-              },
-            ],
-          ],
+          },
         },
         {
           paragraph: [
@@ -822,72 +824,74 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Pure Endowment',
-                type: 'ins-term',
-              },
-              {
-                text: ' merupakan produk asuransi jiwa dengan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang akan diterima jika Peserta masih hidup pada akhir periode.',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Pure Endowment',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' merupakan produk asuransi jiwa dengan ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' yang akan diterima jika Peserta masih hidup pada akhir periode.',
+                },
+              ],
+              [
+                {
+                  text: 'Term Life Insurance',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' merupakan produk asuransi jiwa dengan ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' yang akan diterima jika Peserta meninggal dalam periode.',
+                },
+              ],
+              [
+                {
+                  text: 'Whole Life Insurance',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' merupakan produk asuransi jiwa dengan ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' yang akan diterima jika Peserta meninggal (tanpa batas periode).',
+                },
+              ],
+              [
+                {
+                  text: 'Endowment Insurance',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' merupakan produk asuransi jiwa dengan ',
+                },
+                {
+                  text: 'Manfaat Asuransi',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' yang akan diterim jika Peserta meninggal dalam periode atau masih hidup pada akhir periode tersebut.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Term Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' merupakan produk asuransi jiwa dengan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang akan diterima jika Peserta meninggal dalam periode.',
-              },
-            ],
-            [
-              {
-                text: 'Whole Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' merupakan produk asuransi jiwa dengan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang akan diterima jika Peserta meninggal (tanpa batas periode).',
-              },
-            ],
-            [
-              {
-                text: 'Endowment Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' merupakan produk asuransi jiwa dengan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang akan diterim jika Peserta meninggal dalam periode atau masih hidup pada akhir periode tersebut.',
-              },
-            ],
-          ],
+          },
         },
         {
           paragraph: [

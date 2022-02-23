@@ -72,26 +72,28 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah kontrak pinjaman atas jaminan kapal.',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Bottomry',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' adalah kontrak pinjaman atas jaminan kapal.',
+                },
+              ],
+              [
+                {
+                  text: 'Respondia',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' adalah kontrak pinjaman atas jaminan barang dagangan.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Respondia',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah kontrak pinjaman atas jaminan barang dagangan.',
-              },
-            ],
-          ],
+          },
         },
         {
           paragraph: [
@@ -361,47 +363,53 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
+          list: {
+            content: [
+              [
+                {
+                  text: 'The borrower',
+                  type: 'italic',
+                },
+              ],
               {
-                text: 'The borrower',
-                type: 'italic',
+                list: {
+                  content: [
+                    [
+                      {
+                        text: 'Pemilik Kapal',
+                      },
+                    ],
+                    [
+                      {
+                        text: 'The master',
+                        type: 'italic',
+                      },
+                      {
+                        text: ' atau Nahkoda (jika ada/ opsional)',
+                      },
+                    ],
+                  ],
+                },
+              },
+              [
+                {
+                  text: 'The lender',
+                  type: 'italic',
+                },
+              ],
+              {
+                list: {
+                  content: [
+                    [
+                      {
+                        text: 'Pemberi Pinjaman',
+                      },
+                    ],
+                  ],
+                },
               },
             ],
-            {
-              list: [
-                [
-                  {
-                    text: 'Pemilik Kapal',
-                  },
-                ],
-                [
-                  {
-                    text: 'The master',
-                    type: 'italic',
-                  },
-                  {
-                    text: ' atau Nahkoda (jika ada/ opsional)',
-                  },
-                ],
-              ],
-            },
-            [
-              {
-                text: 'The lender',
-                type: 'italic',
-              },
-            ],
-            {
-              list: [
-                [
-                  {
-                    text: 'Pemberi Pinjaman',
-                  },
-                ],
-              ],
-            },
-          ],
+          },
         },
         {
           paragraph: [
@@ -457,37 +465,39 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Dia bisa memperoleh uang dengan cara lain. Sejak dulu memang sudah diajarkan untuk jauh-jauh dari utang piutang, tapi hal ini masih bisa ditolerir kalau dasar pernyataan ',
-              },
-              {
-                text: 'The master',
-                type: 'italic',
-              },
-              {
-                text: ' terbukti penting.',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Dia bisa memperoleh uang dengan cara lain. Sejak dulu memang sudah diajarkan untuk jauh-jauh dari utang piutang, tapi hal ini masih bisa ditolerir kalau dasar pernyataan ',
+                },
+                {
+                  text: 'The master',
+                  type: 'italic',
+                },
+                {
+                  text: ' terbukti penting.',
+                },
+              ],
+              [
+                {
+                  text: 'Dia bisa berkomunikasi dengan Pemilik kapal. Dengan kata lain, ia tidak boleh membuat kontrak ',
+                },
+                {
+                  text: 'Bottomry',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' di pelabuhan Pemilik kapal berada.',
+                },
+              ],
+              [
+                {
+                  text: 'Dia bisa mendapatkan uang atau persediaan yang diperlukan atas kredit dirinya sendiri. Hal ini cukup jelas karena ia bukan pemilik kapal. Selain itu, akan menjadi masalah yang lebih besar jika setelah kontrak berakhir ia tidak bisa membayar utang.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Dia bisa berkomunikasi dengan Pemilik kapal. Dengan kata lain, ia tidak boleh membuat kontrak ',
-              },
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' di pelabuhan Pemilik kapal berada.',
-              },
-            ],
-            [
-              {
-                text: 'Dia bisa mendapatkan uang atau persediaan yang diperlukan atas kredit dirinya sendiri. Hal ini cukup jelas karena ia bukan pemilik kapal. Selain itu, akan menjadi masalah yang lebih besar jika setelah kontrak berakhir ia tidak bisa membayar utang.',
-              },
-            ],
-          ],
+          },
         },
         {
           paragraph: [
@@ -532,65 +542,67 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Apabila kapal tidak selamat dan risiko penyebabnya termasuk atau tertulis dalam kontrak maka ',
-              },
-              {
-                text: 'The borrower',
-                type: 'italic',
-              },
-              {
-                text: ' otomatis terlepas dari utang.',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Apabila kapal tidak selamat dan risiko penyebabnya termasuk atau tertulis dalam kontrak maka ',
+                },
+                {
+                  text: 'The borrower',
+                  type: 'italic',
+                },
+                {
+                  text: ' otomatis terlepas dari utang.',
+                },
+              ],
+              [
+                {
+                  text: 'Apabila kapal tidak selamat, tapi ',
+                },
+                {
+                  text: 'The lender',
+                  type: 'italic',
+                },
+                {
+                  text: ' menganggap risiko penyebabnya tidak termasuk atau tidak tertulis dalam kontrak maka ',
+                },
+                {
+                  text: 'The borrower',
+                  type: 'italic',
+                },
+                {
+                  text: ' memiliki ',
+                },
+                {
+                  text: 'personal liable',
+                  type: 'italic',
+                },
+                {
+                  text: '.',
+                },
+              ],
+              [
+                {
+                  text: 'Apabila kapal selamat maka ',
+                },
+                {
+                  text: 'The borrower',
+                  type: 'italic',
+                },
+                {
+                  text: ' memiliki ',
+                },
+                {
+                  text: 'personal liable',
+                  type: 'italic',
+                },
+                {
+                  text: '.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Apabila kapal tidak selamat, tapi ',
-              },
-              {
-                text: 'The lender',
-                type: 'italic',
-              },
-              {
-                text: ' menganggap risiko penyebabnya tidak termasuk atau tidak tertulis dalam kontrak maka ',
-              },
-              {
-                text: 'The borrower',
-                type: 'italic',
-              },
-              {
-                text: ' memiliki ',
-              },
-              {
-                text: 'personal liable',
-                type: 'italic',
-              },
-              {
-                text: '.',
-              },
-            ],
-            [
-              {
-                text: 'Apabila kapal selamat maka ',
-              },
-              {
-                text: 'The borrower',
-                type: 'italic',
-              },
-              {
-                text: ' memiliki ',
-              },
-              {
-                text: 'personal liable',
-                type: 'italic',
-              },
-              {
-                text: '.',
-              },
-            ],
-          ],
+          },
         },
         {
           paragraph: [
@@ -1765,26 +1777,28 @@ const DataArticle = {
           ],
         },
         {
-          list: [
-            [
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah sebuah kontrak di mana seseorang meminjam uang untuk menggunakan kapalnya dengan jaminan kapalnya itu sendiri kepada orang lain, dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan tadi, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang tadi beserta bunga.',
-              },
+          list: {
+            content: [
+              [
+                {
+                  text: 'Bottomry',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' adalah sebuah kontrak di mana seseorang meminjam uang untuk menggunakan kapalnya dengan jaminan kapalnya itu sendiri kepada orang lain, dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan tadi, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang tadi beserta bunga.',
+                },
+              ],
+              [
+                {
+                  text: 'Respondia',
+                  type: 'ins-term',
+                },
+                {
+                  text: ' adalah sebuah kontrak di mana seseorang meminjam uang dengan jaminan barang-barang yang dimuat di kapal yang sudah seharusnya dijual dalam perjalanannya sehingga tanggung jawab pribadi menjadi jaminan utama dalam kontrak.',
+                },
+              ],
             ],
-            [
-              {
-                text: 'Respondia',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah sebuah kontrak di mana seseorang meminjam uang dengan jaminan barang-barang yang dimuat di kapal yang sudah seharusnya dijual dalam perjalanannya sehingga tanggung jawab pribadi menjadi jaminan utama dalam kontrak.',
-              },
-            ],
-          ],
+          },
         },
       ],
     },

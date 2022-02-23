@@ -116,27 +116,29 @@ export const SampleContent = [
         ],
       },
       {
-        list: [
-          [
-            {
-              text: 'first line i think',
-            },
+        list: {
+          content: [
+            [
+              {
+                text: 'first line i think',
+              },
+            ],
+            [
+              {
+                text: "then i'm a second with ",
+              },
+              {
+                text: 'underline text',
+                type: 'underline',
+              },
+            ],
+            [
+              {
+                text: 'okay, this is the last',
+              },
+            ],
           ],
-          [
-            {
-              text: "then i'm a second with ",
-            },
-            {
-              text: 'underline text',
-              type: 'underline',
-            },
-          ],
-          [
-            {
-              text: 'okay, this is the last',
-            },
-          ],
-        ],
+        },
       },
       {
         paragraph: [
@@ -212,27 +214,29 @@ export const SampleContent = [
         ],
       },
       {
-        list: [
-          [
-            {
-              text: 'first line i think',
-            },
+        list: {
+          content: [
+            [
+              {
+                text: 'first line i think',
+              },
+            ],
+            [
+              {
+                text: "then i'm a second with ",
+              },
+              {
+                text: 'underline text',
+                type: 'underline',
+              },
+            ],
+            [
+              {
+                text: 'okay, this is the last',
+              },
+            ],
           ],
-          [
-            {
-              text: "then i'm a second with ",
-            },
-            {
-              text: 'underline text',
-              type: 'underline',
-            },
-          ],
-          [
-            {
-              text: 'okay, this is the last',
-            },
-          ],
-        ],
+        },
       },
       {
         paragraph: [
