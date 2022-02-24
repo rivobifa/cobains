@@ -4,9 +4,11 @@ import {
   WrapperIconSocmed,
 } from './DataAssetsWrapper';
 
-import { ReactComponent as IconLinkedin } from '../assets/icon/linkedin.svg';
-import { ReactComponent as IconInstagram } from '../assets/icon/instagram.svg';
-import { ReactComponent as IconTwitter } from '../assets/icon/twitter.svg';
+import { ReactComponent as IconGithubWhite } from '../assets/icon/github-white.svg';
+import { ReactComponent as IconLinkedinWhite } from '../assets/icon/linkedin-white.svg';
+import { ReactComponent as IconTwitterWhite } from '../assets/icon/twitter-white.svg';
+
+import { ReactComponent as Logo } from '../assets/logo/logo-light.svg';
 
 import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/theme-1/exhaustedMan.svg';
 import { ReactComponent as IllustrationElderly } from '../assets/illustration/theme-1/elderly.svg';
@@ -152,14 +154,19 @@ export const DataIllustration = {
   ),
 };
 
+export const DataLogo = <Logo />;
+
 export const DataIconSocMed = {
-  linkedin: WrapperIconSocmed(
-    <IconLinkedin />,
+  githubWhite: WrapperIconSocmed(
+    <IconGithubWhite />,
+    'https://www.github.com/anotherbeef/cobains',
+  ),
+  linkedinWhite: WrapperIconSocmed(
+    <IconLinkedinWhite />,
     'https://www.linkedin.com/in/rivobifa',
   ),
-  instagram: WrapperIconSocmed(
-    <IconInstagram />,
-    'https://www.instagram.com/anotherbeef',
+  twitterWhite: WrapperIconSocmed(
+    <IconTwitterWhite />,
+    'https://www.twitter.com/rbifa_',
   ),
-  twitter: WrapperIconSocmed(<IconTwitter />, 'https://www.twitter.com/rbifa_'),
 };

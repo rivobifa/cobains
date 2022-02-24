@@ -17,7 +17,7 @@
   }
 
   .page-container {
-    padding: 5rem 0;
+    padding: 5rem 0 20rem;
 
     @include mq(breakpoint(large)) {
       max-width: 37.5rem;
