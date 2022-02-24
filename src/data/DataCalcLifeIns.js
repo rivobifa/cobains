@@ -300,7 +300,7 @@ export const DataInputCalc = {
 //       path: DataLinkPage.edu_netoVsBruto,
       type: 'link',
 //       path: 'https://www.ojk.go.id/id/kanal/iknb/regulasi/asuransi/peraturan-ojk/Documents/Pages/POJK-Nomor-23-Produk-Asuransi-Pemasaran-Produk-Asuransi/SALINAN-POJK%20Produk%20Asuransi%20.pdf',
-      psth: 'https://google.com',
+      path: 'https://google.com',
     },
     {
       text: '.',
