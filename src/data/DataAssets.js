@@ -8,7 +8,7 @@ import { ReactComponent as IconGithubWhite } from '../assets/icon/github-white.s
 import { ReactComponent as IconLinkedinWhite } from '../assets/icon/linkedin-white.svg';
 import { ReactComponent as IconTwitterWhite } from '../assets/icon/twitter-white.svg';
 
-import { ReactComponent as Logo } from '../assets/logo/logo-light.svg';
+import { ReactComponent as Logo } from '../assets/logo/logo_light.svg';
 
 import { ReactComponent as IllustrationPageNotFound } from '../assets/illustration/theme-1/exhaustedMan.svg';
 import { ReactComponent as IllustrationElderly } from '../assets/illustration/theme-1/elderly.svg';
