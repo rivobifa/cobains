@@ -8,9 +8,6 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root'),
-  app.use(
-    require('prerender-node').set('prerenderToken', '3d4Jx1xkEHP3d7WLRK73'),
-  ),
 );
 
 // If you want to start measuring performance in your app, pass a function

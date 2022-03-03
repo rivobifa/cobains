@@ -7,7 +7,11 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-container'>
         <div className='footer-text about'>
-          <p>{DataFooter[0].map((text, i) => FormatText({ text, i }))}</p>
+          <p>
+            {DataFooter[0].map((text, i) => (
+              <FormatText key={i} text={text} i={i} />
+            ))}
+          </p>
         </div>
         <div className='footer-socmed'>
           {DataIconSocMed.githubWhite}
@@ -16,7 +20,11 @@ const Footer = () => {
         </div>
         <div className='footer-logo'>{DataLogo}</div>
         <div className='footer-text copyright'>
-          <p>{DataFooter[1].map((text, i) => FormatText({ text, i }))}</p>
+          <p>
+            {DataFooter[1].map((text, i) => (
+              <FormatText key={i} text={text} i={i} />
+            ))}
+          </p>
         </div>
       </div>
     </div>
