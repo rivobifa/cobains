@@ -22,8 +22,8 @@ import { ReactComponent as IllustrationGadget } from '../assets/illustration/the
 import { ReactComponent as IllustrationPackageBundle } from '../assets/illustration/theme-1/analytics-3.svg';
 import { ReactComponent as IllustrationPackageIndividual } from '../assets/illustration/theme-1/shoppingWoman.svg';
 
-import { ReactComponent as PAApaItuBottomryRespondia } from '../assets/preview-article/pa_apa-itu-bottomry-respondia.svg';
-import { ReactComponent as PAMengenalLebihDalamWholeLifeInsurance } from '../assets/preview-article/pa_mengenal-lebih-dalam-whole-life-insurance.svg';
+import { ReactComponent as MetaApaItuBottomryRespondia } from '../assets/meta/meta_apa-itu-bottomry-respondia.svg';
+import { ReactComponent as MetaMengenalLebihDalamWholeLifeInsurance } from '../assets/meta/meta_mengenal-lebih-dalam-whole-life-insurance.svg';
 
 import MMBagaimanaKontrakBottomryDijalankan from '../assets/image/mind-map/bagaimana-kontrak-bottomry-dijalankan.png';
 import MMPerbandinganBottomryRespondiaDenganAsuransiModern from '../assets/image/mind-map/perbandingan-bottomry-respondia-dengan-asuransi-modern.png';
@@ -132,9 +132,9 @@ export const DataImage = {
 };
 
 export const DataPreviewArticleImage = {
-  apaItuBottomryRespondia: <PAApaItuBottomryRespondia />,
+  apaItuBottomryRespondia: <MetaApaItuBottomryRespondia />,
   mengenalLebihDalamWholeLifeInsurance: (
-    <PAMengenalLebihDalamWholeLifeInsurance />
+    <MetaMengenalLebihDalamWholeLifeInsurance />
   ),
 };
 
