@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { DataIllustration as illustration } from '../../data/DataAssets';
 import { DataHomeCalc } from '../../data/DataCalcLifeIns';
 import { RegularText } from '../../components/body/SectionGenerator';
