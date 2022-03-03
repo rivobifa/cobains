@@ -1,3 +1,4 @@
+import React from 'react';
 import Chart from 'react-apexcharts';
 import { DataLifeIns } from '../../data/DataLifeIns';
 import { DataFormInput as form } from '../../data/DataCalcLifeIns';
