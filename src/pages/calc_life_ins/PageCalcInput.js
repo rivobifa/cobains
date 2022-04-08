@@ -1,6 +1,5 @@
 import Input from './Input';
 import { DataInputCalc } from '../../data/DataCalcLifeIns';
-
 import {
   RegularText,
   WarningText,
@@ -18,9 +17,7 @@ const PageCalcInput = ({ setUserData }) => {
         <Input setUserData={setUserData} />
       </div>
       <SideContent
-        // socmed
         sideInfoData={DataInputCalc.sideInfo}
-        normalLinkInfo
       />
     </div>
   );
