@@ -318,8 +318,8 @@ export const DataInputCalc = {
     ],
     button: {
       text: 'Lihat Detail',
-      // path: DataLinkPage.edu_createAssumption,
-      path: 'http://gdurl.com/oS_L',
+      path: DataLinkPage.edu_createAssumption,
+      // path: 'http://gdurl.com/oS_L',
     },
   },
 };
