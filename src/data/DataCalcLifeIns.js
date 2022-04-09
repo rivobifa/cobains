@@ -296,8 +296,8 @@ export const DataInputCalc = {
     },
     {
       text: 'sini',
-//       type: 'link-page',
-//       path: DataLinkPage.edu_netoVsBruto,
+      //       type: 'link-page',
+      //       path: DataLinkPage.edu_netoVsBruto,
       type: 'link',
       path: 'https://www.ojk.go.id/id/kanal/iknb/regulasi/asuransi/peraturan-ojk/Documents/Pages/POJK-Nomor-23-Produk-Asuransi-Pemasaran-Produk-Asuransi/SALINAN-POJK%20Produk%20Asuransi%20.pdf',
     },
@@ -441,40 +441,6 @@ export const DataFormInput = {
       ],
     },
   },
-  tbp: {
-    name: 'tbp',
-    label: DataLabel.tbp,
-    class: 'input-tbp',
-    options: [
-      'Pilih waktu pembayaran manfaat',
-      'The end of the year of death',
-      'The moment of death',
-    ],
-    required: 'Waktu pembayaran manfaat tidak boleh kosong.',
-    info: {
-      name: 'info.tbp',
-      content: [
-        [
-          {
-            text: 'The end of the year of death',
-            type: 'bold-italic',
-          },
-          {
-            text: ' : Manfaat asuransi akan diterima seolah-olah kematian terjadi pada akhir tahun (31 Desember...).',
-          },
-        ],
-        [
-          {
-            text: 'The moment of death',
-            type: 'bold-italic',
-          },
-          {
-            text: ' : Manfaat asuransi akan diterima ketika kematian terjadi pada tanggal berapapun.',
-          },
-        ],
-      ],
-    },
-  },
   calc: {
     name: 'calc',
     label: DataLabel.calc,
@@ -589,6 +555,40 @@ export const DataFormInput = {
         [
           {
             text: 'Tingkat bunga dalam satuan persen (%)',
+          },
+        ],
+      ],
+    },
+  },
+  tbp: {
+    name: 'tbp',
+    label: DataLabel.tbp,
+    class: 'input-tbp',
+    options: [
+      'Pilih waktu pembayaran manfaat',
+      'The end of the year of death',
+      'The moment of death',
+    ],
+    // required: 'Waktu pembayaran manfaat tidak boleh kosong.',
+    info: {
+      name: 'info.tbp',
+      content: [
+        [
+          {
+            text: 'The end of the year of death',
+            type: 'bold-italic',
+          },
+          {
+            text: ' : Manfaat asuransi akan diterima seolah-olah kematian terjadi pada akhir tahun (31 Desember...).',
+          },
+        ],
+        [
+          {
+            text: 'The moment of death',
+            type: 'bold-italic',
+          },
+          {
+            text: ' : Manfaat asuransi akan diterima ketika kematian terjadi pada tanggal berapapun.',
           },
         ],
       ],

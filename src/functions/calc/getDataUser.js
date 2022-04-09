@@ -61,12 +61,17 @@ const getDataUser = ({ user }) => {
 
   if (!user.toggleAdv) {
     user.interest = '';
+    user.tbp = form.tbp.options[2];
     user.mortality = '';
     user.annuity = '';
     user.customMortality = '';
   } else {
     if (user.interest) {
       user.interest = parseFloat(user.interest) / 100;
+    }
+
+    if (!user.tbp) {
+      user.tbp = form.tbp.options[2];
     }
 
     if (user.mortality === form.mortality.options[3]) {

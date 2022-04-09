@@ -37,9 +37,9 @@ const Input = ({ setUserData }) => {
   });
 
   return (
-    <section className='input-container'>
-      <form onSubmit={handleSubmit(onSubmit)} autoComplete='off'>
-        <div className='input-control'>
+    <section className="input-container">
+      <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+        <div className="input-control">
           <InputSelect
             control={control}
             form={form.gender}
@@ -47,7 +47,7 @@ const Input = ({ setUserData }) => {
             dependence={user.gender}
           />
         </div>
-        <div className='input-control'>
+        <div className="input-control">
           <InputNumber
             control={control}
             form={form.age}
@@ -56,7 +56,7 @@ const Input = ({ setUserData }) => {
             dependenceInfo={user.info && user.info.age}
           />
         </div>
-        <div className='input-control'>
+        <div className="input-control">
           <InputSelect
             control={control}
             form={form.product}
@@ -68,13 +68,13 @@ const Input = ({ setUserData }) => {
             user.product === form.product.options[2] ||
             user.product === form.product.options[3] ||
             user.product === form.product.options[4]) && (
-            <div className='input-sub-container'>
-              <div className='input-sub-line' />
-              <div className='input-sub-box'>
+            <div className="input-sub-container">
+              <div className="input-sub-line" />
+              <div className="input-sub-box">
                 {(user.product === form.product.options[1] ||
                   user.product === form.product.options[2] ||
                   user.product === form.product.options[4]) && (
-                  <div className='input-sub'>
+                  <div className="input-sub">
                     <InputNumber
                       control={control}
                       form={form.period}
@@ -84,24 +84,11 @@ const Input = ({ setUserData }) => {
                     />
                   </div>
                 )}
-                {(user.product === form.product.options[2] ||
-                  user.product === form.product.options[3] ||
-                  user.product === form.product.options[4]) && (
-                  <div className='input-sub'>
-                    <InputSelect
-                      control={control}
-                      form={form.tbp}
-                      error={errors.tbp}
-                      dependence={user.tbp}
-                      dependenceInfo={user.info && user.info.tbp}
-                    />
-                  </div>
-                )}
               </div>
             </div>
           )}
         </div>
-        <div className='input-control'>
+        <div className="input-control">
           <InputSelect
             control={control}
             form={form.calc}
@@ -111,11 +98,11 @@ const Input = ({ setUserData }) => {
           />
           {(user.calc === form.calc.options[1] ||
             user.calc === form.calc.options[2]) && (
-            <div className='input-sub-container'>
-              <div className='input-sub-line' />
-              <div className='input-sub-box'>
+            <div className="input-sub-container">
+              <div className="input-sub-line" />
+              <div className="input-sub-box">
                 {user.calc === form.calc.options[1] && (
-                  <div className='input-sub'>
+                  <div className="input-sub">
                     <InputNumber
                       control={control}
                       form={form.tsi}
@@ -126,7 +113,7 @@ const Input = ({ setUserData }) => {
                 )}
                 {user.calc === form.calc.options[2] && (
                   <>
-                    <div className='input-sub'>
+                    <div className="input-sub">
                       <InputNumber
                         control={control}
                         form={form.premium}
@@ -136,7 +123,7 @@ const Input = ({ setUserData }) => {
                       />
                     </div>
                     {user.aPremium === true && (
-                      <div className='input-sub'>
+                      <div className="input-sub">
                         <InputNumber
                           control={control}
                           form={form.installment}
@@ -146,7 +133,7 @@ const Input = ({ setUserData }) => {
                         />
                       </div>
                     )}
-                    <div className='input-sub'>
+                    <div className="input-sub">
                       <InputCheckbox control={control} form={form.aPremium} />
                     </div>
                   </>
@@ -165,7 +152,7 @@ const Input = ({ setUserData }) => {
               complementary
             />
             {user.aPremium !== true && (
-              <div className='input-control'>
+              <div className="input-control">
                 <InputNumber
                   control={control}
                   form={form.installment}
@@ -175,7 +162,7 @@ const Input = ({ setUserData }) => {
                 />
               </div>
             )}
-            <div className='input-control'>
+            <div className="input-control">
               <InputNumber
                 control={control}
                 form={form.interest}
@@ -183,7 +170,20 @@ const Input = ({ setUserData }) => {
                 dependenceInfo={user.info && user.info.interest}
               />
             </div>
-            <div className='input-control'>
+            {(user.product === form.product.options[2] ||
+              user.product === form.product.options[3] ||
+              user.product === form.product.options[4]) && (
+              <div className="input-sub">
+                <InputSelect
+                  control={control}
+                  form={form.tbp}
+                  error={errors.tbp}
+                  dependence={user.tbp}
+                  dependenceInfo={user.info && user.info.tbp}
+                />
+              </div>
+            )}
+            <div className="input-control">
               <InputSelect
                 control={control}
                 form={form.mortality}
@@ -192,10 +192,10 @@ const Input = ({ setUserData }) => {
                 dependenceInfo={user.info && user.info.mortality}
               />
               {user.mortality === form.mortality.options[3] && (
-                <div className='input-sub-container'>
-                  <div className='input-sub-line' />
-                  <div className='input-sub-box'>
-                    <div className='input-sub'>
+                <div className="input-sub-container">
+                  <div className="input-sub-line" />
+                  <div className="input-sub-box">
+                    <div className="input-sub">
                       <CustomMortality
                         control={control}
                         setValue={setValue}
@@ -217,12 +217,12 @@ const Input = ({ setUserData }) => {
                         }
                       />
                     </div>
-                    <div className='input-sub'></div>
+                    <div className="input-sub"></div>
                   </div>
                 </div>
               )}
             </div>
-            <div className='input-control'>
+            <div className="input-control">
               <InputSelect
                 control={control}
                 form={form.annuity}

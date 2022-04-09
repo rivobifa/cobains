@@ -118,10 +118,6 @@ const getPairProduct = ({
     }
   }
   if (user.product === wholeLifeInsurance) {
-    if (!user.tbp) {
-      alert('Wah masih ada kolom yang kosong nih, diisi ya!');
-      return;
-    }
     if (user.tbp === EYD) {
       if (!user.annuity || user.annuity === annuityDue) {
         product = {
