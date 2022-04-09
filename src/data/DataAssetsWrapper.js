@@ -38,7 +38,7 @@ export const WrapperImage = ({
       }`}
     >
       <img
-        className='image'
+        className="image"
         src={data}
         alt={
           captionIllustration
@@ -46,7 +46,7 @@ export const WrapperImage = ({
             : title || caption
         }
       />
-      <button className='image-button' onClick={toggleImageOverlay}>
+      <button className="image-button" onClick={toggleImageOverlay}>
         <IconContext.Provider value={{ className: 'icon' }}>
           {imageOverlay ? (
             <BiIcons.BiExitFullscreen />
@@ -55,9 +55,9 @@ export const WrapperImage = ({
           )}
         </IconContext.Provider>
       </button>
-      <div className='image-text'>
-        <div className='image-ornament'></div>
-        <h3 className='image-caption'>
+      <div className="image-text">
+        <div className="image-ornament"></div>
+        <h3 className="image-caption">
           {captionIllustration ? (
             <>
               {illustration} {caption}
@@ -66,7 +66,7 @@ export const WrapperImage = ({
             caption
           )}
         </h3>
-        <small className='image-source'>
+        <small className="image-source">
           Sumber: <b>{source || (original && 'cobains.id') || '-'}</b>
         </small>
       </div>
@@ -76,12 +76,16 @@ export const WrapperImage = ({
 
 export const WrapperIllustration = ({ data }) => {
   return (
-    <div title='Powered by getIllustrations' className='illustration'>
+    <div title="Powered by getIllustrations" className="illustration">
       {data}
     </div>
   );
 };
 
 export const WrapperIconSocmed = (data, href) => {
-  return <a href={href}>{data}</a>;
+  return (
+    <a href={href} target="_blank" rel="noreferrer">
+      {data}
+    </a>
+  );
 };

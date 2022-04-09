@@ -40,26 +40,26 @@ export const DataImageMindMap = {
   bagaimanaKontrakBottomryDijalankan: (
     <WrapperImage
       data={MMBagaimanaKontrakBottomryDijalankan}
-      className='bagaimana-kontrak-bottomry-dijalankan'
+      className="bagaimana-kontrak-bottomry-dijalankan"
       caption={
         <>
           Bagaimana Kontrak <i>Bottomry</i> Dijalankan
         </>
       }
-      title='Bagaimana Kontrak Bottomry Dijalankan'
+      title="Bagaimana Kontrak Bottomry Dijalankan"
       original
     />
   ),
   perbandinganBottomryRespondiaDenganAsuransiModern: (
     <WrapperImage
       data={MMPerbandinganBottomryRespondiaDenganAsuransiModern}
-      className='perbandingan-bottomry-respondia-dengan-asuransi-modern'
+      className="perbandingan-bottomry-respondia-dengan-asuransi-modern"
       caption={
         <>
           Perbandingan <i>Bottomry Respondia</i> dengan Asuransi Modern
         </>
       }
-      title='Perbandingan Bottomry Respondia dengan Asuransi Modern'
+      title="Perbandingan Bottomry Respondia dengan Asuransi Modern"
       original
     />
   ),
@@ -69,64 +69,64 @@ export const DataImage = {
   mesopotamiaShip: (
     <WrapperImage
       data={MesopotamiaShip}
-      className='mesopotamia-ship'
+      className="mesopotamia-ship"
       captionIllustration
-      caption='Kapal Kuno'
-      source='Ekspedisi Tigris - Untuk Membuktikan Kemungkinan Kontak Lintas Samudera Kuno'
+      caption="Kapal Kuno"
+      source="Ekspedisi Tigris - Untuk Membuktikan Kemungkinan Kontak Lintas Samudera Kuno"
     />
   ),
   arabianCaravan: (
     <WrapperImage
       data={ArabianCaravan}
-      className='arabian-caravan'
+      className="arabian-caravan"
       captionIllustration
-      caption='Karavan Arab'
-      source='Joseph Austin Banwell - Orientalist Painting'
+      caption="Karavan Arab"
+      source="Joseph Austin Banwell - Orientalist Painting"
     />
   ),
   ancientGreekPirates: (
     <WrapperImage
       data={AncientGreekPirates}
-      className='acient-greek-pirates'
+      className="acient-greek-pirates"
       captionIllustration
       caption={<i>Perils on The Sea (War)</i>}
-      title='Perils on The Sea (War)'
+      title="Perils on The Sea (War)"
     />
   ),
   personalLiability: (
     <WrapperImage
       data={PersonalLiability}
-      className='personal-liability'
+      className="personal-liability"
       captionIllustration
       caption={<i>Personal Liability</i>}
-      title='Personal Liability'
+      title="Personal Liability"
     />
   ),
   stormAtSea: (
     <WrapperImage
       data={StormAtSea}
-      className='storm-at-sea'
+      className="storm-at-sea"
       captionIllustration
       caption={<i>Perils on The Sea (Sea Storm)</i>}
-      title='Perils on The Sea (Sea Storm)'
-      source='Miguel Angel Estevez'
+      title="Perils on The Sea (Sea Storm)"
+      source="Miguel Angel Estevez"
     />
   ),
   goodsRespondia: (
     <WrapperImage
       data={GoodsRespondia}
-      className='goods-respondentia'
+      className="goods-respondentia"
       captionIllustration
-      caption='Barang Dagangan Respondia'
+      caption="Barang Dagangan Respondia"
     />
   ),
   codeTabletHammurabi: (
     <WrapperImage
       data={CodeTabletHammurabi}
-      className='code-tablet-hammurabi'
+      className="code-tablet-hammurabi"
       caption={<i>Law Code Tablet of King Hammurabi from Nippur</i>}
-      title='Law Code Tablet of King Hammurabi from Nippur'
-      source='Osama Shukir Muhammed Amin (CC BY-NC-SA)'
+      title="Law Code Tablet of King Hammurabi from Nippur"
+      source="Osama Shukir Muhammed Amin (CC BY-NC-SA)"
     />
   ),
 };
@@ -159,14 +159,14 @@ export const DataLogo = <Logo />;
 export const DataIconSocMed = {
   githubWhite: WrapperIconSocmed(
     <IconGithubWhite />,
-    'https://www.github.com/anotherbeef/cobains',
+    'https://www.github.com/anotherbeef/cobains/'
   ),
   linkedinWhite: WrapperIconSocmed(
     <IconLinkedinWhite />,
-    'https://www.linkedin.com/in/rivobifa',
+    'https://www.linkedin.com/company/cobains-id/'
   ),
   twitterWhite: WrapperIconSocmed(
     <IconTwitterWhite />,
-    'https://www.twitter.com/rbifa_',
+    'https://www.twitter.com/rbifa_/'
   ),
 };
