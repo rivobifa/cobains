@@ -1,10 +1,11 @@
-import { DataLinkPage } from '../DataLink';
+import { DataLinkPage } from '../../DataLink'
 import {
   DPA_ApaItuBottomryRespondia,
   DPA_JenisProdukAsuransiJiwa,
 } from './DataPreviewArticle';
 
-const DataArticle = {
+const DataArticle = 
+{
   section: [
     {
       content: [
@@ -12,7 +13,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Sebelumnya ',
+                text: 'Sebelumnya',
               },
               {
                 text: 'gue',

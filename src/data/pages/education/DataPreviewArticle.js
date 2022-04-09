@@ -1,5 +1,5 @@
-import { DataLinkPage } from '../DataLink';
-import { DataPreviewArticleImage as DPAImage } from '../DataAssets';
+import { DataLinkPage } from '../../DataLink';
+import { DataPreviewArticleImage as DPAImage } from '../../DataAssets';
 
 export const DPA_MengenalLebihDalamWholeLifeInsurance = {
   path: DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance,

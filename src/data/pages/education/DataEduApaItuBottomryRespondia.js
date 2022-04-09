@@ -1,5 +1,5 @@
-import { DataLinkPage } from '../DataLink';
-import { DataImage, DataImageMindMap } from '../DataAssets';
+import { DataLinkPage } from '../../DataLink';
+import { DataImage, DataImageMindMap } from '../../DataAssets';
 import {
   DPA_JenisProdukAsuransiJiwa,
   DPA_MengenalLebihDalamWholeLifeInsurance,

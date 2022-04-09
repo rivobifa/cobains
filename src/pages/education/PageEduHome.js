@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import DataEdu from '../../data/education/DataEdu';
+import DataEdu from '../../data/pages/education/DataEdu';
 import {
   RegularText,
   Title,

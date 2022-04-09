@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import SideContent from '../../components/body/SideContent';
 import { RegularText } from '../../components/body/SectionGenerator';
-import DataEdu from '../../data/education/DataEdu';
+import DataEdu from '../../data/pages/education/DataEdu';
 import { FormatText } from '../../functions/FormatText';
 
 const ArticleGenerator = ({

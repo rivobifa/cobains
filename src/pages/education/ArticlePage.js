@@ -3,16 +3,16 @@ import {
   DPA_ApaItuBottomryRespondia,
   DPA_JenisProdukAsuransiJiwa,
   DPA_MengenalLebihDalamWholeLifeInsurance,
-} from '../../data/education/DataPreviewArticle';
+} from '../../data/pages/education/DataPreviewArticle';
 import DataEduMengenalLebihDalamWholeLifeInsurance, {
   DataPreviewSideContent as DPSC_MengenalLebihDalamWholeLifeInsurance,
-} from '../../data/education/DataEduMengenalLebihDalamWholeLifeInsurance';
+} from '../../data/pages/education/DataEduMengenalLebihDalamWholeLifeInsurance';
 import DataEduJenisProdukAsuransiJiwa, {
   DataPreviewSideContent as DPSC_JenisProdukAsuransiJiwa,
-} from '../../data/education/DataEduJenisProdukAsuransiJiwa';
+} from '../../data/pages/education/DataEduJenisProdukAsuransiJiwa';
 import DataEduApaItuBottomryRespondia, {
   DataPreviewSideContent as DPSC_ApaItuBottomryRespondia,
-} from '../../data/education/DataEduApaItuBottomryRespondia';
+} from '../../data/pages/education/DataEduApaItuBottomryRespondia';
 
 export const MengenalLebihDalamWholeLifeInsurance = () => {
   const DataArticle = DataEduMengenalLebihDalamWholeLifeInsurance;

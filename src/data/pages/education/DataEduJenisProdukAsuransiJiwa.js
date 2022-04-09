@@ -1,5 +1,4 @@
-import { DataLinkPage } from '../DataLink';
-import {
+import { DataLinkPage } from '../../DataLink';import {
   DPA_ApaItuBottomryRespondia,
   DPA_MengenalLebihDalamWholeLifeInsurance,
 } from './DataPreviewArticle';
