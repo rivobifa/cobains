@@ -1,8 +1,8 @@
-import { DataResultCalc as form } from '../../data/DataCalcLifeIns';
+import { DataResultCalc as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const TableBi7drr = ({ iSeries }) => {
   return (
-    <div className='table-container table-bi7drr'>
+    <div className="table-container table-bi7drr">
       <table>
         <thead>
           <tr>

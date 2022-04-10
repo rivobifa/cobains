@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { DataIllustration as illustration } from '../../data/DataAssets';
-import { DataHomeCalc } from '../../data/DataCalcLifeIns';
+import { DataHomeCalc } from '../../data/pages/calc/DataCalcLifeIns';
 import { RegularText } from '../../components/body/SectionGenerator';
 import { Button } from '../../components/body/Button';
 import { IconContext } from 'react-icons';
@@ -22,9 +22,9 @@ const PageCalcHome = () => {
   const card = [cardLevel_1, cardLevel_2];
 
   return (
-    <div className='page-container page-calc-home'>
-      <section className='section-main'>
-        <div className='content-container'>
+    <div className="page-container page-calc-home">
+      <section className="section-main">
+        <div className="content-container">
           <RegularText data={DataHomeCalc.section[0]} />
           <Button
             regular={DataHomeCalc.section[0].button.regular}
@@ -35,9 +35,9 @@ const PageCalcHome = () => {
         </div>
         {illustration.gadget}
       </section>
-      <section ref={sectionSecond} className='section-second'>
+      <section ref={sectionSecond} className="section-second">
         <RegularText data={DataHomeCalc.section[1]} />
-        <div className='content-container-level'>
+        <div className="content-container-level">
           {screenWidth < breakpoint.large ? (
             <SwiperCustom
               pagination
@@ -54,7 +54,7 @@ const PageCalcHome = () => {
           ) : (
             card.map((val, i) => {
               return (
-                <div key={i} className='content-level'>
+                <div key={i} className="content-level">
                   {val.map((val, i) => {
                     return <CardBox key={i} value={val} />;
                   })}
@@ -64,8 +64,8 @@ const PageCalcHome = () => {
           )}
         </div>
       </section>
-      <section className='section-main section-third'>
-        <div className='content-container'>
+      <section className="section-main section-third">
+        <div className="content-container">
           <RegularText data={DataHomeCalc.section[2]} />
           <Button
             regular={DataHomeCalc.section[2].button.regular}
@@ -82,15 +82,15 @@ export default PageCalcHome;
 
 export const CardBox = ({ value }) => {
   return (
-    <div className='content-box'>
-      <div className='content-icon'>
+    <div className="content-box">
+      <div className="content-icon">
         <IconContext.Provider value={{ className: 'icon' }}>
           {value.icon}
         </IconContext.Provider>
       </div>
-      <div className='content-item'>
-        <h3 className='box-title'>{value.title}</h3>
-        <p className='box-desc'>
+      <div className="content-item">
+        <h3 className="box-title">{value.title}</h3>
+        <p className="box-desc">
           <span>{value.desc}</span>
         </p>
       </div>

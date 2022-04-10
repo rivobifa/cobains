@@ -1,5 +1,5 @@
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
-import { DataLifeIns } from '../../data/DataLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
+import { DataLifeIns } from '../../data/pages/calc/DataLifeIns';
 
 const getMortality = ({ user }) => {
   // Set database

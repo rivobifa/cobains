@@ -2,9 +2,10 @@ import { IconContext } from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
 import { Controller } from 'react-hook-form';
 import { InputCheckbox } from './FormInput';
-import { DataFormInput as formInput } from '../../data/DataCalcLifeIns';
-import { DataIMT4 } from '../../data/DataIMT4';
-import { DataIMT3 } from '../../data/DataIMT3';
+import { DataLifeIns } from '../../data/pages/calc/DataLifeIns';
+import { DataFormInput as formInput } from '../../data/pages/calc/DataCalcLifeIns';
+// import { DataIMT4 } from '../../data/DataIMT4';
+// import { DataIMT3 } from '../../data/DataIMT3';
 
 export const CustomMortality = ({
   control,
@@ -24,10 +25,10 @@ export const CustomMortality = ({
         complementary
       />
       {dependence && (
-        <div className='custom-mortality-overlay'>
-          <div className='custom-mortality-container'>
-            <div className='custom-mortality-header'>
-              <h3 className='title'>Custom Tabel Mortalita</h3>
+        <div className="custom-mortality-overlay">
+          <div className="custom-mortality-container">
+            <div className="custom-mortality-header">
+              <h3 className="title">Custom Tabel Mortalita</h3>
               <ToggleCustomMortalityOpen
                 control={control}
                 form={formInput.customMortality.toggleOpen}
@@ -35,19 +36,19 @@ export const CustomMortality = ({
                 complementary
               />
             </div>
-            <div className='custom-mortality-body'>
-              <div className='custom-mortality-template'>
+            <div className="custom-mortality-body">
+              <div className="custom-mortality-template">
                 <InputCheckbox
                   control={control}
                   form={formInput.customMortality.toggleTemplate}
                 />
                 {template && (
                   <>
-                    <div className='custom-mortality-template-input-container'>
-                      <div className='line' />
-                      <div className='custom-mortality-template-input-box'>
-                        <div className='custom-mortality-template-input-item'>
-                          <span className='custom-mortality-template-label'>
+                    <div className="custom-mortality-template-input-container">
+                      <div className="line" />
+                      <div className="custom-mortality-template-input-box">
+                        <div className="custom-mortality-template-input-item">
+                          <span className="custom-mortality-template-label">
                             Pilih Tabel
                           </span>
                           <div
@@ -65,8 +66,8 @@ export const CustomMortality = ({
                             />
                           </div>
                         </div>
-                        <div className='custom-mortality-template-input-item'>
-                          <span className='custom-mortality-template-label'>
+                        <div className="custom-mortality-template-input-item">
+                          <span className="custom-mortality-template-label">
                             Pilih Jenis Kelamin
                           </span>
                           <div
@@ -126,13 +127,13 @@ export const ToggleTemplateMortality = ({ control, form, dependence }) => {
               className={dependence === form.id ? 'active' : 'inactive'}
             >
               <input
-                type='radio'
+                type="radio"
                 name={form.name}
                 id={form.id}
                 value={form.id}
                 onChange={onChange}
               />
-              <span className='checkmark'></span>
+              <span className="checkmark"></span>
               {form.label}
             </label>
           </>
@@ -143,7 +144,7 @@ export const ToggleTemplateMortality = ({ control, form, dependence }) => {
 };
 export const ToggleTemplateMortalityApply = ({ control, setValue, form }) => {
   return (
-    <p className='apply'>
+    <p className="apply">
       <small>{form.text[0]} </small>
       <Controller
         name={form.name}
@@ -160,7 +161,7 @@ export const ToggleTemplateMortalityApply = ({ control, setValue, form }) => {
             <>
               <label htmlFor={form.name}>
                 {form.label}
-                <input type='checkbox' id={form.name} onChange={changeInput} />
+                <input type="checkbox" id={form.name} onChange={changeInput} />
               </label>
             </>
           );
@@ -187,10 +188,10 @@ export const ToggleCustomMortalitySubmit = ({ control, setValue, form }) => {
 
           return (
             <>
-              <label htmlFor={form.name} className='button-regular'>
+              <label htmlFor={form.name} className="button-regular">
                 {form.label}
               </label>
-              <input type='checkbox' id={form.name} onChange={changeInput} />
+              <input type="checkbox" id={form.name} onChange={changeInput} />
             </>
           );
         }}
@@ -228,7 +229,7 @@ export const ToggleCustomMortalityOpen = ({
                 )}
               </label>
               <input
-                type='checkbox'
+                type="checkbox"
                 id={form.name}
                 onChange={onChange}
                 defaultValue={value || undefined}
@@ -240,6 +241,9 @@ export const ToggleCustomMortalityOpen = ({
     </div>
   );
 };
+
+const DataIMT4 = DataLifeIns.imt4;
+const DataIMT3 = DataLifeIns.imt3;
 
 const TableCustomMortality = ({
   control,
@@ -282,8 +286,8 @@ const TableCustomMortality = ({
             }}
             render={({ field: { onChange, value } }) => (
               <input
-                type='number'
-                className='noscroll'
+                type="number"
+                className="noscroll"
                 onChange={onChange}
                 defaultValue={
                   value ||
@@ -308,12 +312,12 @@ const TableCustomMortality = ({
         <td className={error && error[i] && 'error'}>
           {error ? (error[i] ? error[i].message : '-') : '-'}
         </td>
-      </tr>,
+      </tr>
     );
   }
 
   return (
-    <table className='custom-mortality-table'>
+    <table className="custom-mortality-table">
       <thead>
         <tr>
           <th>Usia (x)</th>

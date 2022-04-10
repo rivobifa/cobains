@@ -2,12 +2,12 @@ import {
   DataResultCalc as form,
   DataFormInput as formInput,
   DataAdornment as adornment,
-} from '../../data/DataCalcLifeIns';
+} from '../../data/pages/calc/DataCalcLifeIns';
 import { getCommaSeparator } from '../../functions/FormatNumber';
 
 const TableSummary = ({ user }) => {
   return (
-    <div className='table-container table-summary'>
+    <div className="table-container table-summary">
       <table>
         <thead>
           <tr>

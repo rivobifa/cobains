@@ -1,6 +1,6 @@
 import Chart from 'react-apexcharts';
-import { DataLifeIns } from '../../data/DataLifeIns';
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
+import { DataLifeIns } from '../../data/pages/calc/DataLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const ChartMortality = ({ mortality, user }) => {
   const custom = form.mortality.options[3];
@@ -106,9 +106,9 @@ const ChartMortality = ({ mortality, user }) => {
     <Chart
       options={options}
       series={series}
-      type='line'
-      height='300'
-      width='100%'
+      type="line"
+      height="300"
+      width="100%"
     />
   );
 };

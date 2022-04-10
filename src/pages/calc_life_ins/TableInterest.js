@@ -1,8 +1,8 @@
-import { DataResultCalc as form } from '../../data/DataCalcLifeIns';
+import { DataResultCalc as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const TableInterest = ({ user, interest, discountFactor, forceOfInterest }) => {
   return (
-    <div className='table-container table-interest'>
+    <div className="table-container table-interest">
       <table>
         <thead>
           <tr>

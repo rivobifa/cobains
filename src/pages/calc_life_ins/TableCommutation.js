@@ -1,8 +1,8 @@
-import { DataResultCalc as form } from '../../data/DataCalcLifeIns';
+import { DataResultCalc as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const TableCommutation = ({ user, pairCommutation, installmentCard }) => {
   return (
-    <div className='table-container table-commutation'>
+    <div className="table-container table-commutation">
       <table>
         <thead>
           <tr>
@@ -10,7 +10,7 @@ const TableCommutation = ({ user, pairCommutation, installmentCard }) => {
               return (
                 <th key={i}>
                   {value}
-                  {i !== 0 && <small className='subscript'>x</small>}
+                  {i !== 0 && <small className="subscript">x</small>}
                 </th>
               );
             })}

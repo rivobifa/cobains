@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import getDataUser from './getDataUser';
 import getCalcLifeIns from './getCalcLifeIns';
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const useInput = ({ reset, user, setUserData }) => {
   // // Post data to server

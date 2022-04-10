@@ -1,4 +1,4 @@
-import { DataLinkPage } from './DataLink';
+import { DataLinkPage } from '../../DataLink';
 import * as AiIcons from 'react-icons/ai';
 import * as BiIcons from 'react-icons/bi';
 import * as MdIcons from 'react-icons/md';

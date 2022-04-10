@@ -1,9 +1,9 @@
 import Chart from 'react-apexcharts';
-import { DataLifeIns } from '../../data/DataLifeIns';
+import { DataLifeIns } from '../../data/pages/calc/DataLifeIns';
 
 const ChartMortality = () => {
   const interestReverse = DataLifeIns.bi7drr.map((val) => val).reverse();
-  
+
   let yaxis = interestReverse.map(({ interest }) => interest);
   let xaxis = interestReverse.map(({ date }) => date);
 
@@ -69,9 +69,9 @@ const ChartMortality = () => {
     <Chart
       options={options}
       series={series}
-      type='area'
-      height='300'
-      width='100%'
+      type="area"
+      height="300"
+      width="100%"
     />
   );
 };

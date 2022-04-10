@@ -1,4 +1,4 @@
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const getCost = ({ pairProduct, user }) => {
   // Set data from server

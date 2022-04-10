@@ -1,5 +1,10 @@
 export const DataBi7drr = [
   {
+    date: '17 March 2022',
+    interest: 0.035,
+    url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_248322.aspx',
+  },
+  {
     date: '10 February 2022',
     interest: 0.035,
     url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_244122.aspx',

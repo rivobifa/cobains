@@ -4,7 +4,7 @@ import {
   DataResultCalc,
   DataAdornment as adornment,
   DataLabel as label,
-} from '../../data/DataCalcLifeIns';
+} from '../../data/pages/calc/DataCalcLifeIns';
 import { DataIllustration as illustration } from '../../data/DataAssets';
 import { getCommaSeparator } from '../../functions/FormatNumber';
 
@@ -12,9 +12,9 @@ export const ButtonCard = ({ toggleButton }) => {
   const form = DataResultCalc.card;
 
   return (
-    <div className='add-container'>
+    <div className="add-container">
       <button
-        className='button-regular button-complementary'
+        className="button-regular button-complementary"
         onClick={toggleButton}
       >
         <IconContext.Provider value={{ className: 'button-add-icon' }}>
@@ -35,9 +35,9 @@ export const Card = ({ cost, user, installment, toggleButton }) => {
         cost.nap && 'result-nap'
       }`}
     >
-      <div className='installment'>
+      <div className="installment">
         <p>
-          <small className='count'>
+          <small className="count">
             {installment || 1}
             {adornment.period}{' '}
           </small>
@@ -52,7 +52,7 @@ export const Card = ({ cost, user, installment, toggleButton }) => {
           <small>{label.premium}</small>
           <p>
             <small>{adornment.currency}</small>{' '}
-            <span className='nominal'>
+            <span className="nominal">
               {user.premium
                 ? installment
                   ? user.aPremium === true
@@ -71,7 +71,7 @@ export const Card = ({ cost, user, installment, toggleButton }) => {
           <small>{label.tsi}</small>
           <p>
             <small>{adornment.currency}</small>{' '}
-            <span className='nominal'>
+            <span className="nominal">
               {user.tsi
                 ? getCommaSeparator(user.tsi)
                 : installment

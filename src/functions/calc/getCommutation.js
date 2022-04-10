@@ -1,4 +1,4 @@
-import { DataLifeIns } from '../../data/DataLifeIns';
+import { DataLifeIns } from '../../data/pages/calc/DataLifeIns';
 
 const getCommutation = ({ mortality, discountFactor }) => {
   const radix = DataLifeIns.radix; // Radix

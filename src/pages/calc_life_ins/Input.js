@@ -8,7 +8,7 @@ import {
 import { CustomMortality } from './CustomMortality';
 import FormSubmit from './FormSubmit';
 import useInput from '../../functions/calc/useInput';
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const Input = ({ setUserData }) => {
   const {

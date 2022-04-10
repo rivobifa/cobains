@@ -1,5 +1,5 @@
 import { removeCommaSeparator } from '../FormatNumber';
-import { DataFormInput as form } from '../../data/DataCalcLifeIns';
+import { DataFormInput as form } from '../../data/pages/calc/DataCalcLifeIns';
 
 const getDataUser = ({ user }) => {
   // Fix the format number
