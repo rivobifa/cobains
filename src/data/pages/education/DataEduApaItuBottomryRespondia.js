@@ -1,11 +1,67 @@
 import { DataLinkPage } from '../../DataLink';
-import { DataImage, DataImageMindMap } from '../../DataAssets';
 import {
-  DPA_JenisProdukAsuransiJiwa,
-  DPA_MengenalLebihDalamWholeLifeInsurance,
-} from './DataPreviewArticle';
+  DataImage,
+  DataImageMindMap,
+  DataPreviewArticleImage as DPAImage,
+} from '../../DataAssets';
 
 const DataArticle = {
+  path: DataLinkPage.edu_apaItuBottomryRespondia,
+  preview: {
+    title: [
+      {
+        text: 'Apa itu ',
+      },
+      {
+        text: 'Bottomry',
+        type: 'italic',
+      },
+      {
+        text: ' dan ',
+      },
+      {
+        text: 'Respondia',
+        type: 'italic',
+      },
+      {
+        text: ' ?',
+      },
+    ],
+    subInfo: {
+      author: 'Rivo Bifa',
+      linkProfile: DataLinkPage.author_rivoBifa,
+      timestamp: 'Selasa, 18 Januari 2022',
+      location: 'Jakarta',
+    },
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Artikel ini membahas tentang bagaimana penerapan kontrak ',
+            },
+            {
+              text: 'Bottomry',
+              type: 'ins-term',
+            },
+            {
+              text: ' dan kontrak ',
+            },
+            {
+              text: 'Respondia',
+              type: 'ins-term',
+            },
+            {
+              text: ' yang dikenal oleh kalangan pelaku asuransi sebagai kontrak jadul dari praktik mirip asuransi.',
+            },
+          ],
+        ],
+      },
+      {
+        previewArticle: DPAImage.apaItuBottomryRespondia,
+      },
+    ],
+  },
   section: [
     {
       content: [
@@ -170,33 +226,33 @@ const DataArticle = {
         },
       ],
       content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Gue',
-                type: 'italic',
-              },
-              {
-                text: ' punya referensi yang cukup bagus untuk definisi dari ',
-              },
-              {
-                text: 'Bottomry',
-                type: 'ins-term',
-              },
-              {
-                text: ' dan ',
-              },
-              {
-                text: 'lo',
-                type: 'italic',
-              },
-              {
-                text: ' bisa baca di bawah ini.',
-              },
-            ],
-          ],
-        },
+        // {
+        //   paragraph: [
+        //     [
+        //       {
+        //         text: 'Gue',
+        //         type: 'italic',
+        //       },
+        //       {
+        //         text: ' punya referensi yang cukup bagus untuk definisi dari ',
+        //       },
+        //       {
+        //         text: 'Bottomry',
+        //         type: 'ins-term',
+        //       },
+        //       {
+        //         text: ' dan ',
+        //       },
+        //       {
+        //         text: 'lo',
+        //         type: 'italic',
+        //       },
+        //       {
+        //         text: ' bisa baca di bawah ini.',
+        //       },
+        //     ],
+        //   ],
+        // },
         {
           quote: {
             content: [
@@ -221,11 +277,11 @@ const DataArticle = {
         },
         {
           paragraph: [
-            [
-              {
-                text: 'Nah lohh, bingung kan… Hehe',
-              },
-            ],
+            // [
+            //   {
+            //     text: 'Nah lohh, bingung kan… Hehe',
+            //   },
+            // ],
             [
               {
                 text: 'Dari definisi di atas, kita bisa ngejabarin dalam ',
@@ -819,33 +875,33 @@ const DataArticle = {
         },
       ],
       content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Definisi ',
-              },
-              {
-                text: 'Respondia',
-                type: 'ins-term',
-              },
-              {
-                text: ' gue ',
-                type: 'italic',
-              },
-              {
-                text: ' ambil dari salah satu referensi yang bisa ',
-              },
-              {
-                text: 'lo',
-                type: 'italic',
-              },
-              {
-                text: ' baca di bawah ini.',
-              },
-            ],
-          ],
-        },
+        // {
+        //   paragraph: [
+        //     [
+        //       {
+        //         text: 'Definisi ',
+        //       },
+        //       {
+        //         text: 'Respondia',
+        //         type: 'ins-term',
+        //       },
+        //       {
+        //         text: ' gue ',
+        //         type: 'italic',
+        //       },
+        //       {
+        //         text: ' ambil dari salah satu referensi yang bisa ',
+        //       },
+        //       {
+        //         text: 'lo',
+        //         type: 'italic',
+        //       },
+        //       {
+        //         text: ' baca di bawah ini.',
+        //       },
+        //     ],
+        //   ],
+        // },
         {
           quote: {
             content: [
@@ -1745,85 +1801,62 @@ const DataArticle = {
       ],
     },
   ],
-  conclusion: [
-    {
-      title: [
-        {
-          text: 'Kesimpulan',
-        },
-      ],
-      content: [
-        {
-          paragraph: [
+  conclusion: {
+    title: [
+      {
+        text: 'Kesimpulan',
+      },
+    ],
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Kontrak ',
+            },
+            {
+              text: 'Bottomry',
+              type: 'ins-term',
+            },
+            {
+              text: ' dan ',
+            },
+            {
+              text: 'Respondia',
+              type: 'ins-term',
+            },
+            {
+              text: ' merupakan praktik mirip asuransi yang menjadi cikal bakal dari asuransi modern atau asuransi masa kini.',
+            },
+          ],
+        ],
+      },
+      {
+        list: {
+          content: [
             [
-              {
-                text: 'Kontrak ',
-              },
               {
                 text: 'Bottomry',
                 type: 'ins-term',
               },
               {
-                text: ' dan ',
+                text: ' adalah sebuah kontrak di mana seseorang meminjam uang untuk menggunakan kapalnya dengan jaminan kapalnya itu sendiri kepada orang lain, dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan tadi, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang tadi beserta bunga.',
               },
+            ],
+            [
               {
                 text: 'Respondia',
                 type: 'ins-term',
               },
               {
-                text: ' merupakan praktik mirip asuransi yang menjadi cikal bakal dari asuransi modern atau asuransi masa kini.',
+                text: ' adalah sebuah kontrak di mana seseorang meminjam uang dengan jaminan barang-barang yang dimuat di kapal yang sudah seharusnya dijual dalam perjalanannya sehingga tanggung jawab pribadi menjadi jaminan utama dalam kontrak.',
               },
             ],
           ],
         },
-        {
-          list: {
-            content: [
-              [
-                {
-                  text: 'Bottomry',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' adalah sebuah kontrak di mana seseorang meminjam uang untuk menggunakan kapalnya dengan jaminan kapalnya itu sendiri kepada orang lain, dengan ketentuan apabila dalam perjalanan kapal itu hilang maka Pemberi pinjaman juga kehilangan uang yang dia pinjamkan tadi, tapi apabila kapal itu selamat maka Pemberi pinjaman akan menerima kembali uang tadi beserta bunga.',
-                },
-              ],
-              [
-                {
-                  text: 'Respondia',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' adalah sebuah kontrak di mana seseorang meminjam uang dengan jaminan barang-barang yang dimuat di kapal yang sudah seharusnya dijual dalam perjalanannya sehingga tanggung jawab pribadi menjadi jaminan utama dalam kontrak.',
-                },
-              ],
-            ],
-          },
-        },
-      ],
-    },
-  ],
+      },
+    ],
+  },
 };
 
 export default DataArticle;
-
-export const DataPreviewSideContent = {
-  title: [
-    {
-      text: 'Perluas Wawasan',
-    },
-  ],
-  content: [
-    {
-      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
-      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
-    },
-    {
-      path: DPA_JenisProdukAsuransiJiwa.path,
-      content: DPA_JenisProdukAsuransiJiwa.section[0],
-    },
-  ],
-  button: {
-    text: 'Baca Selengkapnya',
-  },
-};

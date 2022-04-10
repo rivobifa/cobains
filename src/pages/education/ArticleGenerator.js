@@ -15,11 +15,17 @@ const ArticleGenerator = ({
   const conclusion = useRef(null);
   const scrollToConclusion = () => conclusion.current.scrollIntoView();
 
+  const DPSC = {
+    title: DataEdu.section.title,
+    content: DataPreviewSideContent,
+    button: DataEdu.button,
+  };
+
   return (
-    <div className='body-page'>
+    <div className="body-page">
       <div className={`page-container page-education-item ${className}`}>
-        <section className='section-main'>
-          <article className='content-container'>
+        <section className="section-main">
+          <article className="content-container">
             <RegularText
               data={data}
               dataChild={dataChild}
@@ -27,7 +33,7 @@ const ArticleGenerator = ({
               scrollToConclusion={scrollToConclusion}
             />
             {dataConclusion && (
-              <div ref={conclusion} className='conclusion-container'>
+              <div ref={conclusion} className="conclusion-container">
                 <RegularText data={dataConclusion} />
               </div>
             )}
@@ -36,11 +42,7 @@ const ArticleGenerator = ({
           </article>
         </section>
       </div>
-      <SideContent
-        // socmed
-        reverse
-        previewData={DataPreviewSideContent}
-      />
+      <SideContent reverse previewData={DPSC} />
     </div>
   );
 };
@@ -51,11 +53,11 @@ export const Disclaimer = ({ data }) => {
   const disclaimer = DataEdu.disclaimer;
 
   return (
-    <div className='disclaimer'>
-      <h5 className='disclaimer-title'>
+    <div className="disclaimer">
+      <h5 className="disclaimer-title">
         {data ? data.title : disclaimer.title}
       </h5>
-      <p className='disclaimer-content'>
+      <p className="disclaimer-content">
         <small>
           {data
             ? data.content.map((text, i) => FormatText({ text, i }))

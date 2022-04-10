@@ -10,7 +10,7 @@ export const DataSection = [
         paragraph: [
           [
             {
-              text: 'Hmm.. Sepertinya halaman ini belum siap dan butuh waktu beberapa saat untuk menyelesaikannya.',
+              text: 'Hmm, sepertinya halaman ini belum siap dan butuh waktu beberapa saat untuk menyelesaikannya.',
             },
           ],
         ],

@@ -1,9 +1,8 @@
 import * as GoIcons from 'react-icons/go';
-import {
-  DPA_ApaItuBottomryRespondia,
-  DPA_JenisProdukAsuransiJiwa,
-  DPA_MengenalLebihDalamWholeLifeInsurance,
-} from './DataPreviewArticle';
+import DataEduDefinisiManajemenRisiko from './DataEduDefinisiManajemenRisiko';
+import DataEduMengenalLebihDalamWholeLifeInsurance from './DataEduMengenalLebihDalamWholeLifeInsurance';
+import DataEduJenisProdukAsuransiJiwa from './DataEduJenisProdukAsuransiJiwa';
+import DataEduApaItuBottomryRespondia from './DataEduApaItuBottomryRespondia';
 
 const DataEdu = {
   banner: {
@@ -33,16 +32,20 @@ const DataEdu = {
   },
   article: [
     {
-      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
-      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
+      path: DataEduDefinisiManajemenRisiko.path,
+      content: DataEduDefinisiManajemenRisiko.preview,
     },
     {
-      path: DPA_JenisProdukAsuransiJiwa.path,
-      content: DPA_JenisProdukAsuransiJiwa.section[0],
+      path: DataEduMengenalLebihDalamWholeLifeInsurance.path,
+      content: DataEduMengenalLebihDalamWholeLifeInsurance.preview,
     },
     {
-      path: DPA_ApaItuBottomryRespondia.path,
-      content: DPA_ApaItuBottomryRespondia.section[0],
+      path: DataEduJenisProdukAsuransiJiwa.path,
+      content: DataEduJenisProdukAsuransiJiwa.preview,
+    },
+    {
+      path: DataEduApaItuBottomryRespondia.path,
+      content: DataEduApaItuBottomryRespondia.preview,
     },
   ],
   disclaimer: {

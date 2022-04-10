@@ -1,9 +1,64 @@
-import { DataLinkPage } from '../../DataLink';import {
-  DPA_ApaItuBottomryRespondia,
-  DPA_MengenalLebihDalamWholeLifeInsurance,
-} from './DataPreviewArticle';
+import { DataLinkPage } from '../../DataLink';
 
 const DataArticle = {
+  path: DataLinkPage.edu_jenisProdukAsuransiJiwa,
+  preview: {
+    title: [
+      {
+        text: 'Jenis Produk Asuransi Jiwa',
+      },
+    ],
+    subInfo: {
+      author: 'Rivo Bifa',
+      linkProfile: DataLinkPage.author_rivoBifa,
+      timestamp: 'Selasa, 25 Januari 2022',
+      location: 'Jakarta',
+    },
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Artikel ini akan membahas tentang jenis-jenis produk dasar pada asuransi jiwa yaitu ',
+            },
+            {
+              text: 'Pure Endowment',
+              type: 'ins-term',
+            },
+            {
+              text: ', ',
+            },
+            {
+              text: 'Term Life Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ', ',
+            },
+
+            {
+              text: 'Whole Life Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ', dan ',
+            },
+
+            {
+              text: 'Endowment Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' dengan menggunakan definisi dari para ahli asuransi yang akan menambah wawasan kita semua.',
+            },
+          ],
+        ],
+      },
+      // {
+      //   previewArticle: DPAImage.jenisProdukAsuransiJiwa,
+      // },
+    ],
+  },
   section: [
     {
       title: [
@@ -805,168 +860,145 @@ const DataArticle = {
       ],
     },
   ],
-  conclusion: [
-    {
-      title: [
-        {
-          text: 'Kesimpulan',
-        },
-      ],
-      content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Produk asuransi jiwa dapat kita definisikan sebagai:',
-              },
-            ],
+  conclusion: {
+    title: [
+      {
+        text: 'Kesimpulan',
+      },
+    ],
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Produk asuransi jiwa dapat kita definisikan sebagai:',
+            },
           ],
-        },
-        {
-          list: {
-            content: [
-              [
-                {
-                  text: 'Pure Endowment',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' merupakan produk asuransi jiwa dengan ',
-                },
-                {
-                  text: 'Manfaat Asuransi',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' yang akan diterima jika Peserta masih hidup pada akhir periode.',
-                },
-              ],
-              [
-                {
-                  text: 'Term Life Insurance',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' merupakan produk asuransi jiwa dengan ',
-                },
-                {
-                  text: 'Manfaat Asuransi',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' yang akan diterima jika Peserta meninggal dalam periode.',
-                },
-              ],
-              [
-                {
-                  text: 'Whole Life Insurance',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' merupakan produk asuransi jiwa dengan ',
-                },
-                {
-                  text: 'Manfaat Asuransi',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' yang akan diterima jika Peserta meninggal (tanpa batas periode).',
-                },
-              ],
-              [
-                {
-                  text: 'Endowment Insurance',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' merupakan produk asuransi jiwa dengan ',
-                },
-                {
-                  text: 'Manfaat Asuransi',
-                  type: 'ins-term',
-                },
-                {
-                  text: ' yang akan diterim jika Peserta meninggal dalam periode atau masih hidup pada akhir periode tersebut.',
-                },
-              ],
-            ],
-          },
-        },
-        {
-          paragraph: [
+        ],
+      },
+      {
+        list: {
+          content: [
             [
-              {
-                text: 'Perlu dicatat, dari keempat jenis produk asuransi jiwa yang dituliskan di sini, produk ',
-              },
-              {
-                text: 'Endowment Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' merupakan produk dengan ',
-              },
-              {
-                text: 'Premi',
-                type: 'ins-term',
-              },
-              {
-                text: ' termahal dikarenakan hadirnya dua kondisi pada produk ',
-              },
-
-              {
-                text: 'Endowment Insurance',
-                type: 'ins-term',
-              },
-            ],
-            [
-              {
-                text: 'Reminder',
-                type: 'italic',
-              },
-              {
-                text: ' untuk temen-temen, produk ',
-              },
               {
                 text: 'Pure Endowment',
                 type: 'ins-term',
               },
               {
-                text: ' dan ',
+                text: ' merupakan produk asuransi jiwa dengan ',
               },
+              {
+                text: 'Manfaat Asuransi',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang akan diterima jika Peserta masih hidup pada akhir periode.',
+              },
+            ],
+            [
+              {
+                text: 'Term Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' merupakan produk asuransi jiwa dengan ',
+              },
+              {
+                text: 'Manfaat Asuransi',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang akan diterima jika Peserta meninggal dalam periode.',
+              },
+            ],
+            [
+              {
+                text: 'Whole Life Insurance',
+                type: 'ins-term',
+              },
+              {
+                text: ' merupakan produk asuransi jiwa dengan ',
+              },
+              {
+                text: 'Manfaat Asuransi',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang akan diterima jika Peserta meninggal (tanpa batas periode).',
+              },
+            ],
+            [
               {
                 text: 'Endowment Insurance',
                 type: 'ins-term',
               },
               {
-                text: ' adalah dua produk yang berbeda. Jangan sampai keliru yaa!',
+                text: ' merupakan produk asuransi jiwa dengan ',
+              },
+              {
+                text: 'Manfaat Asuransi',
+                type: 'ins-term',
+              },
+              {
+                text: ' yang akan diterim jika Peserta meninggal dalam periode atau masih hidup pada akhir periode tersebut.',
               },
             ],
           ],
         },
-      ],
-    },
-  ],
+      },
+      {
+        paragraph: [
+          [
+            {
+              text: 'Perlu dicatat, dari keempat jenis produk asuransi jiwa yang dituliskan di sini, produk ',
+            },
+            {
+              text: 'Endowment Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' merupakan produk dengan ',
+            },
+            {
+              text: 'Premi',
+              type: 'ins-term',
+            },
+            {
+              text: ' termahal dikarenakan hadirnya dua kondisi pada produk ',
+            },
+
+            {
+              text: 'Endowment Insurance',
+              type: 'ins-term',
+            },
+          ],
+          [
+            {
+              text: 'Reminder',
+              type: 'italic',
+            },
+            {
+              text: ' untuk temen-temen, produk ',
+            },
+            {
+              text: 'Pure Endowment',
+              type: 'ins-term',
+            },
+            {
+              text: ' dan ',
+            },
+            {
+              text: 'Endowment Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' adalah dua produk yang berbeda. Jangan sampai keliru yaa!',
+            },
+          ],
+        ],
+      },
+    ],
+  },
 };
 
 export default DataArticle;
-
-export const DataPreviewSideContent = {
-  title: [
-    {
-      text: 'Perluas Wawasan',
-    },
-  ],
-  content: [
-    {
-      path: DPA_MengenalLebihDalamWholeLifeInsurance.path,
-      content: DPA_MengenalLebihDalamWholeLifeInsurance.section[0],
-    },
-    {
-      path: DPA_ApaItuBottomryRespondia.path,
-      content: DPA_ApaItuBottomryRespondia.section[0],
-    },
-  ],
-  button: {
-    text: 'Baca Selengkapnya',
-  },
-};

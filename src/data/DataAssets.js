@@ -1,3 +1,5 @@
+import { DataSocmed } from './DataLink';
+
 import {
   WrapperImage,
   WrapperIllustration,
@@ -159,14 +161,14 @@ export const DataLogo = <Logo />;
 export const DataIconSocMed = {
   githubWhite: WrapperIconSocmed(
     <IconGithubWhite />,
-    'https://www.github.com/anotherbeef/cobains/'
+    DataSocmed.cobains.github
   ),
   linkedinWhite: WrapperIconSocmed(
     <IconLinkedinWhite />,
-    'https://www.linkedin.com/company/cobains-id/'
+    DataSocmed.cobains.linkedin
   ),
   twitterWhite: WrapperIconSocmed(
     <IconTwitterWhite />,
-    'https://www.twitter.com/rbifa_/'
+    DataSocmed.author.rivoBifa.twitter
   ),
 };

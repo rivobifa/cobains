@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { IconContext } from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
 // import { Link } from 'react-router-dom';
-import { DataLoader } from '../../data/DataLoader';
+import { DataLoader } from '../../data/pages/DataLoader';
 
 const Loader = ({ path }) => {
   const loader = React.createRef();
@@ -14,19 +14,19 @@ const Loader = ({ path }) => {
   useEffect(() => {
     const changeText1 = setTimeout(
       () => setTitleText(DataLoader.title.loader[1]),
-      1500,
+      1500
     );
     const changeText2 = setTimeout(
       () => setTitleText(DataLoader.title.loader[2]),
-      1700,
+      1700
     );
     const changeText3 = setTimeout(
       () => setTitleText(DataLoader.title.loader[3]),
-      2000,
+      2000
     );
     const changeText4 = setTimeout(
       () => setTitleText(DataLoader.title.loader[4]),
-      3000,
+      3000
     );
 
     const clear = () => {
@@ -54,15 +54,15 @@ const Loader = ({ path }) => {
   clearTimeout(init);
 
   return (
-    <div className='loader-overlay'>
-      <div className='loader-container'>
-        <div ref={loader} className='loader' />
-        <p ref={loaderTitle} className='loader-title'>
+    <div className="loader-overlay">
+      <div className="loader-container">
+        <div ref={loader} className="loader" />
+        <p ref={loaderTitle} className="loader-title">
           {titleText}
         </p>
       </div>
-      <div ref={failed} className='loader-container-failed'>
-        <p className='loader-title'>
+      <div ref={failed} className="loader-container-failed">
+        <p className="loader-title">
           <IconContext.Provider value={{ className: 'loader-failed-icon' }}>
             <AiIcons.AiFillCloseCircle />
           </IconContext.Provider>

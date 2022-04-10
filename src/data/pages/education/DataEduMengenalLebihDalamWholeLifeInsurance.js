@@ -1,11 +1,59 @@
-import { DataLinkPage } from '../../DataLink'
-import {
-  DPA_ApaItuBottomryRespondia,
-  DPA_JenisProdukAsuransiJiwa,
-} from './DataPreviewArticle';
+import { DataLinkPage } from '../../DataLink';
+import { DataPreviewArticleImage as DPAImage } from '../../DataAssets';
 
-const DataArticle = 
-{
+const DataArticle = {
+  path: DataLinkPage.edu_mengenalLebihDalamWholeLifeInsurance,
+  preview: {
+    title: [
+      {
+        text: 'Mengenal Lebih Dalam ',
+      },
+      {
+        text: 'Whole Life Insurance',
+        type: 'italic',
+      },
+    ],
+    subInfo: {
+      author: 'Rivo Bifa',
+      linkProfile: DataLinkPage.author_rivoBifa,
+      timestamp: 'Selasa, 25 Januari 2022',
+      location: 'Jakarta',
+    },
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Artikel ini akan membahas bagaimana produk ',
+            },
+            {
+              text: 'Whole Life Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' digunakan serta hubungannya dengan tabel mortalita yang menyebabkan ',
+            },
+            {
+              text: 'Manfaat Asuransi',
+              type: 'ins-term',
+            },
+            {
+              text: ' dari produk ',
+            },
+
+            {
+              text: 'Whole Life Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' tidak selalu diberikan sebagai santunan kepada ahli waris yang ditinggalkan.',
+            },
+          ],
+        ],
+        previewArticle: DPAImage.mengenalLebihDalamWholeLifeInsurance,
+      },
+    ],
+  },
   section: [
     {
       content: [
@@ -317,68 +365,45 @@ const DataArticle =
       ],
     },
   ],
-  conclusion: [
-    {
-      title: [
-        {
-          text: 'Kesimpulan',
-        },
-      ],
-      content: [
-        {
-          paragraph: [
-            [
-              {
-                text: 'Produk ',
-              },
-              {
-                text: 'Whole Life Insurance',
-                type: 'ins-term',
-              },
-              {
-                text: ' adalah produk dengan ',
-              },
-              {
-                text: 'Manfaat Asuransi',
-                type: 'ins-term',
-              },
-              {
-                text: ' yang akan diterima jika terjadi kematian (tanpa batas periode). Intepretasi ',
-              },
-              {
-                text: 'Klaim',
-                type: 'ins-term',
-              },
-              {
-                text: ' dari produk ini tidak selalu harus terjadi kematian. Namun juga bisa saat Peserta telah melewati batas mortalita.',
-              },
-            ],
+  conclusion: {
+    title: [
+      {
+        text: 'Kesimpulan',
+      },
+    ],
+    content: [
+      {
+        paragraph: [
+          [
+            {
+              text: 'Produk ',
+            },
+            {
+              text: 'Whole Life Insurance',
+              type: 'ins-term',
+            },
+            {
+              text: ' adalah produk dengan ',
+            },
+            {
+              text: 'Manfaat Asuransi',
+              type: 'ins-term',
+            },
+            {
+              text: ' yang akan diterima jika terjadi kematian (tanpa batas periode). Intepretasi ',
+            },
+            {
+              text: 'Klaim',
+              type: 'ins-term',
+            },
+            {
+              text: ' dari produk ini tidak selalu harus terjadi kematian. Namun juga bisa saat Peserta telah melewati batas mortalita.',
+            },
           ],
-        },
-      ],
-    },
-  ],
+        ],
+      },
+    ],
+  },
 };
 
 export default DataArticle;
-
-export const DataPreviewSideContent = {
-  title: [
-    {
-      text: 'Perluas Wawasan',
-    },
-  ],
-  content: [
-    {
-      path: DPA_JenisProdukAsuransiJiwa.path,
-      content: DPA_JenisProdukAsuransiJiwa.section[0],
-    },
-    {
-      path: DPA_ApaItuBottomryRespondia.path,
-      content: DPA_ApaItuBottomryRespondia.section[0],
-    },
-  ],
-  button: {
-    text: 'Baca Selengkapnya',
-  },
-};

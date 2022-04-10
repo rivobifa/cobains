@@ -14,6 +14,7 @@ export const DataLinkPage = {
   edu_jenisProdukAsuransiJiwa: '/edukasi/jenis-produk-asuransi-jiwa',
   edu_mengenalLebihDalamWholeLifeInsurance:
     '/edukasi/mengenal-lebih-dalam-whole-life-insurance',
+  edu_definisiManajemenRisiko: '/edukasi/definisi-manajemen-risiko',
   edu_endowmentInsuranceVsWholeLifeInsurance:
     '/edukasi/endowment-insurance-vs-whole-life-insurance',
   edu_endowmentinsuranceVsPureEndowment: '/Edukasi/endowment-vs-pure-endowment',
@@ -45,3 +46,21 @@ export const DataNav = [
     icon: <MdIcons.MdOutlineSchool />,
   },
 ];
+
+export const DataSocmed = {
+  cobains: {
+    github: 'https://www.github.com/anotherbeef/cobains/',
+    linkedin: 'https://www.linkedin.com/company/cobains-id/',
+  },
+  author: {
+    rivoBifa: {
+      github: 'https://www.github.com/anotherbeef/',
+      linkedin: 'https://www.linkedin.com/in/rivobifa/',
+      medium: '',
+      instagram: 'https://www.instagram.com/anotherbeef/',
+      facebook: 'https://www.facebook.com/rivobifa/',
+      twitter: 'https://www.twitter.com/rivobifa/',
+      youtube: 'https://www.youtube.com/rivobifa/',
+    },
+  },
+};

@@ -1,5 +1,5 @@
-import { DataLinkPage } from './DataLink';
-import getDate from '../functions/getDate';
+import { DataLinkPage } from '../DataLink';
+import getDate from '../../functions/getDate';
 
 export const DataFooter = [
   [

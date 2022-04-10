@@ -1,4 +1,4 @@
-import { DataLinkPage } from './DataLink';
+import { DataLinkPage } from '../DataLink';
 import * as BsIcons from 'react-icons/bs';
 
 export const DataHome = {
