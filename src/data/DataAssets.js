@@ -109,8 +109,8 @@ export const DataImage = {
       data={StormAtSea}
       className="storm-at-sea"
       captionIllustration
-      caption={<i>Perils on The Sea (Sea Storm)</i>}
-      title="Perils on The Sea (Sea Storm)"
+      caption={<i>Perils of The Sea (Sea Storm)</i>}
+      title="Perils of The Sea (Sea Storm)"
       source="Miguel Angel Estevez"
     />
   ),
