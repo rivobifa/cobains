@@ -73,7 +73,7 @@ const DataArticle = {
           paragraph: [
             [
               {
-                text: 'Definisi manajemen risiko menurut The Commite of Sponsoring Organization of The Treadway Commision (COSO) adalah suatu proses yang dipengaruhi oleh direksi, manajemen, dan pihak lain, yang diaplikasikan dalam penentuan strategi perusahaan, yang dirancang untuk mengidentifikasi risiko-risiko yang mungkin mempengaruhi perusahaan, dan mengelola risiko-risiko tersebut tetap berada pada selera risiko perusahaan, serta memberikan pemastian yang memadai bahwa tujuan perusahaan dapat dicapai.',
+                text: 'Definisi manajemen risiko menurut The Committee of Sponsoring Organization of The Treadway Commission (COSO) adalah suatu proses yang dipengaruhi oleh direksi, manajemen, dan pihak lain, yang diaplikasikan dalam penentuan strategi perusahaan, yang dirancang untuk mengidentifikasi risiko-risiko yang mungkin mempengaruhi perusahaan, dan mengelola risiko-risiko tersebut tetap berada pada selera risiko perusahaan, serta memberikan pemastian yang memadai bahwa tujuan perusahaan dapat dicapai.',
               },
             ],
           ],
