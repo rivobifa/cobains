@@ -65,7 +65,7 @@ const DataArticle = {
     {
       title: [
         {
-          text: 'The Commite of Sponsoring Organization of The Treadway Commision (COSO)',
+          text: 'The Committee of Sponsoring Organization of The Treadway Commission (COSO)',
         },
       ],
       content: [
