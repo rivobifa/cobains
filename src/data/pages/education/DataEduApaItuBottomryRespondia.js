@@ -736,7 +736,7 @@ const DataArticle = {
                 type: 'ins-term',
               },
               {
-                text: 'dibuat oleh Pemilik kapal ya sudah jelas dirinya juga ikut bertanggung jawab ',
+                text: ' dibuat oleh Pemilik kapal ya sudah jelas dirinya juga ikut bertanggung jawab ',
               },
               {
                 text: '(personal liable)',
@@ -814,7 +814,7 @@ const DataArticle = {
               },
               {
                 text: 'lo',
-                type: 'ins-term',
+                type: 'italic',
               },
               {
                 text: ' masih bingung coba liat skema ini:',
