@@ -19,7 +19,7 @@ const DataArticle = {
         paragraph: [
           [
             {
-              text: 'Artikel ini membahas tentang definisi dari manajemen risiko menurut standar dan organisasi yang ada. Diantaranya ialah ISO 31000:2018, The Commite of Sponsoring Organization of The Treadway Commision (COSO), Komite Nasional Kebijakan Governance (KNKG), dan ERM AS/NZS 4360:1999.',
+              text: 'Artikel ini membahas tentang definisi dari manajemen risiko menurut standar dan organisasi yang ada. Diantaranya ialah ISO 31000:2018, The Committee of Sponsoring Organization of The Treadway Commission (COSO), Komite Nasional Kebijakan Governance (KNKG), dan ERM AS/NZS 4360:1999.',
             },
           ],
         ],
