@@ -12,7 +12,7 @@ You can learn more in the [cobains.id](https://www.cobains.id/).
 
 This project contains actuarial and insurance disciplines.
 
-You can learn more in the [Github Wiki](https://github.com/anotherbeef/cobains.wiki.git) (Indonesia version).
+You can learn more in the [Github Wiki](https://github.com/anotherbeef/cobains/wiki) (Indonesia version).
 
 ## Learn More About The Code
 
