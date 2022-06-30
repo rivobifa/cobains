@@ -49,14 +49,14 @@ export const DataNav = [
 
 export const DataSocmed = {
   cobains: {
-    github: 'https://www.github.com/anotherbeef/cobains/',
+    github: 'https://www.github.com/rivobifa/cobains/',
     linkedin: 'https://www.linkedin.com/company/cobains-id/',
   },
   author: {
     rivoBifa: {
-      github: 'https://www.github.com/anotherbeef/',
+      github: 'https://www.github.com/rivobifa/',
       linkedin: 'https://www.linkedin.com/in/rivobifa/',
-      medium: '',
+      medium: 'https://www.medium.com/@rivobifa',
       instagram: 'https://www.instagram.com/anotherbeef/',
       facebook: 'https://www.facebook.com/rivobifa/',
       twitter: 'https://www.twitter.com/rivobifa/',
