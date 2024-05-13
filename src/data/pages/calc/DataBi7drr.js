@@ -1,5 +1,120 @@
 export const DataBi7drr = [
   {
+	date: '24 April 2024',
+	interest: 0.0625,
+	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_268024.aspx',
+  },
+  {
+  	date: '20 March 2024',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_265424.aspx',
+  },
+  {
+  	date: '21 February 2024',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_263324.aspx',
+  },
+  {
+  	date: '17 January 2024',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_260924.aspx',
+  },
+  {
+  	date: '21 December 2023',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2534223.aspx',
+  },
+  {
+  	date: '23 November 2023',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2531723.aspx',
+  },
+  {
+  	date: '19 October 2023',
+  	interest: 0.06,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2528323.aspx',
+  },
+  {
+  	date: '21 September 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2525923.aspx',
+  },
+  {
+  	date: '24 August 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2523323.aspx',
+  },
+  {
+  	date: '25 July 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2519723.aspx',
+  },
+  {
+  	date: '22 June 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2516523.aspx',
+  },
+  {
+  	date: '25 May 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2514023.aspx',
+  },
+  {
+  	date: '18 April 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2510223.aspx',
+  },
+  {
+  	date: '16 March 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_256523.aspx',
+  },
+  {
+  	date: '16 February 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_253823.aspx',
+  },
+  {
+  	date: '19 January 2023',
+  	interest: 0.0575,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_251323.aspx',
+  },
+  {
+  	date: '22 December 2022',
+  	interest: 0.055,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2435022.aspx',
+  },
+  {
+  	date: '17 November 2022',
+  	interest: 0.0525,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2431322.aspx',
+  },
+  {
+  	date: '20 October 2022',
+  	interest: 0.0475,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2428522.aspx',
+  },
+  {
+  	date: '22 September 2022',
+  	interest: 0.0425,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2425322.aspx',
+  },
+  {
+  	date: '23 August 2022',
+  	interest: 0.0375,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2422622.aspx',
+  },
+  {
+  	date: '21 July 2022',
+  	interest: 0.035,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2419522.aspx',
+  },
+  {
+  	date: '23 June 2022',
+  	interest: 0.035,
+  	url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2415922.aspx',
+  },
+  {
     date: '24 May 2022',
     interest: 0.035,
     url: 'https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2413622.aspx',
